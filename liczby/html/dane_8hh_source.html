@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Liczby: Plik źródłowy dane.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Liczby
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="dir_8bd4341366b1335c2ba3810a87c44c98.html">inc</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">dane.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dane_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef DANE_HH_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define DANE_HH_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">using namespace </span>std;
+<a name="l00021"></a><a class="code" href="class_dane.html">00021</a> <span class="keyword">class </span><a class="code" href="class_dane.html" title="Deklaracja klasy Kolejka. Klasa ta zawiera dwie tablice dynamiczne, tablica w ktorej przechowujemy da...">Dane</a>
+<a name="l00022"></a>00022 {
+<a name="l00023"></a>00023         <span class="keyword">private</span>:
+<a name="l00028"></a><a class="code" href="class_dane.html#a094084ea03dd13bb92c8a8eb7d4e7888">00028</a>                 <span class="keywordtype">int</span> *<a class="code" href="class_dane.html#a094084ea03dd13bb92c8a8eb7d4e7888" title="Zmienna typu int, odpowiada za tworzenie tablicy dynamicznej, ktora zawiera dane wczytywane z pliku...">tablica</a>;
+<a name="l00034"></a><a class="code" href="class_dane.html#a394973f4dcbc75d3e218ef2a31bc99f9">00034</a>                 <span class="keywordtype">int</span> *<a class="code" href="class_dane.html#a394973f4dcbc75d3e218ef2a31bc99f9" title="Zmienna typu int, odpowiada za tworzenie tablicy sprawdzajacej dynamicznej, ktora zawiera dane wczyta...">tablica_spr</a>;
+<a name="l00038"></a><a class="code" href="class_dane.html#a98c7a87fc812e3d3b41e4cb9ee7b105f">00038</a>                 <span class="keywordtype">int</span> temp, <a class="code" href="class_dane.html#a98c7a87fc812e3d3b41e4cb9ee7b105f">temp_spr</a>; 
+<a name="l00042"></a><a class="code" href="class_dane.html#ab9731edece0d6a357594c7cd02985dab">00042</a>                 <span class="keywordtype">int</span> rozmiar, <a class="code" href="class_dane.html#ab9731edece0d6a357594c7cd02985dab">rozmiar_spr</a>;
+<a name="l00043"></a>00043         <span class="keyword">public</span>:
+<a name="l00049"></a><a class="code" href="class_dane.html#a623e63e2c94f352a14758c8671f197d0">00049</a>                 <a class="code" href="class_dane.html#a623e63e2c94f352a14758c8671f197d0" title="Konstruktor klasy Dane. W funkcji tej zerujemy wszystkie zmienne jak rowniez zmienne dynamiczne w cel...">Dane</a>(){ tablica = 0; tablica_spr = 0; temp = 0; temp_spr = 0; rozmiar_spr = 0; rozmiar = 0;}
+<a name="l00054"></a>00054                 <a class="code" href="class_dane.html" title="Deklaracja klasy Kolejka. Klasa ta zawiera dwie tablice dynamiczne, tablica w ktorej przechowujemy da...">Dane</a>(<span class="keywordtype">string</span> Nazwa_Pliku);
+<a name="l00059"></a>00059                 <span class="keywordtype">void</span> Wczytaj_Dane_Spr();
+<a name="l00065"></a>00065                 <span class="keywordtype">void</span> Wczytaj_Dane();
+<a name="l00071"></a>00071                 <span class="keywordtype">void</span> Wykonaj_Obliczenia();
+<a name="l00081"></a>00081                 <span class="keywordtype">void</span> Sprawdz();
+<a name="l00087"></a>00087                 <span class="keywordtype">void</span> Pokaz_Dane();
+<a name="l00092"></a>00092                 <span class="keywordtype">void</span> Pokaz_Dane_Spr();
+<a name="l00099"></a>00099                 <span class="keywordtype">void</span> Wyzeruj_Dane();
+<a name="l00104"></a><a class="code" href="class_dane.html#ad0ab5b58f60dae17303291e8f0a49151">00104</a>                 ~<a class="code" href="class_dane.html" title="Deklaracja klasy Kolejka. Klasa ta zawiera dwie tablice dynamiczne, tablica w ktorej przechowujemy da...">Dane</a>()
+<a name="l00105"></a>00105                 {
+<a name="l00106"></a>00106                         <span class="keyword">delete</span> [] tablica;
+<a name="l00107"></a>00107                         <span class="keyword">delete</span> [] tablica_spr;
+<a name="l00108"></a>00108                 }
+<a name="l00109"></a>00109 };
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Sun Apr 27 2014 14:58:02 dla Liczby programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

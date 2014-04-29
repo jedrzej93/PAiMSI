@@ -1,0 +1,285 @@
+\hypertarget{class_dane}{\section{\-Dokumentacja klasy \-Dane}
+\label{class_dane}\index{\-Dane@{\-Dane}}
+}
+
+
+\-Deklaracja klasy \-Kolejka. \-Klasa ta zawiera dwie tablice dynamiczne, tablica w ktorej przechowujemy dane wczytane z pliku oraz tablica\-\_\-spr, w ktorej zawarte sa dane sprawdzajace czy po wykonaniu obliczenia dane z tablicy sa takie same. \-Klasa ta rowniez ma zdefiniowane zmienne pomocnicze odpowiadajace za tworzenie tablic oraz zmienne zawierajace rozmiary tych tablic.  
+
+
+
+
+{\ttfamily \#include $<$dane.\-hh$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dane_a623e63e2c94f352a14758c8671f197d0}{\-Dane} ()
+\begin{DoxyCompactList}\small\item\em \-Konstruktor klasy \hyperlink{class_dane}{\-Dane}. \-W funkcji tej zerujemy wszystkie zmienne jak rowniez zmienne dynamiczne w celu zwolnienia pamieci. \end{DoxyCompactList}\item 
+\hyperlink{class_dane_ac5b1c1fcec846b36b7bd601e2358aef0}{\-Dane} (string \-Nazwa\-\_\-\-Pliku)
+\begin{DoxyCompactList}\small\item\em \-Konstruktor klasy \hyperlink{class_dane}{\-Dane}. \-Funkcja wczytuje plik o zadanej nazwie oraz zeruje wszystkie zmienne w celu zwolnienia pamieci. \end{DoxyCompactList}\item 
+void \hyperlink{class_dane_a83171250f88d38d2cbac97185b3bd5dd}{\-Wczytaj\-\_\-\-Dane\-\_\-\-Spr} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wczytywania danych sprawdzajacych \-Funkcja ta wczytuje dane z pliku sprawdzajacego -\/ test.\-txt. \end{DoxyCompactList}\item 
+void \hyperlink{class_dane_ad992d9c799eb8e35bfb6069e0812b908}{\-Wczytaj\-\_\-\-Dane} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wczytywania danych. \-Funkcja ta wczytuje dane z pliku, uzytkownik jest pytany jaki plik chce wczytac. \end{DoxyCompactList}\item 
+void \hyperlink{class_dane_a71e1e5ab35b8952f84724853c042e90b}{\-Wykonaj\-\_\-\-Obliczenia} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wykonujaca obliczenia. \-Funkcja sluzy do wykonania operacji mnozenia x2 danych wczytanych z tablicy. \end{DoxyCompactList}\item 
+void \hyperlink{class_dane_a1dd37a4eb6da968da533e80f36145fdc}{\-Sprawdz} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja sprawdzajaca. \-Funkcja ta porownuje czy dane z tablicy po operacji mnozenia sa takie same jak dane zawarte w tablicy sprawdzajacej. \-Sprawdza kazdy element po kolei i jezeli napotka rozne dane to przypisuje wartosc 1 do zmiennej blad, jezeli wszystkie dane beda takie same blad = 0. \-I jezeli otrzymane 1 to funkcja wyswietla blad, w przeciwnym razie funkcja zwraca, ze dane sa takie same. \end{DoxyCompactList}\item 
+void \hyperlink{class_dane_a84cd5938a2dc0aaab4287cd58c8bd0d2}{\-Pokaz\-\_\-\-Dane} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajaca dane z tablicy. \-Funkcja wyswietla dane wczytane z tablicy, badz te po wykonaniu obliczen. \end{DoxyCompactList}\item 
+void \hyperlink{class_dane_a644482d17f85bb48d81ce5174d4425e6}{\-Pokaz\-\_\-\-Dane\-\_\-\-Spr} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajaca dane z tablicy sprawdzajacej. \-Funkcja wyswietla dane wczytane z tablicy sprawdzajacej. \end{DoxyCompactList}\item 
+void \hyperlink{class_dane_a922c52bcc8c6ff4f49f5e3ae3d48a5d7}{\-Wyzeruj\-\_\-\-Dane} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja zerujaca dane. \-Funkcja ta zeruje wszystkie zmienne pomocnicze oraz zmienne dynamiczne oraz usuwa utworzone tablice dynamiczne w celu zwolnienia pamieci i ochrony przed jej zapelnieniu. \end{DoxyCompactList}\item 
+\hyperlink{class_dane_ad0ab5b58f60dae17303291e8f0a49151}{$\sim$\-Dane} ()
+\begin{DoxyCompactList}\small\item\em \-Destruktor klasy \hyperlink{class_dane}{\-Dane}. \-Usuwa tablice dynamiczne w celu zwolnienia pamieci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{class_dane_a094084ea03dd13bb92c8a8eb7d4e7888}{tablica}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu int, odpowiada za tworzenie tablicy dynamicznej, ktora zawiera dane wczytywane z pliku, ktore nastepnie sa wykorzystywane do wykonania na nich obliczenia -\/ mnozenia x2. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{class_dane_a394973f4dcbc75d3e218ef2a31bc99f9}{tablica\-\_\-spr}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu int, odpowiada za tworzenie tablicy sprawdzajacej dynamicznej, ktora zawiera dane wczytane z pliku, ktore sa po operacji mnożenia x2, ktore nastepnie sa wykorzystane do porownania z danymi z tablicy. \end{DoxyCompactList}\item 
+int \hyperlink{class_dane_a4f2d205b1c49da1f5f289a97139d4f6d}{temp}
+\begin{DoxyCompactList}\small\item\em \-Zmienne pomocnicze typu int. \end{DoxyCompactList}\item 
+int \hyperlink{class_dane_a98c7a87fc812e3d3b41e4cb9ee7b105f}{temp\-\_\-spr}
+\item 
+int \hyperlink{class_dane_afe0ec9a05ba6720f9a14c96bbec2c7dd}{rozmiar}
+\begin{DoxyCompactList}\small\item\em \-Zmienne typu int, zawierajace rozmiar tablicy oraz rozmiar tablicy sprawdzajacej. \end{DoxyCompactList}\item 
+int \hyperlink{class_dane_ab9731edece0d6a357594c7cd02985dab}{rozmiar\-\_\-spr}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Deklaracja klasy \-Kolejka. \-Klasa ta zawiera dwie tablice dynamiczne, tablica w ktorej przechowujemy dane wczytane z pliku oraz tablica\-\_\-spr, w ktorej zawarte sa dane sprawdzajace czy po wykonaniu obliczenia dane z tablicy sa takie same. \-Klasa ta rowniez ma zdefiniowane zmienne pomocnicze odpowiadajace za tworzenie tablic oraz zmienne zawierajace rozmiary tych tablic. 
+
+\-Definicja w linii 21 pliku dane.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_dane_a623e63e2c94f352a14758c8671f197d0}{\index{\-Dane@{\-Dane}!\-Dane@{\-Dane}}
+\index{\-Dane@{\-Dane}!Dane@{\-Dane}}
+\subsubsection[{\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Dane\-::\-Dane} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_dane_a623e63e2c94f352a14758c8671f197d0}
+
+
+\-Konstruktor klasy \hyperlink{class_dane}{\-Dane}. \-W funkcji tej zerujemy wszystkie zmienne jak rowniez zmienne dynamiczne w celu zwolnienia pamieci. 
+
+
+
+\-Definicja w linii 49 pliku dane.\-hh.
+
+\hypertarget{class_dane_ac5b1c1fcec846b36b7bd601e2358aef0}{\index{\-Dane@{\-Dane}!\-Dane@{\-Dane}}
+\index{\-Dane@{\-Dane}!Dane@{\-Dane}}
+\subsubsection[{\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Dane\-::\-Dane} (
+\begin{DoxyParamCaption}
+\item[{string}]{\-Nazwa\-\_\-\-Pliku}
+\end{DoxyParamCaption}
+)}}\label{class_dane_ac5b1c1fcec846b36b7bd601e2358aef0}
+
+
+\-Konstruktor klasy \hyperlink{class_dane}{\-Dane}. \-Funkcja wczytuje plik o zadanej nazwie oraz zeruje wszystkie zmienne w celu zwolnienia pamieci. 
+
+
+
+\-Definicja w linii 23 pliku dane.\-cpp.
+
+\hypertarget{class_dane_ad0ab5b58f60dae17303291e8f0a49151}{\index{\-Dane@{\-Dane}!$\sim$\-Dane@{$\sim$\-Dane}}
+\index{$\sim$\-Dane@{$\sim$\-Dane}!Dane@{\-Dane}}
+\subsubsection[{$\sim$\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Dane\-::$\sim$\-Dane} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_dane_ad0ab5b58f60dae17303291e8f0a49151}
+
+
+\-Destruktor klasy \hyperlink{class_dane}{\-Dane}. \-Usuwa tablice dynamiczne w celu zwolnienia pamieci. 
+
+
+
+\-Definicja w linii 104 pliku dane.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_dane_a84cd5938a2dc0aaab4287cd58c8bd0d2}{\index{\-Dane@{\-Dane}!\-Pokaz\-\_\-\-Dane@{\-Pokaz\-\_\-\-Dane}}
+\index{\-Pokaz\-\_\-\-Dane@{\-Pokaz\-\_\-\-Dane}!Dane@{\-Dane}}
+\subsubsection[{\-Pokaz\-\_\-\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Dane\-::\-Pokaz\-\_\-\-Dane} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dane_a84cd5938a2dc0aaab4287cd58c8bd0d2}
+
+
+\-Funkcja wyswietlajaca dane z tablicy. \-Funkcja wyswietla dane wczytane z tablicy, badz te po wykonaniu obliczen. 
+
+
+
+\-Definicja w linii 111 pliku dane.\-cpp.
+
+\hypertarget{class_dane_a644482d17f85bb48d81ce5174d4425e6}{\index{\-Dane@{\-Dane}!\-Pokaz\-\_\-\-Dane\-\_\-\-Spr@{\-Pokaz\-\_\-\-Dane\-\_\-\-Spr}}
+\index{\-Pokaz\-\_\-\-Dane\-\_\-\-Spr@{\-Pokaz\-\_\-\-Dane\-\_\-\-Spr}!Dane@{\-Dane}}
+\subsubsection[{\-Pokaz\-\_\-\-Dane\-\_\-\-Spr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Dane\-::\-Pokaz\-\_\-\-Dane\-\_\-\-Spr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dane_a644482d17f85bb48d81ce5174d4425e6}
+
+
+\-Funkcja wyswietlajaca dane z tablicy sprawdzajacej. \-Funkcja wyswietla dane wczytane z tablicy sprawdzajacej. 
+
+
+
+\-Definicja w linii 120 pliku dane.\-cpp.
+
+\hypertarget{class_dane_a1dd37a4eb6da968da533e80f36145fdc}{\index{\-Dane@{\-Dane}!\-Sprawdz@{\-Sprawdz}}
+\index{\-Sprawdz@{\-Sprawdz}!Dane@{\-Dane}}
+\subsubsection[{\-Sprawdz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Dane\-::\-Sprawdz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dane_a1dd37a4eb6da968da533e80f36145fdc}
+
+
+\-Funkcja sprawdzajaca. \-Funkcja ta porownuje czy dane z tablicy po operacji mnozenia sa takie same jak dane zawarte w tablicy sprawdzajacej. \-Sprawdza kazdy element po kolei i jezeli napotka rozne dane to przypisuje wartosc 1 do zmiennej blad, jezeli wszystkie dane beda takie same blad = 0. \-I jezeli otrzymane 1 to funkcja wyswietla blad, w przeciwnym razie funkcja zwraca, ze dane sa takie same. 
+
+
+
+\-Definicja w linii 90 pliku dane.\-cpp.
+
+\hypertarget{class_dane_ad992d9c799eb8e35bfb6069e0812b908}{\index{\-Dane@{\-Dane}!\-Wczytaj\-\_\-\-Dane@{\-Wczytaj\-\_\-\-Dane}}
+\index{\-Wczytaj\-\_\-\-Dane@{\-Wczytaj\-\_\-\-Dane}!Dane@{\-Dane}}
+\subsubsection[{\-Wczytaj\-\_\-\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Dane\-::\-Wczytaj\-\_\-\-Dane} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dane_ad992d9c799eb8e35bfb6069e0812b908}
+
+
+\-Funkcja wczytywania danych. \-Funkcja ta wczytuje dane z pliku, uzytkownik jest pytany jaki plik chce wczytac. 
+
+
+
+\-Definicja w linii 40 pliku dane.\-cpp.
+
+\hypertarget{class_dane_a83171250f88d38d2cbac97185b3bd5dd}{\index{\-Dane@{\-Dane}!\-Wczytaj\-\_\-\-Dane\-\_\-\-Spr@{\-Wczytaj\-\_\-\-Dane\-\_\-\-Spr}}
+\index{\-Wczytaj\-\_\-\-Dane\-\_\-\-Spr@{\-Wczytaj\-\_\-\-Dane\-\_\-\-Spr}!Dane@{\-Dane}}
+\subsubsection[{\-Wczytaj\-\_\-\-Dane\-\_\-\-Spr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Dane\-::\-Wczytaj\-\_\-\-Dane\-\_\-\-Spr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dane_a83171250f88d38d2cbac97185b3bd5dd}
+
+
+\-Funkcja wczytywania danych sprawdzajacych \-Funkcja ta wczytuje dane z pliku sprawdzajacego -\/ test.\-txt. 
+
+
+
+\-Definicja w linii 60 pliku dane.\-cpp.
+
+\hypertarget{class_dane_a71e1e5ab35b8952f84724853c042e90b}{\index{\-Dane@{\-Dane}!\-Wykonaj\-\_\-\-Obliczenia@{\-Wykonaj\-\_\-\-Obliczenia}}
+\index{\-Wykonaj\-\_\-\-Obliczenia@{\-Wykonaj\-\_\-\-Obliczenia}!Dane@{\-Dane}}
+\subsubsection[{\-Wykonaj\-\_\-\-Obliczenia}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Dane\-::\-Wykonaj\-\_\-\-Obliczenia} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dane_a71e1e5ab35b8952f84724853c042e90b}
+
+
+\-Funkcja wykonujaca obliczenia. \-Funkcja sluzy do wykonania operacji mnozenia x2 danych wczytanych z tablicy. 
+
+
+
+\-Definicja w linii 81 pliku dane.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_dane_a922c52bcc8c6ff4f49f5e3ae3d48a5d7}{\index{\-Dane@{\-Dane}!\-Wyzeruj\-\_\-\-Dane@{\-Wyzeruj\-\_\-\-Dane}}
+\index{\-Wyzeruj\-\_\-\-Dane@{\-Wyzeruj\-\_\-\-Dane}!Dane@{\-Dane}}
+\subsubsection[{\-Wyzeruj\-\_\-\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Dane\-::\-Wyzeruj\-\_\-\-Dane} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dane_a922c52bcc8c6ff4f49f5e3ae3d48a5d7}
+
+
+\-Funkcja zerujaca dane. \-Funkcja ta zeruje wszystkie zmienne pomocnicze oraz zmienne dynamiczne oraz usuwa utworzone tablice dynamiczne w celu zwolnienia pamieci i ochrony przed jej zapelnieniu. 
+
+
+
+\-Definicja w linii 12 pliku dane.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_dane_afe0ec9a05ba6720f9a14c96bbec2c7dd}{\index{\-Dane@{\-Dane}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!Dane@{\-Dane}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Dane\-::rozmiar}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_dane_afe0ec9a05ba6720f9a14c96bbec2c7dd}
+
+
+\-Zmienne typu int, zawierajace rozmiar tablicy oraz rozmiar tablicy sprawdzajacej. 
+
+
+
+\-Definicja w linii 42 pliku dane.\-hh.
+
+\hypertarget{class_dane_ab9731edece0d6a357594c7cd02985dab}{\index{\-Dane@{\-Dane}!rozmiar\-\_\-spr@{rozmiar\-\_\-spr}}
+\index{rozmiar\-\_\-spr@{rozmiar\-\_\-spr}!Dane@{\-Dane}}
+\subsubsection[{rozmiar\-\_\-spr}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Dane\-::rozmiar\-\_\-spr}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_dane_ab9731edece0d6a357594c7cd02985dab}
+
+
+\-Definicja w linii 42 pliku dane.\-hh.
+
+\hypertarget{class_dane_a094084ea03dd13bb92c8a8eb7d4e7888}{\index{\-Dane@{\-Dane}!tablica@{tablica}}
+\index{tablica@{tablica}!Dane@{\-Dane}}
+\subsubsection[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-Dane\-::tablica}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_dane_a094084ea03dd13bb92c8a8eb7d4e7888}
+
+
+\-Zmienna typu int, odpowiada za tworzenie tablicy dynamicznej, ktora zawiera dane wczytywane z pliku, ktore nastepnie sa wykorzystywane do wykonania na nich obliczenia -\/ mnozenia x2. 
+
+
+
+\-Definicja w linii 28 pliku dane.\-hh.
+
+\hypertarget{class_dane_a394973f4dcbc75d3e218ef2a31bc99f9}{\index{\-Dane@{\-Dane}!tablica\-\_\-spr@{tablica\-\_\-spr}}
+\index{tablica\-\_\-spr@{tablica\-\_\-spr}!Dane@{\-Dane}}
+\subsubsection[{tablica\-\_\-spr}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-Dane\-::tablica\-\_\-spr}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_dane_a394973f4dcbc75d3e218ef2a31bc99f9}
+
+
+\-Zmienna typu int, odpowiada za tworzenie tablicy sprawdzajacej dynamicznej, ktora zawiera dane wczytane z pliku, ktore sa po operacji mnożenia x2, ktore nastepnie sa wykorzystane do porownania z danymi z tablicy. 
+
+
+
+\-Definicja w linii 34 pliku dane.\-hh.
+
+\hypertarget{class_dane_a4f2d205b1c49da1f5f289a97139d4f6d}{\index{\-Dane@{\-Dane}!temp@{temp}}
+\index{temp@{temp}!Dane@{\-Dane}}
+\subsubsection[{temp}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Dane\-::temp}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_dane_a4f2d205b1c49da1f5f289a97139d4f6d}
+
+
+\-Zmienne pomocnicze typu int. 
+
+
+
+\-Definicja w linii 38 pliku dane.\-hh.
+
+\hypertarget{class_dane_a98c7a87fc812e3d3b41e4cb9ee7b105f}{\index{\-Dane@{\-Dane}!temp\-\_\-spr@{temp\-\_\-spr}}
+\index{temp\-\_\-spr@{temp\-\_\-spr}!Dane@{\-Dane}}
+\subsubsection[{temp\-\_\-spr}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Dane\-::temp\-\_\-spr}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_dane_a98c7a87fc812e3d3b41e4cb9ee7b105f}
+
+
+\-Definicja w linii 38 pliku dane.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dane_8hh}{dane.\-hh}\item 
+\hyperlink{dane_8cpp}{dane.\-cpp}\end{DoxyCompactItemize}

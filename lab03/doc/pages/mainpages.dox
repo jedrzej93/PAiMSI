@@ -1,0 +1,9 @@
+/*!
+ *\mainpage Program Benchmark
+  
+	Program umozliwiajacy zapelnienie stosu lub kolejki za pomoca 		tablicy badz tez listy.
+	Wartosci do zapelnienia sa wczytywane z plikow stos.txt, 		stos100.txt, stos1000.txt oraz stos.10000.txt.
+
+	Za pomoca klasy Benchmark i funkcji Wykonaj_Algorytm uzytkownik
+	moze wybrac dana klase do zapelnienia, a nastepnie otrzymuje 		wynik operacji zapelnienia danej klasy.
+ */

@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Liczby: Plik źródłowy dane.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Liczby
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="dir_b178bb3ad732efb50ae9b12592737580.html">src</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">dane.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dane_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;../inc/dane.hh&quot;</span>
+<a name="l00010"></a>00010 <span class="keyword">using namespace </span>std;
+<a name="l00011"></a>00011 
+<a name="l00012"></a><a class="code" href="class_dane.html#a922c52bcc8c6ff4f49f5e3ae3d48a5d7">00012</a> <span class="keywordtype">void</span> <a class="code" href="class_dane.html#a922c52bcc8c6ff4f49f5e3ae3d48a5d7" title="Funkcja zerujaca dane. Funkcja ta zeruje wszystkie zmienne pomocnicze oraz zmienne dynamiczne oraz us...">Dane::Wyzeruj_Dane</a>()
+<a name="l00013"></a>00013 {
+<a name="l00014"></a>00014         <span class="keyword">delete</span> [] tablica;
+<a name="l00015"></a>00015         <span class="keyword">delete</span> [] tablica_spr;
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017         rozmiar = 0;
+<a name="l00018"></a>00018         rozmiar_spr = 0;
+<a name="l00019"></a>00019         temp = 0;
+<a name="l00020"></a>00020         temp_spr = 0;
+<a name="l00021"></a>00021 }
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="class_dane.html#ac5b1c1fcec846b36b7bd601e2358aef0">00023</a> <a class="code" href="class_dane.html#a623e63e2c94f352a14758c8671f197d0" title="Konstruktor klasy Dane. W funkcji tej zerujemy wszystkie zmienne jak rowniez zmienne dynamiczne w cel...">Dane::Dane</a>(<span class="keywordtype">string</span> Nazwa_Pliku)
+<a name="l00024"></a>00024 {
+<a name="l00025"></a>00025         tablica = 0; tablica_spr = 0; temp = 0; temp_spr = 0; rozmiar_spr = 0; rozmiar = 0;
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027         ifstream plik(Nazwa_Pliku.c_str());
+<a name="l00028"></a>00028         
+<a name="l00029"></a>00029         <span class="keywordflow">if</span>(!plik)
+<a name="l00030"></a>00030         {
+<a name="l00031"></a>00031                 cout &lt;&lt; <span class="stringliteral">&quot;Nie mozna otworzyc pliku!&quot;</span> &lt;&lt; endl;
+<a name="l00032"></a>00032                 getchar();
+<a name="l00033"></a>00033         }
+<a name="l00034"></a>00034         plik &gt;&gt; rozmiar;
+<a name="l00035"></a>00035         tablica = <span class="keyword">new</span> <span class="keywordtype">int</span>[rozmiar];
+<a name="l00036"></a>00036         <span class="keywordflow">while</span>(!plik.eof())
+<a name="l00037"></a>00037                 plik &gt;&gt; tablica[temp++];
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="class_dane.html#ad992d9c799eb8e35bfb6069e0812b908">00040</a> <span class="keywordtype">void</span> <a class="code" href="class_dane.html#ad992d9c799eb8e35bfb6069e0812b908" title="Funkcja wczytywania danych. Funkcja ta wczytuje dane z pliku, uzytkownik jest pytany jaki plik chce w...">Dane::Wczytaj_Dane</a>()
+<a name="l00041"></a>00041 {
+<a name="l00042"></a>00042         <span class="keywordtype">string</span> nazwa_pliku;
+<a name="l00043"></a>00043         cout &lt;&lt; <span class="stringliteral">&quot;Wczytaj plik o nazwie: &quot;</span> &lt;&lt; endl;
+<a name="l00044"></a>00044         cin &gt;&gt; nazwa_pliku;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046         ifstream plik(nazwa_pliku.c_str());
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <span class="keywordflow">if</span>(!plik)
+<a name="l00049"></a>00049         {
+<a name="l00050"></a>00050                 cout &lt;&lt; <span class="stringliteral">&quot;Nie mozna otworzyc pliku!&quot;</span> &lt;&lt; endl;
+<a name="l00051"></a>00051                 getchar();
+<a name="l00052"></a>00052         }
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054         plik &gt;&gt; rozmiar;
+<a name="l00055"></a>00055         tablica = <span class="keyword">new</span> <span class="keywordtype">int</span>[rozmiar];
+<a name="l00056"></a>00056         <span class="keywordflow">while</span>(!plik.eof())
+<a name="l00057"></a>00057                 plik &gt;&gt; tablica[temp++];
+<a name="l00058"></a>00058 }
+<a name="l00059"></a>00059 
+<a name="l00060"></a><a class="code" href="class_dane.html#a83171250f88d38d2cbac97185b3bd5dd">00060</a> <span class="keywordtype">void</span> <a class="code" href="class_dane.html#a83171250f88d38d2cbac97185b3bd5dd" title="Funkcja wczytywania danych sprawdzajacych Funkcja ta wczytuje dane z pliku sprawdzajacego - test...">Dane::Wczytaj_Dane_Spr</a>()
+<a name="l00061"></a>00061 {
+<a name="l00062"></a>00062         
+<a name="l00063"></a>00063         <span class="keywordtype">string</span> nazwa_pliku;
+<a name="l00064"></a>00064         cout &lt;&lt; <span class="stringliteral">&quot;Wczytaj plik o nazwie: &quot;</span> &lt;&lt; endl;
+<a name="l00065"></a>00065         cin &gt;&gt; nazwa_pliku;
+<a name="l00066"></a>00066         
+<a name="l00067"></a>00067         ifstream plik_spr(nazwa_pliku.c_str());
+<a name="l00068"></a>00068         <span class="keywordflow">if</span>(!plik_spr)
+<a name="l00069"></a>00069         {
+<a name="l00070"></a>00070                 cout &lt;&lt; <span class="stringliteral">&quot;Nie mozna otworzyc pliku!&quot;</span> &lt;&lt; endl;
+<a name="l00071"></a>00071                 getchar();
+<a name="l00072"></a>00072         }
+<a name="l00073"></a>00073         
+<a name="l00074"></a>00074         plik_spr &gt;&gt; rozmiar_spr;
+<a name="l00075"></a>00075         tablica = <span class="keyword">new</span> <span class="keywordtype">int</span>[rozmiar_spr];
+<a name="l00076"></a>00076         <span class="keywordflow">while</span>(!plik_spr.eof())
+<a name="l00077"></a>00077                 plik_spr &gt;&gt; tablica_spr[temp_spr++];
+<a name="l00078"></a>00078                 
+<a name="l00079"></a>00079 }
+<a name="l00080"></a>00080 
+<a name="l00081"></a><a class="code" href="class_dane.html#a71e1e5ab35b8952f84724853c042e90b">00081</a> <span class="keywordtype">void</span> <a class="code" href="class_dane.html#a71e1e5ab35b8952f84724853c042e90b" title="Funkcja wykonujaca obliczenia. Funkcja sluzy do wykonania operacji mnozenia x2 danych wczytanych z ta...">Dane::Wykonaj_Obliczenia</a>()
+<a name="l00082"></a>00082 {
+<a name="l00083"></a>00083         <span class="comment">//cout &lt;&lt; &quot;Wykonanie mnozenia tablicy x2: &quot; &lt;&lt; endl;</span>
+<a name="l00084"></a>00084                 <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; rozmiar; i++)
+<a name="l00085"></a>00085                 {
+<a name="l00086"></a>00086                 tablica[i] = tablica[i]*2;
+<a name="l00087"></a>00087                 }
+<a name="l00088"></a>00088 }
+<a name="l00089"></a>00089 
+<a name="l00090"></a><a class="code" href="class_dane.html#a1dd37a4eb6da968da533e80f36145fdc">00090</a> <span class="keywordtype">void</span> <a class="code" href="class_dane.html#a1dd37a4eb6da968da533e80f36145fdc" title="Funkcja sprawdzajaca. Funkcja ta porownuje czy dane z tablicy po operacji mnozenia sa takie same jak ...">Dane::Sprawdz</a>()
+<a name="l00091"></a>00091 {
+<a name="l00092"></a>00092         <span class="keywordtype">int</span> blad = 0;
+<a name="l00093"></a>00093         cout &lt;&lt; <span class="stringliteral">&quot;Sprawdzanie...&quot;</span> &lt;&lt; endl;
+<a name="l00094"></a>00094                 <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; rozmiar; i++)
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096             <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j = 0; j &lt; rozmiar_spr; j++)
+<a name="l00097"></a>00097               {
+<a name="l00098"></a>00098                         <span class="keywordflow">if</span>( tablica[i] != tablica_spr[j])
+<a name="l00099"></a>00099                         {
+<a name="l00100"></a>00100                                 blad = 1;
+<a name="l00101"></a>00101                                 <span class="keywordflow">break</span>;
+<a name="l00102"></a>00102                         }
+<a name="l00103"></a>00103                         <span class="keywordflow">else</span> blad = 0;
+<a name="l00104"></a>00104                 }
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106                 <span class="keywordflow">if</span> ( blad == 1)
+<a name="l00107"></a>00107                         cout &lt;&lt; endl &lt;&lt;<span class="stringliteral">&quot;BLAD! TABLICE SA ROZNE!&quot;</span> &lt;&lt; endl;
+<a name="l00108"></a>00108                 <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">&quot;TABLICE SA TAKIE SAME!&quot;</span> &lt;&lt; endl;
+<a name="l00109"></a>00109 }
+<a name="l00110"></a>00110 
+<a name="l00111"></a><a class="code" href="class_dane.html#a84cd5938a2dc0aaab4287cd58c8bd0d2">00111</a> <span class="keywordtype">void</span> <a class="code" href="class_dane.html#a84cd5938a2dc0aaab4287cd58c8bd0d2" title="Funkcja wyswietlajaca dane z tablicy. Funkcja wyswietla dane wczytane z tablicy, badz te po wykonaniu...">Dane::Pokaz_Dane</a>()
+<a name="l00112"></a>00112 {
+<a name="l00113"></a>00113         cout &lt;&lt; <span class="stringliteral">&quot;Zawartosc pliku: &quot;</span> &lt;&lt; endl;
+<a name="l00114"></a>00114             <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; rozmiar; i++)
+<a name="l00115"></a>00115             {
+<a name="l00116"></a>00116                 cout &lt;&lt; tablica[i] &lt;&lt; endl;
+<a name="l00117"></a>00117             }
+<a name="l00118"></a>00118 }
+<a name="l00119"></a>00119 
+<a name="l00120"></a><a class="code" href="class_dane.html#a644482d17f85bb48d81ce5174d4425e6">00120</a> <span class="keywordtype">void</span> <a class="code" href="class_dane.html#a644482d17f85bb48d81ce5174d4425e6" title="Funkcja wyswietlajaca dane z tablicy sprawdzajacej. Funkcja wyswietla dane wczytane z tablicy sprawdz...">Dane::Pokaz_Dane_Spr</a>()
+<a name="l00121"></a>00121 {
+<a name="l00122"></a>00122         cout &lt;&lt; <span class="stringliteral">&quot;Zawartosc pliku: &quot;</span> &lt;&lt; endl;
+<a name="l00123"></a>00123         <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j = 0; j &lt; rozmiar; j++)
+<a name="l00124"></a>00124         {
+<a name="l00125"></a>00125                 cout &lt;&lt; tablica_spr[j] &lt;&lt; endl;
+<a name="l00126"></a>00126         }
+<a name="l00127"></a>00127 }
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Sun Apr 27 2014 14:58:02 dla Liczby programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Kolejka_lista::Menu",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Kolejka_lista::Wczytaj_Dane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_kolejka__lista.html#a91633cddface592e92ae6725a3848d4c",tooltip="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Kolejka_lista::Wyswietl_Element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_kolejka__lista.html#aad962eba70726e11cea38db34176a9b4",tooltip="Funkcja wyswietlajaca dane. Funkcja odpowiedzalna za wyswietlenie kolejki."];
+}

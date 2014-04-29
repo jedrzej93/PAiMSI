@@ -1,0 +1,203 @@
+\hypertarget{class_kolejka__lista}{\section{\-Dokumentacja klasy \-Kolejka\-\_\-lista}
+\label{class_kolejka__lista}\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}}
+}
+
+
+\-Deklaracja klasy \hyperlink{class_kolejka__lista}{\-Kolejka\-\_\-lista}.  
+
+
+
+
+{\ttfamily \#include $<$kolejka\-\_\-lista.\-hh$>$}
+
+
+
+\-Diagram współpracy dla \-Kolejka\-\_\-lista\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_kolejka__lista_a7208c60729540ca7b9099987dda7bc7b}{\-Kolejka\-\_\-lista} ()
+\begin{DoxyCompactList}\small\item\em \-Konstruktor klasy \hyperlink{class_kolejka__lista}{\-Kolejka\-\_\-lista}. \-Konstruktor jest funkcja bezparametryczna, zerujaca wszystkie skladniki zawarte w private. \end{DoxyCompactList}\item 
+\hyperlink{class_kolejka__lista_af84680ce033e41ef9688e432a0934fa9}{$\sim$\-Kolejka\-\_\-lista} ()
+\begin{DoxyCompactList}\small\item\em \-Destruktor klasy \hyperlink{class_kolejka__lista}{\-Kolejka\-\_\-lista}. \-Destruktor zwalnia pamiec za pomoca usuniecia dynamicznej listy poczatek i wsk\-\_\-pocz. \end{DoxyCompactList}\item 
+bool \hyperlink{class_kolejka__lista_a4837bfca938aa2b6f017e2095af530e7}{empty} (void)
+\begin{DoxyCompactList}\small\item\em \-Funkcja empty. \-Zwraca nam czy w stosie zawarte sa jakies elementy badz tez brak. \end{DoxyCompactList}\item 
+int \hyperlink{class_kolejka__lista_ac02c779e92932408ac9c8c8d964153c5}{front} (void)
+\begin{DoxyCompactList}\small\item\em \-Funkcja zwracajaca element znajdujacy sie na szczycie kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka__lista_a96c9087072efa9b2787c4e2344ed88f9}{push} (int element)
+\begin{DoxyCompactList}\small\item\em \-Funkcja push. \-Deklaracja funkcji odpowiedzialnej za dodawanie elementu do kolejki. \-Uzytkownik podaje wartosc elementu jaki chce dodac do kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka__lista_ac3014e11247bd54f79c9ac16581b547e}{pop} (void)
+\begin{DoxyCompactList}\small\item\em \-Funkcja pop. \-Deklaracja funkcji odpowiedzialna za usuwanie elementu z kolejki. \-Funkcja usuwa ostatni element znajdujacy sie w kolejce i zmiejsza jego rozmiar o jeden. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka__lista_a91633cddface592e92ae6725a3848d4c}{\-Wczytaj\-\_\-\-Dane} (string nazwa\-\_\-pliku)
+\begin{DoxyCompactList}\small\item\em \-Funkcja \-Wczytaj dane. \-Funkcja wczytuje dane z pliku o zadanej nazwie pliku. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka__lista_aad962eba70726e11cea38db34176a9b4}{\-Wyswietl\-\_\-\-Element} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajaca dane. \-Funkcja odpowiedzalna za wyswietlenie kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka__lista_a52acff2296e6341bb36fbacb722045b2}{\-Menu} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajca menu klasy \hyperlink{class_kolejka}{\-Kolejka}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_lista__kolejka}{\-Lista\-\_\-kolejka} $\ast$ \hyperlink{class_kolejka__lista_aa0e11d9e192e2bfe47f9b9d0016622c7}{wsk\-\_\-pocz}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu \hyperlink{struct_lista__kolejka}{\-Lista\-\_\-kolejka} $\ast$, zmienna wskazuja wskaznik na dany element. \end{DoxyCompactList}\item 
+\hyperlink{struct_lista__kolejka}{\-Lista\-\_\-kolejka} $\ast$ \hyperlink{class_kolejka__lista_a45d5a866786a9a26a03be24e801ffb89}{poczatek}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu \hyperlink{struct_lista__kolejka}{\-Lista\-\_\-kolejka} $\ast$, wskazuje poczatkowy element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Klasa \hyperlink{class_kolejka__lista}{\-Kolejka\-\_\-lista} zawiera dwie listy dynamiczne, ktore wskazuja na wartosc poczatkowa kolejki oraz wskaznik wartosci na dany element. 
+
+\-Definicja w linii 37 pliku kolejka\-\_\-lista.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_kolejka__lista_a7208c60729540ca7b9099987dda7bc7b}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}}
+\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{\-Kolejka\-\_\-lista}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Kolejka\-\_\-lista\-::\-Kolejka\-\_\-lista} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_a7208c60729540ca7b9099987dda7bc7b}
+
+
+\-Definicja w linii 16 pliku kolejka\-\_\-lista.\-cpp.
+
+\hypertarget{class_kolejka__lista_af84680ce033e41ef9688e432a0934fa9}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!$\sim$\-Kolejka\-\_\-lista@{$\sim$\-Kolejka\-\_\-lista}}
+\index{$\sim$\-Kolejka\-\_\-lista@{$\sim$\-Kolejka\-\_\-lista}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{$\sim$\-Kolejka\-\_\-lista}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Kolejka\-\_\-lista\-::$\sim$\-Kolejka\-\_\-lista} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_af84680ce033e41ef9688e432a0934fa9}
+
+
+\-Definicja w linii 21 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_kolejka__lista_a4837bfca938aa2b6f017e2095af530e7}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!empty@{empty}}
+\index{empty@{empty}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Kolejka\-\_\-lista\-::empty} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_a4837bfca938aa2b6f017e2095af530e7}
+
+
+\-Definicja w linii 27 pliku kolejka\-\_\-lista.\-cpp.
+
+\hypertarget{class_kolejka__lista_ac02c779e92932408ac9c8c8d964153c5}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!front@{front}}
+\index{front@{front}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Kolejka\-\_\-lista\-::front} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_ac02c779e92932408ac9c8c8d964153c5}
+
+
+\-Definicja w linii 32 pliku kolejka\-\_\-lista.\-cpp.
+
+\hypertarget{class_kolejka__lista_a52acff2296e6341bb36fbacb722045b2}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!\-Menu@{\-Menu}}
+\index{\-Menu@{\-Menu}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-\_\-lista\-::\-Menu} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_a52acff2296e6341bb36fbacb722045b2}
+
+
+\-Definicja w linii 100 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{class_kolejka__lista_ac3014e11247bd54f79c9ac16581b547e}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!pop@{pop}}
+\index{pop@{pop}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-\_\-lista\-::pop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_ac3014e11247bd54f79c9ac16581b547e}
+
+
+\-Definicja w linii 53 pliku kolejka\-\_\-lista.\-cpp.
+
+\hypertarget{class_kolejka__lista_a96c9087072efa9b2787c4e2344ed88f9}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!push@{push}}
+\index{push@{push}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-\_\-lista\-::push} (
+\begin{DoxyParamCaption}
+\item[{int}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_a96c9087072efa9b2787c4e2344ed88f9}
+
+\begin{DoxyParams}{\-Parametry}
+{\em element} & -\/ parametr typu int, przechowuje wartosc elementu do dodania. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 40 pliku kolejka\-\_\-lista.\-cpp.
+
+\hypertarget{class_kolejka__lista_a91633cddface592e92ae6725a3848d4c}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!\-Wczytaj\-\_\-\-Dane@{\-Wczytaj\-\_\-\-Dane}}
+\index{\-Wczytaj\-\_\-\-Dane@{\-Wczytaj\-\_\-\-Dane}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{\-Wczytaj\-\_\-\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-\_\-lista\-::\-Wczytaj\-\_\-\-Dane} (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa\-\_\-pliku}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_a91633cddface592e92ae6725a3848d4c}
+
+\begin{DoxyParams}{\-Parametry}
+{\em nazwa\-\_\-pliku} & -\/ zmienna typu string zawierajaca dokladna nazwe pliku do wczytania. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 82 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_kolejka__lista_aad962eba70726e11cea38db34176a9b4}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!\-Wyswietl\-\_\-\-Element@{\-Wyswietl\-\_\-\-Element}}
+\index{\-Wyswietl\-\_\-\-Element@{\-Wyswietl\-\_\-\-Element}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{\-Wyswietl\-\_\-\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-\_\-lista\-::\-Wyswietl\-\_\-\-Element} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka__lista_aad962eba70726e11cea38db34176a9b4}
+
+
+\-Definicja w linii 64 pliku kolejka\-\_\-lista.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_kolejka__lista_a45d5a866786a9a26a03be24e801ffb89}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!poczatek@{poczatek}}
+\index{poczatek@{poczatek}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{poczatek}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Lista\-\_\-kolejka}$\ast$ {\bf \-Kolejka\-\_\-lista\-::poczatek}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka__lista_a45d5a866786a9a26a03be24e801ffb89}
+
+
+\-Definicja w linii 47 pliku kolejka\-\_\-lista.\-hh.
+
+\hypertarget{class_kolejka__lista_aa0e11d9e192e2bfe47f9b9d0016622c7}{\index{\-Kolejka\-\_\-lista@{\-Kolejka\-\_\-lista}!wsk\-\_\-pocz@{wsk\-\_\-pocz}}
+\index{wsk\-\_\-pocz@{wsk\-\_\-pocz}!Kolejka_lista@{\-Kolejka\-\_\-lista}}
+\subsubsection[{wsk\-\_\-pocz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Lista\-\_\-kolejka}$\ast$ {\bf \-Kolejka\-\_\-lista\-::wsk\-\_\-pocz}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka__lista_aa0e11d9e192e2bfe47f9b9d0016622c7}
+
+
+\-Definicja w linii 43 pliku kolejka\-\_\-lista.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+kolejka\-\_\-lista.\-hh\item 
+kolejka\-\_\-lista.\-cpp\end{DoxyCompactItemize}
