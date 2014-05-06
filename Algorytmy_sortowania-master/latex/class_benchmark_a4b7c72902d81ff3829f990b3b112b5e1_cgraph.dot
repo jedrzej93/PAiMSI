@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Benchmark::Wykonaj_Sortowanie",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Kolejka::Wczytaj_Dane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d",tooltip="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Kolejka::Sort_Merge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_kolejka.html#a80ab27bb35ddb60d0c0614da14e46c3a",tooltip="Funkcja sortowania przez scalanie. Algorytm wywolujemy z zadanymi wartosciami indeksow l_p oraz l_k k..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Kolejka::Quick_Sort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_kolejka.html#a29d7138233171af5ac991e4ef4597eb4",tooltip="Funkcja wykonujaca algorytm szybkiego sortowania. Funkcja zawierajaca dwie zmienne, ktore wskazuja na poczatek oraz koniec zbioru. Dzieki czemu sprawdzamy czy partycje utworzone poprzez funkcje Partition zawieraja wiecej niz jeden element. Jezeli tak, to wywolujemy rekurencyjnie algorytm sortowania szybkiego z wyznaczonymi granicami partycji. Po tym wywolaniu partycja jest posortowana rosnaco."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Kolejka::Wykonaj_Heap_Sort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_kolejka.html#ad9a907fcc67803e1ff8a348ecde1aa5b",tooltip="Funkcja wykonujaca algorytm HeapSort. Najpierw jest budowany kopiec, a nastepnie rozebrany. Dzieki temu mamy posortowane elementy."];
+}

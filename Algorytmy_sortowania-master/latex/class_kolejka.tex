@@ -1,0 +1,653 @@
+\hypertarget{class_kolejka}{\section{\-Dokumentacja klasy \-Kolejka}
+\label{class_kolejka}\index{\-Kolejka@{\-Kolejka}}
+}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_kolejka_a37c886fdc73dce62b04da0381dec5484}{\-Kolejka} ()
+\begin{DoxyCompactList}\small\item\em \-Konstruktor klasy \hyperlink{class_kolejka}{\-Kolejka}. \-Konstruktor jest funkcja bezparametryczna, zerujaca wszystkie skladniki zawarte w private. \end{DoxyCompactList}\item 
+\hyperlink{class_kolejka_a352f86ff08cd47be6c35c60bb0f873a6}{$\sim$\-Kolejka} ()
+\begin{DoxyCompactList}\small\item\em \-Destruktor klasy \hyperlink{class_kolejka}{\-Kolejka}. \-Destruktor zwalnia pamiec za pomoca usuniecia dynamicznej tablicy \-Tab i \-Tab\-\_\-temp. \end{DoxyCompactList}\item 
+bool \hyperlink{class_kolejka_a0106bd9157a970b63a06edd1dad350a9}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja is\-Empty \-Zwraca nam czy w stosie zawarte sa jakies elementy badz tez brak. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_ae69532510bff2585c5dfe6c6d40a779d}{push} (int dodaj\-\_\-elem)
+\begin{DoxyCompactList}\small\item\em \-Funkcja push. \-Deklaracja funkcji odpowiedzialnej za dodawanie elementu do kolejki. \-Uzytkownik podaje wartosc elementu jaki chce dodac do kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a9a637b21a46f6330d774f03e16bd003e}{pop} (void)
+\begin{DoxyCompactList}\small\item\em \-Funkcja pop. \-Deklaracja funkcji odpowiedzialna za usuwanie elementu z kolejki. \-Funkcja usuwa ostatni element znajdujacy sie w kolejce i zmiejsza jego rozmiar o jeden. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a449374680f4f4cc633f067c4fb0fac3d}{\-Wczytaj\-\_\-\-Dane} (string nazwa\-\_\-pliku)
+\begin{DoxyCompactList}\small\item\em \-Funkcja \-Wczytaj dane. \-Funkcja wczytuje dane z pliku o zadanej nazwie pliku. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a2feb88aa9e6b9af5c14e6e9fde851966}{\-Wyswietl\-\_\-\-Dane} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajaca dane. \-Funkcja odpowiedzalna za wyswietlenie kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_adf3fa87d0693b7f11835e8a67d2efcc1}{\-Menu} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajca menu klasy \hyperlink{class_kolejka}{\-Kolejka}. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a29d7138233171af5ac991e4ef4597eb4}{\-Quick\-\_\-\-Sort} (int pocz\-\_\-p, int koniec\-\_\-p)
+\begin{DoxyCompactList}\small\item\em \-Funkcja wykonujaca algorytm szybkiego sortowania. \-Funkcja zawierajaca dwie zmienne, ktore wskazuja na poczatek oraz koniec zbioru. \-Dzieki czemu sprawdzamy czy partycje utworzone poprzez funkcje \-Partition zawieraja wiecej niz jeden element. \-Jezeli tak, to wywolujemy rekurencyjnie algorytm sortowania szybkiego z wyznaczonymi granicami partycji. \-Po tym wywolaniu partycja jest posortowana rosnaco. \end{DoxyCompactList}\item 
+int \hyperlink{class_kolejka_a96d9cb5d8cc8da6d1db542e6412a3fd5}{\-Partition} (int $\ast$\hyperlink{class_kolejka_adfbcda2500bf9d82a22d8d717ee6f695}{\-Tab}, int pocz\-\_\-p, int koniec\-\_\-p)
+\begin{DoxyCompactList}\small\item\em \-Funkcja tworzaca partycje do algorytmu szybkiego sortowania. \-Funkcja wykorzystuje dwa wskazniki na poczatku zbioru i,j. \-Zmienna i przeszukuje zbior utworzonej partycji mniejszej wartosci niz wartosc najwieksza tej partycji. \-A nastepnie gdy natrafi na mniejsza, to jest ta wartosc zamieniana poprzez zmienna j. \-Kolejno wskaznik j przesuwa sie na nastepna pozycje. \-Wskaznik j zapmamietuje pozycje na ktorej znajduje sie nastepny element, zatem na koncu zbioru wskaze pozycje zakonczenia partycji. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a482fc74f6e5e3dd4760be59130a7eec5}{\-Wyswietl\-\_\-\-Dane\-\_\-\-Quick\-\_\-\-Sort} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajaca posortowane dane za pomoca algorytmu \-Quick\-Sort. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a80ab27bb35ddb60d0c0614da14e46c3a}{\-Sort\-\_\-\-Merge} (int l\-\_\-p, int l\-\_\-k)
+\begin{DoxyCompactList}\small\item\em \-Funkcja sortowania przez scalanie. \-Algorytm wywolujemy z zadanymi wartosciami indeksow l\-\_\-p oraz l\-\_\-k ktore powinny objac caly zbior tablicy. \-Na poczatku algorytm dzieli poprzez zmienna polowa zbior na dwie polowki, a nastepnie sprawdzamy czy dana polowka zawiera wiecej niz jeden element. \-Jezeli tak to to rekurencyjnie sortujemy algorytmem przez scalanie. \-Po operacji sortowania dla dwoch polowek uporzadkowane zbiory scalamy je i zakanczamy algorytm. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_ab074854cd1004b8a7c5a9413a141312e}{\-Wyswietl\-\_\-\-Dane\-\_\-\-Sort\-\_\-\-Merge} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajaca posortowane dane za pomoca algorytmu \-Sort\-Merge. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a0673980c5d68690dfb10457da04f9bc0}{\-Buduj\-\_\-\-Kopiec} (int $\ast$\hyperlink{class_kolejka_adfbcda2500bf9d82a22d8d717ee6f695}{\-Tab})
+\begin{DoxyCompactList}\small\item\em \-Funkcja algorytmu sortowania przez kopcowanie. \-Funkcja budujaca kopiec, ktory uzywany jest to sortowanie przez kopcowanie. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a933f5ada5d64f38b7d512c46f46c14b5}{\-Rozbierz\-\_\-\-Kopiec} (int $\ast$\hyperlink{class_kolejka_adfbcda2500bf9d82a22d8d717ee6f695}{\-Tab})
+\begin{DoxyCompactList}\small\item\em \-Funkcja algorytmu sortowania przez kopcowanie. \-Funkcja rozbierajaca kopiec, dzieki czemu elementy, ktore budowaly kopiec zostaly rozebrany i w ten sposob sa posortowane. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_aba08defbed8f23d0f7d17513dc296f57}{\-Wyswietl\-\_\-\-Dane\-\_\-\-Heap\-\_\-\-Sort} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wyswietlajaca posortowane dane za pomoca algorytmu \-Heap\-Sort. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_ad9a907fcc67803e1ff8a348ecde1aa5b}{\-Wykonaj\-\_\-\-Heap\-\_\-\-Sort} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wykonujaca algorytm \-Heap\-Sort. \-Najpierw jest budowany kopiec, a nastepnie rozebrany. \-Dzieki temu mamy posortowane elementy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_kolejka_a72ba80c6ad16d9e2f5a8a02ec257524b}{rozmiar\-\_\-tab}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu int, przechowuje rozmiar kolejki. \end{DoxyCompactList}\item 
+int \hyperlink{class_kolejka_a9fc9f63fded5c275d32f8b05125e8428}{wsk\-\_\-pocz}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu int, wskazuje wartosc poczatkowa kolejki. \end{DoxyCompactList}\item 
+int \hyperlink{class_kolejka_a563cd8e3ecaf570a6f8068db62d6c099}{licz\-\_\-elem}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu int, zmienna pomocnicza przy liczeniu ilosci elementow. \end{DoxyCompactList}\item 
+int \hyperlink{class_kolejka_a859e9504347a642ed42c65d1aadee0a1}{k}
+\begin{DoxyCompactList}\small\item\em \-Zmienne typu int, wykorzystywany do. \end{DoxyCompactList}\item 
+int \hyperlink{class_kolejka_a7eef5cf96ca7f8178dfc9ae5ad02417d}{j}
+\item 
+int $\ast$ \hyperlink{class_kolejka_adfbcda2500bf9d82a22d8d717ee6f695}{\-Tab}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu int, tablica dynamiczna kolejki. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{class_kolejka_a5ec5307ce26f31ae9c29f91bd7527225}{\-Tab\-\_\-temp}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu int, tablica dynamiczna pomocnicza kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Klasa \hyperlink{class_kolejka}{\-Kolejka} zawiera dwie tablice dynamiczne, ktora jedna z nich zawiera dane dotyczace kolejki i na ktorej beda dokonywane operacje, a druga jako tablica tymczasowa do przechowywania danych. 
+
+\-Definicja w linii 26 pliku kolejka\-\_\-tablica.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_kolejka_a37c886fdc73dce62b04da0381dec5484}{\index{\-Kolejka@{\-Kolejka}!\-Kolejka@{\-Kolejka}}
+\index{\-Kolejka@{\-Kolejka}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Kolejka\-::\-Kolejka} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a37c886fdc73dce62b04da0381dec5484}
+
+
+\-Definicja w linii 10 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        wsk_pocz = licz_elem = rozmiar_tab = 0;
+        Tab = 0;
+        Tab_temp = 0;
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_a352f86ff08cd47be6c35c60bb0f873a6}{\index{\-Kolejka@{\-Kolejka}!$\sim$\-Kolejka@{$\sim$\-Kolejka}}
+\index{$\sim$\-Kolejka@{$\sim$\-Kolejka}!Kolejka@{\-Kolejka}}
+\subsubsection[{$\sim$\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Kolejka\-::$\sim$\-Kolejka} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_kolejka_a352f86ff08cd47be6c35c60bb0f873a6}
+
+
+\-Definicja w linii 64 pliku kolejka\-\_\-tablica.\-hh.
+
+
+\begin{DoxyCode}
+{ delete [] Tab; rozmiar_tab = 0; }
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_kolejka_a0673980c5d68690dfb10457da04f9bc0}{\index{\-Kolejka@{\-Kolejka}!\-Buduj\-\_\-\-Kopiec@{\-Buduj\-\_\-\-Kopiec}}
+\index{\-Buduj\-\_\-\-Kopiec@{\-Buduj\-\_\-\-Kopiec}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Buduj\-\_\-\-Kopiec}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Buduj\-\_\-\-Kopiec} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{\-Tab}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a0673980c5d68690dfb10457da04f9bc0}
+
+
+\-Definicja w linii 207 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        int temp;
+
+        for(int i = 2; i <= rozmiar_tab; i++)
+        {
+                j = i;
+                k = j / 2;
+                temp = Tab[i];
+                while((k > 0) && (Tab[k] < temp))
+                {
+                        Tab[j] = Tab[k];
+                        j = k;
+                        k = j / 2;
+                }
+                Tab[j] = temp;
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_a0106bd9157a970b63a06edd1dad350a9}{\index{\-Kolejka@{\-Kolejka}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Kolejka@{\-Kolejka}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Kolejka\-::is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a0106bd9157a970b63a06edd1dad350a9}
+
+
+\-Definicja w linii 17 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if(rozmiar_tab == 0)
+                return 1;
+        else
+                return 0;
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_adf3fa87d0693b7f11835e8a67d2efcc1}{\index{\-Kolejka@{\-Kolejka}!\-Menu@{\-Menu}}
+\index{\-Menu@{\-Menu}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Menu} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_adf3fa87d0693b7f11835e8a67d2efcc1}
+
+
+\-Definicja w linii 272 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        Kolejka K;
+        K.Wczytaj_Dane("stos.txt");
+        K.Wyswietl_Dane_Quick_Sort();
+        K.Wyswietl_Dane_Sort_Merge();
+        K.Wyswietl_Dane_Heap_Sort();
+}\end{DoxyCode}
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{class_kolejka_a96d9cb5d8cc8da6d1db542e6412a3fd5}{\index{\-Kolejka@{\-Kolejka}!\-Partition@{\-Partition}}
+\index{\-Partition@{\-Partition}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Partition}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Kolejka\-::\-Partition} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{\-Tab, }
+\item[{int}]{pocz\-\_\-p, }
+\item[{int}]{koniec\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a96d9cb5d8cc8da6d1db542e6412a3fd5}
+
+
+\-Definicja w linii 109 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        int elem, temp, i, j;
+
+        elem = Tab[pocz_p];
+        i = pocz_p;
+        j = koniec_p;
+        do
+        {
+                do
+                {
+                        i++;
+                }
+        while(Tab[i] < elem);
+                do
+                {
+                        j--;
+                }
+        while(Tab[j] > elem);
+                if (i < j)
+                {
+                        temp = Tab[i];
+                        Tab[i] = Tab[j];
+                        Tab[j] = temp;
+                }
+        }
+        while(i < j);
+        Tab[pocz_p] = Tab[j];
+        Tab[j] = elem;
+
+        return j;
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_a9a637b21a46f6330d774f03e16bd003e}{\index{\-Kolejka@{\-Kolejka}!pop@{pop}}
+\index{pop@{pop}!Kolejka@{\-Kolejka}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::pop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a9a637b21a46f6330d774f03e16bd003e}
+
+
+\-Definicja w linii 25 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if(rozmiar_tab != 0)
+        {
+                Tab_temp = new int[rozmiar_tab];
+                for(int i = 0; i < rozmiar_tab; i++)
+                        Tab_temp[i] = Tab[i];
+                delete Tab;
+                --rozmiar_tab;
+
+                Tab = new int[rozmiar_tab];
+                for(int i = 0; i < rozmiar_tab; i++)
+                        Tab[i] = Tab_temp[i];
+                delete [] Tab_temp;
+        }
+        else 
+                cout << endl;
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_ae69532510bff2585c5dfe6c6d40a779d}{\index{\-Kolejka@{\-Kolejka}!push@{push}}
+\index{push@{push}!Kolejka@{\-Kolejka}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::push} (
+\begin{DoxyParamCaption}
+\item[{int}]{dodaj\-\_\-elem}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_ae69532510bff2585c5dfe6c6d40a779d}
+
+\begin{DoxyParams}{\-Parametry}
+{\em dodaj\-\_\-elem} & -\/ parametr typu int, przechowuje wartosc zadana przez uzytkownika. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 44 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if( rozmiar_tab != 0)
+        {
+                Tab_temp = new int[rozmiar_tab];
+                for(int i = 0; i < rozmiar_tab; i++)
+                {
+                        Tab_temp[i] = Tab[i];
+                }
+                delete [] Tab;
+
+                ++rozmiar_tab;
+                Tab = new int[rozmiar_tab];
+                Tab[0] = dodaj_elem;
+                
+                int x = 1;
+                for(int i = 0; i < (rozmiar_tab - 1); i++)
+                {
+                        Tab[x] = Tab_temp[i];
+                        x++;
+                }
+                x = 0;
+                delete [] Tab_temp;
+        } 
+        else
+        {
+                ++rozmiar_tab;
+                Tab = new int[1];
+                Tab[0] = dodaj_elem;
+        }
+
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_a29d7138233171af5ac991e4ef4597eb4}{\index{\-Kolejka@{\-Kolejka}!\-Quick\-\_\-\-Sort@{\-Quick\-\_\-\-Sort}}
+\index{\-Quick\-\_\-\-Sort@{\-Quick\-\_\-\-Sort}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Quick\-\_\-\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Quick\-\_\-\-Sort} (
+\begin{DoxyParamCaption}
+\item[{int}]{pocz\-\_\-p, }
+\item[{int}]{koniec\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a29d7138233171af5ac991e4ef4597eb4}
+
+
+\-Definicja w linii 142 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        int wart_elem;
+        if(pocz_p < koniec_p)
+        {
+                wart_elem = Partition(Tab, pocz_p, koniec_p + 1);
+                Quick_Sort(wart_elem + 1, koniec_p);
+                Quick_Sort(pocz_p, wart_elem - 1);
+        }
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_kolejka_a933f5ada5d64f38b7d512c46f46c14b5}{\index{\-Kolejka@{\-Kolejka}!\-Rozbierz\-\_\-\-Kopiec@{\-Rozbierz\-\_\-\-Kopiec}}
+\index{\-Rozbierz\-\_\-\-Kopiec@{\-Rozbierz\-\_\-\-Kopiec}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Rozbierz\-\_\-\-Kopiec}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Rozbierz\-\_\-\-Kopiec} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{\-Tab}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a933f5ada5d64f38b7d512c46f46c14b5}
+
+
+\-Definicja w linii 226 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        int m;
+
+        for(int i = rozmiar_tab; i > 1; i--)
+        {
+                swap(Tab[1], Tab[i]);
+                j = 1;
+                k = 2;
+                while( k < i)
+                {
+                        if((k + 1 < i) && (Tab[k + 1] > Tab[k]))
+                                m = k + 1;
+                        else
+                                m = k;
+                        if(Tab[m] <= Tab[j])
+                                break;
+                        swap(Tab[j], Tab[m]);
+                        j = m;
+                        k = j + j;
+                }
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_a80ab27bb35ddb60d0c0614da14e46c3a}{\index{\-Kolejka@{\-Kolejka}!\-Sort\-\_\-\-Merge@{\-Sort\-\_\-\-Merge}}
+\index{\-Sort\-\_\-\-Merge@{\-Sort\-\_\-\-Merge}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Sort\-\_\-\-Merge}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Sort\-\_\-\-Merge} (
+\begin{DoxyParamCaption}
+\item[{int}]{l\-\_\-p, }
+\item[{int}]{l\-\_\-k}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a80ab27bb35ddb60d0c0614da14e46c3a}
+
+
+\-Definicja w linii 169 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        int polowa, l1, l2, l;
+
+        polowa = (l_p + l_k + 1) / 2;
+        if(polowa - l_p > 1)
+                Sort_Merge(l_p, polowa - 1);
+        if(l_k - polowa > 0)
+                Sort_Merge(polowa, l_k);
+        l1 = l_p;
+        l2 = polowa;
+        for(l = l_p; l <= l_k; l++)
+        {
+                Tab_temp[l] = ((l1 == polowa) || ((l2 <= l_k) && (Tab[l1] > Tab
+      [l2]))) ? Tab[l2++]: Tab[l1++];
+        }
+        for(l = l_p; l <= l_k; l++)
+        {
+                Tab[l] = Tab_temp[l];
+        }
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_kolejka_a449374680f4f4cc633f067c4fb0fac3d}{\index{\-Kolejka@{\-Kolejka}!\-Wczytaj\-\_\-\-Dane@{\-Wczytaj\-\_\-\-Dane}}
+\index{\-Wczytaj\-\_\-\-Dane@{\-Wczytaj\-\_\-\-Dane}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Wczytaj\-\_\-\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Wczytaj\-\_\-\-Dane} (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa\-\_\-pliku}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a449374680f4f4cc633f067c4fb0fac3d}
+
+\begin{DoxyParams}{\-Parametry}
+{\em nazwa\-\_\-pliku} & -\/ zmienna typu string zawierajaca dokladna nazwe pliku do wczytania. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 91 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        int temp;
+
+        ifstream plik(nazwa_pliku.c_str());
+
+        if(!plik)
+        {
+                cerr << "Nie mozna otworzyc pliku!" << endl;
+                getchar();
+        }
+        else
+        {
+                while(plik >> temp)
+                        push(temp);
+        }
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_kolejka_ad9a907fcc67803e1ff8a348ecde1aa5b}{\index{\-Kolejka@{\-Kolejka}!\-Wykonaj\-\_\-\-Heap\-\_\-\-Sort@{\-Wykonaj\-\_\-\-Heap\-\_\-\-Sort}}
+\index{\-Wykonaj\-\_\-\-Heap\-\_\-\-Sort@{\-Wykonaj\-\_\-\-Heap\-\_\-\-Sort}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Wykonaj\-\_\-\-Heap\-\_\-\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Wykonaj\-\_\-\-Heap\-\_\-\-Sort} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_ad9a907fcc67803e1ff8a348ecde1aa5b}
+
+
+\-Definicja w linii 250 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        Buduj_Kopiec(Tab);
+        Rozbierz_Kopiec(Tab);
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_kolejka_a2feb88aa9e6b9af5c14e6e9fde851966}{\index{\-Kolejka@{\-Kolejka}!\-Wyswietl\-\_\-\-Dane@{\-Wyswietl\-\_\-\-Dane}}
+\index{\-Wyswietl\-\_\-\-Dane@{\-Wyswietl\-\_\-\-Dane}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Wyswietl\-\_\-\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Wyswietl\-\_\-\-Dane} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a2feb88aa9e6b9af5c14e6e9fde851966}
+
+
+\-Definicja w linii 77 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{       
+        if(rozmiar_tab != 0)
+        {
+                cout << "Zawartosc kolejki:  " << endl;
+                for(int i = (rozmiar_tab - 1); i >= 0 ; i--)
+                {
+                        cout << Tab[i] << endl;
+                }
+        } 
+        else
+                cout << "Brak elementow! " << endl;
+}
+\end{DoxyCode}
+\hypertarget{class_kolejka_aba08defbed8f23d0f7d17513dc296f57}{\index{\-Kolejka@{\-Kolejka}!\-Wyswietl\-\_\-\-Dane\-\_\-\-Heap\-\_\-\-Sort@{\-Wyswietl\-\_\-\-Dane\-\_\-\-Heap\-\_\-\-Sort}}
+\index{\-Wyswietl\-\_\-\-Dane\-\_\-\-Heap\-\_\-\-Sort@{\-Wyswietl\-\_\-\-Dane\-\_\-\-Heap\-\_\-\-Sort}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Wyswietl\-\_\-\-Dane\-\_\-\-Heap\-\_\-\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Wyswietl\-\_\-\-Dane\-\_\-\-Heap\-\_\-\-Sort} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_aba08defbed8f23d0f7d17513dc296f57}
+
+
+\-Definicja w linii 256 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        Wykonaj_Heap_Sort();
+
+        if(rozmiar_tab != 0)
+        {
+                cout << "Zawartosc kolejki:  " << endl;
+                for(int i = 0; i <= rozmiar_tab ; i++)
+                {
+                        cout << Tab[i] << endl;
+                }
+        } 
+        else
+                cout << "Brak elementow! " << endl;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_kolejka_a482fc74f6e5e3dd4760be59130a7eec5}{\index{\-Kolejka@{\-Kolejka}!\-Wyswietl\-\_\-\-Dane\-\_\-\-Quick\-\_\-\-Sort@{\-Wyswietl\-\_\-\-Dane\-\_\-\-Quick\-\_\-\-Sort}}
+\index{\-Wyswietl\-\_\-\-Dane\-\_\-\-Quick\-\_\-\-Sort@{\-Wyswietl\-\_\-\-Dane\-\_\-\-Quick\-\_\-\-Sort}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Wyswietl\-\_\-\-Dane\-\_\-\-Quick\-\_\-\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Wyswietl\-\_\-\-Dane\-\_\-\-Quick\-\_\-\-Sort} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a482fc74f6e5e3dd4760be59130a7eec5}
+
+
+\-Definicja w linii 153 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{       
+        Quick_Sort(0,9);
+
+        if(rozmiar_tab != 0)
+        {
+                cout << "Zawartosc kolejki:  " << endl;
+                for(int i = 0; i < rozmiar_tab ; i++)
+                {
+                        cout << Tab[i] << endl;
+                }
+        } 
+        else
+                cout << "Brak elementow! " << endl;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_kolejka_ab074854cd1004b8a7c5a9413a141312e}{\index{\-Kolejka@{\-Kolejka}!\-Wyswietl\-\_\-\-Dane\-\_\-\-Sort\-\_\-\-Merge@{\-Wyswietl\-\_\-\-Dane\-\_\-\-Sort\-\_\-\-Merge}}
+\index{\-Wyswietl\-\_\-\-Dane\-\_\-\-Sort\-\_\-\-Merge@{\-Wyswietl\-\_\-\-Dane\-\_\-\-Sort\-\_\-\-Merge}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Wyswietl\-\_\-\-Dane\-\_\-\-Sort\-\_\-\-Merge}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Kolejka\-::\-Wyswietl\-\_\-\-Dane\-\_\-\-Sort\-\_\-\-Merge} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_ab074854cd1004b8a7c5a9413a141312e}
+
+
+\-Definicja w linii 190 pliku kolejka\-\_\-tablica.\-cpp.
+
+
+\begin{DoxyCode}
+{       
+        Sort_Merge(0,9);
+
+        if(rozmiar_tab != 0)
+        {
+                cout << "Zawartosc kolejki:  " << endl;
+                for(int i = 0; i < rozmiar_tab ; i++)
+                {
+                        cout << Tab[i] << endl;
+                }
+        } 
+        else
+                cout << "Brak elementow! " << endl;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_kolejka_a7eef5cf96ca7f8178dfc9ae5ad02417d}{\index{\-Kolejka@{\-Kolejka}!j@{j}}
+\index{j@{j}!Kolejka@{\-Kolejka}}
+\subsubsection[{j}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Kolejka\-::j}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka_a7eef5cf96ca7f8178dfc9ae5ad02417d}
+
+
+\-Definicja w linii 44 pliku kolejka\-\_\-tablica.\-hh.
+
+\hypertarget{class_kolejka_a859e9504347a642ed42c65d1aadee0a1}{\index{\-Kolejka@{\-Kolejka}!k@{k}}
+\index{k@{k}!Kolejka@{\-Kolejka}}
+\subsubsection[{k}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Kolejka\-::k}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka_a859e9504347a642ed42c65d1aadee0a1}
+
+
+\-Definicja w linii 44 pliku kolejka\-\_\-tablica.\-hh.
+
+\hypertarget{class_kolejka_a563cd8e3ecaf570a6f8068db62d6c099}{\index{\-Kolejka@{\-Kolejka}!licz\-\_\-elem@{licz\-\_\-elem}}
+\index{licz\-\_\-elem@{licz\-\_\-elem}!Kolejka@{\-Kolejka}}
+\subsubsection[{licz\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Kolejka\-::licz\-\_\-elem}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka_a563cd8e3ecaf570a6f8068db62d6c099}
+
+
+\-Definicja w linii 40 pliku kolejka\-\_\-tablica.\-hh.
+
+\hypertarget{class_kolejka_a72ba80c6ad16d9e2f5a8a02ec257524b}{\index{\-Kolejka@{\-Kolejka}!rozmiar\-\_\-tab@{rozmiar\-\_\-tab}}
+\index{rozmiar\-\_\-tab@{rozmiar\-\_\-tab}!Kolejka@{\-Kolejka}}
+\subsubsection[{rozmiar\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Kolejka\-::rozmiar\-\_\-tab}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka_a72ba80c6ad16d9e2f5a8a02ec257524b}
+
+
+\-Definicja w linii 32 pliku kolejka\-\_\-tablica.\-hh.
+
+\hypertarget{class_kolejka_adfbcda2500bf9d82a22d8d717ee6f695}{\index{\-Kolejka@{\-Kolejka}!\-Tab@{\-Tab}}
+\index{\-Tab@{\-Tab}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Tab}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-Kolejka\-::\-Tab}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka_adfbcda2500bf9d82a22d8d717ee6f695}
+
+
+\-Definicja w linii 48 pliku kolejka\-\_\-tablica.\-hh.
+
+\hypertarget{class_kolejka_a5ec5307ce26f31ae9c29f91bd7527225}{\index{\-Kolejka@{\-Kolejka}!\-Tab\-\_\-temp@{\-Tab\-\_\-temp}}
+\index{\-Tab\-\_\-temp@{\-Tab\-\_\-temp}!Kolejka@{\-Kolejka}}
+\subsubsection[{\-Tab\-\_\-temp}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-Kolejka\-::\-Tab\-\_\-temp}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka_a5ec5307ce26f31ae9c29f91bd7527225}
+
+
+\-Definicja w linii 52 pliku kolejka\-\_\-tablica.\-hh.
+
+\hypertarget{class_kolejka_a9fc9f63fded5c275d32f8b05125e8428}{\index{\-Kolejka@{\-Kolejka}!wsk\-\_\-pocz@{wsk\-\_\-pocz}}
+\index{wsk\-\_\-pocz@{wsk\-\_\-pocz}!Kolejka@{\-Kolejka}}
+\subsubsection[{wsk\-\_\-pocz}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Kolejka\-::wsk\-\_\-pocz}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_kolejka_a9fc9f63fded5c275d32f8b05125e8428}
+
+
+\-Definicja w linii 36 pliku kolejka\-\_\-tablica.\-hh.
+

@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Stos::Menu",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Stos::push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a609341925384a8d758c01d4b1b2e9bca",tooltip="Funkcja push. Deklaracja funkcji odpowiedzialnej za dodawanie elementu do stosu. Uzytkownik podaje wa..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Stos::pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a88b0da41b49ef4d4b63cfd4924665683",tooltip="Funkcja pop. Deklaracja funkcji odpowiedzialna za usuwanie elementu ze stosu. Funkcja usuwa ostatni e..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Stos::Wyswietl_Stos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#acfa731646fc656e7f9484aab1b00ef52",tooltip="Funkcja Wyswietl Stos Funkcja odpowiedzalna za wyswietlenie stosu."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Stos::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a7658744ffd2f5792145d6ee5bfb8f8f8",tooltip="Funkcja size. Funkcja odpowiedzialna za wyswietlenie obecnego rozmiaru stosu."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Stos::empty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a2d6a33b87b09dd8c5e61dbeb1df59ec8",tooltip="Funkcja empty. Zwraca nam czy w stosie zawarte sa jakies elementy badz tez brak."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Stos::Wczytaj_Dane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#ae9bc0edc8991d6951738e8c332fdbffd",tooltip="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku."];
+}

@@ -1,0 +1,21 @@
+/*!
+\mainpage Algorytmy sortowania
+
+\author Patryk Jedrzejko
+\date 23.03.2014
+\version 1.1
+
+Program wykonujacy algorytmy sortowania:
+\n QuickSort - sortowania szybkiego,
+\n MergeSort - sortowanie przez scalanie,
+\n HeapSort - sortowanie przez kopcowanie.
+\n
+Program zostal napisany na bazie klasy Kolejka jako tablica. 
+\n Funkcje poszczegolnych algorytmow zostaly dodane to tej wlasnie klasy. Dane dla tej klasy wczytywany sa z plikow stos.txt, stos100.txt
+\n stos1000.txt oraz stos10000.txt zawierajace kolejno, n = 10, 100, 1000, 10000 elementow wylosowanych.
+\n Program rowniez liczy czas poprzez klase Benchmark szybkosci wykonania operacji sortowania dla poszczegolnych algorytmow.
+\n Poprzez menu uzytkownik moze wybrac jakim algorytmem chce posortowac
+dany zbior elementow.
+
+
+ */

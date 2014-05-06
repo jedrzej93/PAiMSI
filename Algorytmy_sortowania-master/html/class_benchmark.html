@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Algorytmy sortowania: Dokumentacja klasy Benchmark</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Algorytmy sortowania
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Benchmark</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="Benchmark" -->
+<p><a href="class_benchmark-members.html">Lista wszystkich składowych.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#acfca497989836a688d44477802e822d8">Benchmark</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_benchmark.html">Benchmark</a>. Konstruktor jest funkcja bezparametryczna.  <a href="#acfca497989836a688d44477802e822d8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a4b7c72902d81ff3829f990b3b112b5e1">Wykonaj_Sortowanie</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wykonujaca algorytmy sortowania. Funkcja wykonuje wczytanie danych z plikow stos.txt, stos100.txt, stos1000.txt, stos10000.txt. ktore zawieraja wylosowane liczby z przedzialu odpowiedniego do liczby elementow Uzytkownik poprzez menu moze wybrac dla jakiego zbioru elementow ma byc wykonane sortowanie i dla jakiego algorytmu, tj. sortowanie szybkie - QuickSort, sortowanie przez kopcowanie - HeapSort oraz sortowanie przez scalanie - SortMerge. Po wyborze przez uzytkownika opcji, zostaje wlaczany zegar, jest wykonywany algorytm sortowania, a na koncu zegar zostaje zatrzymany i wyswietlony calkowity czas operacji wykonania sortowania.  <a href="#a4b7c72902d81ff3829f990b3b112b5e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187">Start</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki danymi wczytanymi z pliku.  <a href="#ac55ca7809108ed22a644d6d41071d187"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a">Stop</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kolejki danymi wczytanymi z pliku.  <a href="#aa3ca94f8984beb0ecbfa77d50cbe5c3a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2">Czas_Operacji</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms.  <a href="#aee4890492aa777816da1d63fa7a8c4c2"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a461847eb9a01e511e19af6cd7bcc057e">czas1</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienne typu timeval, zmienne przyjmujace wartosci czasu start i stop.  <a href="#a461847eb9a01e511e19af6cd7bcc057e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a56ec92a30b650825403d14907a321eea">czas2</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#accd4af9649210ce216db513c0676c401">CzasOperacji</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna typu double, zawiera wartosc czasu operacji.  <a href="#accd4af9649210ce216db513c0676c401"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa <a class="el" href="class_benchmark.html">Benchmark</a> w owej klasie definiujemy funkcje odpowiedzialne za wykonanie algorytmu benchmarku, ktory zwraca nam czas w ms jaki uplynal podczas wykonywania operacji. </p>
+
+<p>Definicja w linii <a class="el" href="benchmark_8hh_source.html#l00022">22</a> pliku <a class="el" href="benchmark_8hh_source.html">benchmark.hh</a>.</p>
+</div><hr/><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="acfca497989836a688d44477802e822d8"></a><!-- doxytag: member="Benchmark::Benchmark" ref="acfca497989836a688d44477802e822d8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_benchmark.html#acfca497989836a688d44477802e822d8">Benchmark::Benchmark</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8hh_source.html#l00038">38</a> pliku <a class="el" href="benchmark_8hh_source.html">benchmark.hh</a>.</p>
+<div class="fragment"><pre class="fragment">{}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="aee4890492aa777816da1d63fa7a8c4c2"></a><!-- doxytag: member="Benchmark::Czas_Operacji" ref="aee4890492aa777816da1d63fa7a8c4c2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2">Benchmark::Czas_Operacji</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8cpp_source.html#l00112">112</a> pliku <a class="el" href="benchmark_8cpp_source.html">benchmark.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_benchmark.html#accd4af9649210ce216db513c0676c401" title="Zmienna typu double, zawiera wartosc czasu operacji.">CzasOperacji</a> = (<a class="code" href="class_benchmark.html#a56ec92a30b650825403d14907a321eea">czas2</a>.tv_sec - <a class="code" href="class_benchmark.html#a461847eb9a01e511e19af6cd7bcc057e" title="Zmienne typu timeval, zmienne przyjmujace wartosci czasu start i stop.">czas1</a>.tv_sec)*1000.0;
+        <a class="code" href="class_benchmark.html#accd4af9649210ce216db513c0676c401" title="Zmienna typu double, zawiera wartosc czasu operacji.">CzasOperacji</a> += (<a class="code" href="class_benchmark.html#a56ec92a30b650825403d14907a321eea">czas2</a>.tv_usec - <a class="code" href="class_benchmark.html#a461847eb9a01e511e19af6cd7bcc057e" title="Zmienne typu timeval, zmienne przyjmujace wartosci czasu start i stop.">czas1</a>.tv_usec) / 1000.0;
+        cout &lt;&lt; <a class="code" href="class_benchmark.html#accd4af9649210ce216db513c0676c401" title="Zmienna typu double, zawiera wartosc czasu operacji.">CzasOperacji</a> &lt;&lt; <span class="stringliteral">&quot;ms.&quot;</span> &lt;&lt; endl;
+
+        <span class="keywordflow">return</span> <a class="code" href="class_benchmark.html#accd4af9649210ce216db513c0676c401" title="Zmienna typu double, zawiera wartosc czasu operacji.">CzasOperacji</a>;
+}</pre></div>
+</div>
+</div>
+<a class="anchor" id="ac55ca7809108ed22a644d6d41071d187"></a><!-- doxytag: member="Benchmark::Start" ref="ac55ca7809108ed22a644d6d41071d187" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187">Benchmark::Start</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8cpp_source.html#l00100">100</a> pliku <a class="el" href="benchmark_8cpp_source.html">benchmark.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="comment">//cout &lt;&lt; &quot;Zegar wlaczony!&quot; &lt;&lt; endl;</span>
+        gettimeofday(&amp;<a class="code" href="class_benchmark.html#a461847eb9a01e511e19af6cd7bcc057e" title="Zmienne typu timeval, zmienne przyjmujace wartosci czasu start i stop.">czas1</a>, NULL);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aa3ca94f8984beb0ecbfa77d50cbe5c3a"></a><!-- doxytag: member="Benchmark::Stop" ref="aa3ca94f8984beb0ecbfa77d50cbe5c3a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a">Benchmark::Stop</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8cpp_source.html#l00106">106</a> pliku <a class="el" href="benchmark_8cpp_source.html">benchmark.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="comment">//cout &lt;&lt; &quot;Zegar wylaczony!&quot; &lt;&lt; endl;</span>
+        gettimeofday(&amp;<a class="code" href="class_benchmark.html#a56ec92a30b650825403d14907a321eea">czas2</a>, NULL);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a4b7c72902d81ff3829f990b3b112b5e1"></a><!-- doxytag: member="Benchmark::Wykonaj_Sortowanie" ref="a4b7c72902d81ff3829f990b3b112b5e1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_benchmark.html#a4b7c72902d81ff3829f990b3b112b5e1">Benchmark::Wykonaj_Sortowanie</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8cpp_source.html#l00019">19</a> pliku <a class="el" href="benchmark_8cpp_source.html">benchmark.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_kolejka.html">Kolejka</a> K;
+        
+        <span class="keywordtype">int</span> wybor;
+
+        cout &lt;&lt; <span class="stringliteral">&quot;----MENU BENCHMARK----&quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;1 - SORTOWANIE PRZEZ SCALANIE 10 ELEMENTOW&quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;2 - SORTOWANIE PRZEZ SCALANIE 100 ELEMENTOW&quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;3 - SORTOWANIE PRZEZ SCALANIE 1000 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;4 - SORTOWANIE PRZEZ SCALANIE 10000 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;5 - SORTOWANIE SZYBKIE 10 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;6 - SORTOWANIE SZYBKIE 100 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;7 - SORTOWANIE SZYBKIE 1000 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;8 - SORTOWANIE SZYBKIE 10000 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;9 - SORTOWANIE KOPCEM 10 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;10 - SORTOWANIE KOPCEM 100 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;11 - SORTOWANIE KOPCEM 1000 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;12 - SORTOWANIE KOPCEM 10000 ELEMENTOW &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot;13 - ZAKONCZ PROGRAM &quot;</span> &lt;&lt; endl;
+        cout &lt;&lt; <span class="stringliteral">&quot; WYBIERZ OPCJE: &quot;</span>;
+        cin &gt;&gt; wybor;
+
+        <span class="keywordflow">switch</span>(wybor)
+        {
+                <span class="keywordflow">case</span> 1: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie przez scalanie dla 10 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a80ab27bb35ddb60d0c0614da14e46c3a" title="Funkcja sortowania przez scalanie. Algorytm wywolujemy z zadanymi wartosciami indeksow l_p oraz l_k k...">Sort_Merge</a>(0,9); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 2: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie przez scalanie dla 100 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos100.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a80ab27bb35ddb60d0c0614da14e46c3a" title="Funkcja sortowania przez scalanie. Algorytm wywolujemy z zadanymi wartosciami indeksow l_p oraz l_k k...">Sort_Merge</a>(0,99); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();                    
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 3:
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie przez scalanie dla 1000 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos1000.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a80ab27bb35ddb60d0c0614da14e46c3a" title="Funkcja sortowania przez scalanie. Algorytm wywolujemy z zadanymi wartosciami indeksow l_p oraz l_k k...">Sort_Merge</a>(0,999); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 4:
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie przez scalanie dla 10000 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos10000.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a80ab27bb35ddb60d0c0614da14e46c3a" title="Funkcja sortowania przez scalanie. Algorytm wywolujemy z zadanymi wartosciami indeksow l_p oraz l_k k...">Sort_Merge</a>(0,9999); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 5: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie szybkie dla 10 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a29d7138233171af5ac991e4ef4597eb4" title="Funkcja wykonujaca algorytm szybkiego sortowania. Funkcja zawierajaca dwie zmienne, ktore wskazuja na poczatek oraz koniec zbioru. Dzieki czemu sprawdzamy czy partycje utworzone poprzez funkcje Partition zawieraja wiecej niz jeden element. Jezeli tak, to wywolujemy rekurencyjnie algorytm sortowania szybkiego z wyznaczonymi granicami partycji. Po tym wywolaniu partycja jest posortowana rosnaco.">Quick_Sort</a>(0,9); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 6: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie szybkie dla 100 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos100.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a29d7138233171af5ac991e4ef4597eb4" title="Funkcja wykonujaca algorytm szybkiego sortowania. Funkcja zawierajaca dwie zmienne, ktore wskazuja na poczatek oraz koniec zbioru. Dzieki czemu sprawdzamy czy partycje utworzone poprzez funkcje Partition zawieraja wiecej niz jeden element. Jezeli tak, to wywolujemy rekurencyjnie algorytm sortowania szybkiego z wyznaczonymi granicami partycji. Po tym wywolaniu partycja jest posortowana rosnaco.">Quick_Sort</a>(0,99); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 7: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie szybkie dla 1000 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos1000.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a29d7138233171af5ac991e4ef4597eb4" title="Funkcja wykonujaca algorytm szybkiego sortowania. Funkcja zawierajaca dwie zmienne, ktore wskazuja na poczatek oraz koniec zbioru. Dzieki czemu sprawdzamy czy partycje utworzone poprzez funkcje Partition zawieraja wiecej niz jeden element. Jezeli tak, to wywolujemy rekurencyjnie algorytm sortowania szybkiego z wyznaczonymi granicami partycji. Po tym wywolaniu partycja jest posortowana rosnaco.">Quick_Sort</a>(0,999); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 8: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie szybkie dla 10000 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos10000.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#a29d7138233171af5ac991e4ef4597eb4" title="Funkcja wykonujaca algorytm szybkiego sortowania. Funkcja zawierajaca dwie zmienne, ktore wskazuja na poczatek oraz koniec zbioru. Dzieki czemu sprawdzamy czy partycje utworzone poprzez funkcje Partition zawieraja wiecej niz jeden element. Jezeli tak, to wywolujemy rekurencyjnie algorytm sortowania szybkiego z wyznaczonymi granicami partycji. Po tym wywolaniu partycja jest posortowana rosnaco.">Quick_Sort</a>(0,9999); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;  
+                <span class="keywordflow">case</span> 9: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie kopcem dla 10 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#ad9a907fcc67803e1ff8a348ecde1aa5b" title="Funkcja wykonujaca algorytm HeapSort. Najpierw jest budowany kopiec, a nastepnie rozebrany. Dzieki temu mamy posortowane elementy.">Wykonaj_Heap_Sort</a>(); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 10: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie kopcem dla 100 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos100.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#ad9a907fcc67803e1ff8a348ecde1aa5b" title="Funkcja wykonujaca algorytm HeapSort. Najpierw jest budowany kopiec, a nastepnie rozebrany. Dzieki temu mamy posortowane elementy.">Wykonaj_Heap_Sort</a>(); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;  
+                <span class="keywordflow">case</span> 11: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie kopcem dla 1000 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos1000.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#ad9a907fcc67803e1ff8a348ecde1aa5b" title="Funkcja wykonujaca algorytm HeapSort. Najpierw jest budowany kopiec, a nastepnie rozebrany. Dzieki temu mamy posortowane elementy.">Wykonaj_Heap_Sort</a>(); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;  
+                <span class="keywordflow">case</span> 12: 
+                        cout &lt;&lt; <span class="stringliteral">&quot;Sortowanie kopcem dla 10000 elementow: &quot;</span>;
+                        K.<a class="code" href="class_kolejka.html#a449374680f4f4cc633f067c4fb0fac3d" title="Funkcja Wczytaj dane. Funkcja wczytuje dane z pliku o zadanej nazwie pliku.">Wczytaj_Dane</a>(<span class="stringliteral">&quot;stos10000.txt&quot;</span>); <a class="code" href="class_benchmark.html#ac55ca7809108ed22a644d6d41071d187" title="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da...">Start</a>(); K.<a class="code" href="class_kolejka.html#ad9a907fcc67803e1ff8a348ecde1aa5b" title="Funkcja wykonujaca algorytm HeapSort. Najpierw jest budowany kopiec, a nastepnie rozebrany. Dzieki temu mamy posortowane elementy.">Wykonaj_Heap_Sort</a>(); <a class="code" href="class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a" title="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole...">Stop</a>(); <a class="code" href="class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2" title="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms...">Czas_Operacji</a>();
+                        <span class="keywordflow">break</span>;                  
+                <span class="keywordflow">case</span> 13:
+                                cout &lt;&lt; <span class="stringliteral">&quot;ZAKONCZONO PROGRAM &quot;</span> &lt;&lt; endl;
+                                <span class="keywordflow">break</span>;
+                <span class="keywordflow">default</span>:
+                                <span class="keywordflow">break</span>;
+        }
+}
+</pre></div>
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_benchmark_a4b7c72902d81ff3829f990b3b112b5e1_cgraph.png" border="0" usemap="#class_benchmark_a4b7c72902d81ff3829f990b3b112b5e1_cgraph" alt=""/></div>
+<map name="class_benchmark_a4b7c72902d81ff3829f990b3b112b5e1_cgraph" id="class_benchmark_a4b7c72902d81ff3829f990b3b112b5e1_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="a461847eb9a01e511e19af6cd7bcc057e"></a><!-- doxytag: member="Benchmark::czas1" ref="a461847eb9a01e511e19af6cd7bcc057e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">timeval <a class="el" href="class_benchmark.html#a461847eb9a01e511e19af6cd7bcc057e">Benchmark::czas1</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8hh_source.html#l00028">28</a> pliku <a class="el" href="benchmark_8hh_source.html">benchmark.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56ec92a30b650825403d14907a321eea"></a><!-- doxytag: member="Benchmark::czas2" ref="a56ec92a30b650825403d14907a321eea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">timeval <a class="el" href="class_benchmark.html#a56ec92a30b650825403d14907a321eea">Benchmark::czas2</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8hh_source.html#l00028">28</a> pliku <a class="el" href="benchmark_8hh_source.html">benchmark.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="accd4af9649210ce216db513c0676c401"></a><!-- doxytag: member="Benchmark::CzasOperacji" ref="accd4af9649210ce216db513c0676c401" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_benchmark.html#accd4af9649210ce216db513c0676c401">Benchmark::CzasOperacji</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="benchmark_8hh_source.html#l00032">32</a> pliku <a class="el" href="benchmark_8hh_source.html">benchmark.hh</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Mon Mar 24 2014 13:01:48 dla Algorytmy sortowania programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

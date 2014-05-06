@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Benchmark: Plik źródłowy stos_lista.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Benchmark
+   &#160;<span id="projectnumber">1.1 - dodana dokumentacja</span>
+   </div>
+   <div id="projectbrief">Stosy, kolejki, listy i tablice</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">stos_lista.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef STOS_LISTA_HH_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define STOS_LISTA_HH_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;list&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;stack&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;iomanip&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;string.h&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="keyword">using namespace </span>std;
+<a name="l00028"></a><a class="code" href="struct_stos___lista.html">00028</a> <span class="keyword">struct </span><a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a>
+<a name="l00029"></a>00029 {
+<a name="l00033"></a><a class="code" href="struct_stos___lista.html#a2b4b6b290201eda9964dafc81b123065">00033</a>        <a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a> * <a class="code" href="struct_stos___lista.html#a2b4b6b290201eda9964dafc81b123065" title="Zmienna typu Stos_Lista *, jest to wskaznik laczacy elementy w stos.">nastepna_wartosc</a>;
+<a name="l00037"></a><a class="code" href="struct_stos___lista.html#a00c1b5347b912366037a5fb9c84efe91">00037</a>        <span class="keywordtype">int</span> <a class="code" href="struct_stos___lista.html#a00c1b5347b912366037a5fb9c84efe91" title="Zmienna typu int, przechowuje wartosci danych elementow.">dane_stosu</a>;
+<a name="l00038"></a>00038 };
+<a name="l00045"></a><a class="code" href="class_lista.html">00045</a> <span class="keyword">class </span><a class="code" href="class_lista.html">Lista</a>
+<a name="l00046"></a>00046 {
+<a name="l00047"></a>00047        <span class="keyword">private</span>:
+<a name="l00051"></a><a class="code" href="class_lista.html#a86a0427913a82e41da202168e209bd06">00051</a>               <a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a> * <a class="code" href="class_lista.html#a86a0427913a82e41da202168e209bd06" title="Zmienna typu Stos_Lista *, wskaznik na pierwszy element listy.">poczatek</a>;
+<a name="l00055"></a><a class="code" href="class_lista.html#a74098fc9225d008398096c33e6f2c76b">00055</a>               <a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a> * <a class="code" href="class_lista.html#a74098fc9225d008398096c33e6f2c76b" title="Zmienna typu Stos_Lista *, wskaznik na ostatni element listy.">koniec</a>; 
+<a name="l00059"></a><a class="code" href="class_lista.html#a3cbc0beed9a449e0fb2f66bb6bd393d3">00059</a>               <span class="keywordtype">unsigned</span> <a class="code" href="class_lista.html#a3cbc0beed9a449e0fb2f66bb6bd393d3" title="Zmienna typu unsigned, bedzie pelnina funkcje jako rozmiar stosu.">licznik</a>;
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061        <span class="keyword">public</span>:
+<a name="l00067"></a>00067               <a class="code" href="class_lista.html">Lista</a>(); <span class="comment">// konstruktor</span>
+<a name="l00072"></a>00072 <span class="comment"></span>              ~<a class="code" href="class_lista.html">Lista</a>(); <span class="comment">// destruktor</span>
+<a name="l00073"></a>00073               
+<a name="l00074"></a>00074               <span class="keywordtype">unsigned</span> size();
+<a name="l00078"></a>00078               <span class="keywordtype">void</span> rozmiar_listy();
+<a name="l00083"></a>00083               <span class="keywordtype">bool</span> empty(<span class="keywordtype">void</span>);
+<a name="l00089"></a>00089               <a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a> * top(<span class="keywordtype">void</span>);
+<a name="l00097"></a>00097               <a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a> * push(<a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a> * lista);
+<a name="l00106"></a>00106               <a class="code" href="struct_stos___lista.html" title="Deklaracja klasy Stos_Lista.">Stos_Lista</a> * pop();
+<a name="l00111"></a>00111               <span class="keywordtype">void</span> Wyswietl_Elementy();
+<a name="l00117"></a>00117               <span class="keywordtype">void</span> Wczytaj_Dane(<span class="keywordtype">string</span> nazwa_pliku);
+<a name="l00125"></a>00125               <span class="keywordtype">void</span> Dodaj_Element(<span class="keywordtype">int</span> wartosc);
+<a name="l00133"></a>00133               <span class="keywordtype">void</span> Menu();
+<a name="l00134"></a>00134 };
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Tue Mar 18 2014 22:01:36 dla Benchmark programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

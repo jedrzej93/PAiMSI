@@ -1,0 +1,137 @@
+\hypertarget{class_benchmark}{\section{\-Dokumentacja klasy \-Benchmark}
+\label{class_benchmark}\index{\-Benchmark@{\-Benchmark}}
+}
+
+
+\hyperlink{class_benchmark}{\-Benchmark} \-Klasa \hyperlink{class_benchmark}{\-Benchmark} w owej klasie definiujemy funkcje odpowiedzialne za wykonanie algorytmu benchmarku, ktory zwraca nam czas w ms jaki uplynal podczas wykonywania operacji.  
+
+
+
+
+{\ttfamily \#include $<$benchmark.\-hh$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_benchmark_acfca497989836a688d44477802e822d8}{\-Benchmark} ()
+\begin{DoxyCompactList}\small\item\em \-Konstruktor klasy \hyperlink{class_benchmark}{\-Benchmark}. \-Konstruktor jest funkcja bezparametryczna. \end{DoxyCompactList}\item 
+void \hyperlink{class_benchmark_aec505cc255177517a37e06e3b49f5911}{\-Wykonaj\-\_\-\-Algorytm} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja wykonujaca algorytm benchmarku. \-Funkcja wykonuje wczytanie danych z plikow stos.\-txt, stos100.\-txt, stos1000.\-txt, stos10000.\-txt. \-Nastepnie tworzy obiekty klas i wypelnia je wartosciami wczytanymi z tych plikow. \-Czyli wypelnia je wartosciami\-: 10 elementow, 100 elementow, 1000 oraz 10000 elementow. \-Na koniec wyswietla dla zadanej klasy poszczegolne wartosci. \-Funkcja zawiera menu, dzieki ktoremu uzytkownik moze wybrac opcje zapelnienia danej klasy obiektu. \end{DoxyCompactList}\item 
+void \hyperlink{class_benchmark_ac55ca7809108ed22a644d6d41071d187}{\-Start} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja startujaca zegar. \-Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki danymi wczytanymi z pliku. \end{DoxyCompactList}\item 
+void \hyperlink{class_benchmark_aa3ca94f8984beb0ecbfa77d50cbe5c3a}{\-Stop} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja zatrzymujaca zegar. \-Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kolejki danymi wczytanymi z pliku. \end{DoxyCompactList}\item 
+double \hyperlink{class_benchmark_aee4890492aa777816da1d63fa7a8c4c2}{\-Czas\-\_\-\-Operacji} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja zawieracaja czas operacji zegaru. \-Funkcja zwraca nam czas calkowity wykonanej operacji w ms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+timeval \hyperlink{class_benchmark_a461847eb9a01e511e19af6cd7bcc057e}{czas1}
+\begin{DoxyCompactList}\small\item\em \-Zmienne typu timeval, zmienne przyjmujace wartosci czasu start i stop. \end{DoxyCompactList}\item 
+timeval \hyperlink{class_benchmark_a56ec92a30b650825403d14907a321eea}{czas2}
+\item 
+double \hyperlink{class_benchmark_accd4af9649210ce216db513c0676c401}{\-Czas\-Operacji}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu double, zawiera wartosc czasu operacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 26 pliku benchmark.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_benchmark_acfca497989836a688d44477802e822d8}{\index{\-Benchmark@{\-Benchmark}!\-Benchmark@{\-Benchmark}}
+\index{\-Benchmark@{\-Benchmark}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Benchmark}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Benchmark\-::\-Benchmark} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_benchmark_acfca497989836a688d44477802e822d8}
+
+
+\-Definicja w linii 42 pliku benchmark.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_benchmark_aee4890492aa777816da1d63fa7a8c4c2}{\index{\-Benchmark@{\-Benchmark}!\-Czas\-\_\-\-Operacji@{\-Czas\-\_\-\-Operacji}}
+\index{\-Czas\-\_\-\-Operacji@{\-Czas\-\_\-\-Operacji}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Czas\-\_\-\-Operacji}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Benchmark\-::\-Czas\-\_\-\-Operacji} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_aee4890492aa777816da1d63fa7a8c4c2}
+
+
+\-Definicja w linii 98 pliku benchmark.\-cpp.
+
+\hypertarget{class_benchmark_ac55ca7809108ed22a644d6d41071d187}{\index{\-Benchmark@{\-Benchmark}!\-Start@{\-Start}}
+\index{\-Start@{\-Start}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Benchmark\-::\-Start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_ac55ca7809108ed22a644d6d41071d187}
+
+
+\-Definicja w linii 86 pliku benchmark.\-cpp.
+
+\hypertarget{class_benchmark_aa3ca94f8984beb0ecbfa77d50cbe5c3a}{\index{\-Benchmark@{\-Benchmark}!\-Stop@{\-Stop}}
+\index{\-Stop@{\-Stop}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Benchmark\-::\-Stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_aa3ca94f8984beb0ecbfa77d50cbe5c3a}
+
+
+\-Definicja w linii 92 pliku benchmark.\-cpp.
+
+\hypertarget{class_benchmark_aec505cc255177517a37e06e3b49f5911}{\index{\-Benchmark@{\-Benchmark}!\-Wykonaj\-\_\-\-Algorytm@{\-Wykonaj\-\_\-\-Algorytm}}
+\index{\-Wykonaj\-\_\-\-Algorytm@{\-Wykonaj\-\_\-\-Algorytm}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Wykonaj\-\_\-\-Algorytm}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Benchmark\-::\-Wykonaj\-\_\-\-Algorytm} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_aec505cc255177517a37e06e3b49f5911}
+
+
+\-Definicja w linii 15 pliku benchmark.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_benchmark_a461847eb9a01e511e19af6cd7bcc057e}{\index{\-Benchmark@{\-Benchmark}!czas1@{czas1}}
+\index{czas1@{czas1}!Benchmark@{\-Benchmark}}
+\subsubsection[{czas1}]{\setlength{\rightskip}{0pt plus 5cm}timeval {\bf \-Benchmark\-::czas1}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_benchmark_a461847eb9a01e511e19af6cd7bcc057e}
+
+
+\-Definicja w linii 32 pliku benchmark.\-hh.
+
+\hypertarget{class_benchmark_a56ec92a30b650825403d14907a321eea}{\index{\-Benchmark@{\-Benchmark}!czas2@{czas2}}
+\index{czas2@{czas2}!Benchmark@{\-Benchmark}}
+\subsubsection[{czas2}]{\setlength{\rightskip}{0pt plus 5cm}timeval {\bf \-Benchmark\-::czas2}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_benchmark_a56ec92a30b650825403d14907a321eea}
+
+
+\-Definicja w linii 32 pliku benchmark.\-hh.
+
+\hypertarget{class_benchmark_accd4af9649210ce216db513c0676c401}{\index{\-Benchmark@{\-Benchmark}!\-Czas\-Operacji@{\-Czas\-Operacji}}
+\index{\-Czas\-Operacji@{\-Czas\-Operacji}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Czas\-Operacji}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Benchmark\-::\-Czas\-Operacji}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_benchmark_accd4af9649210ce216db513c0676c401}
+
+
+\-Definicja w linii 36 pliku benchmark.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+benchmark.\-hh\item 
+benchmark.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Lista::Wczytaj_Dane",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Benchmark::Wykonaj_Algorytm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_benchmark.html#aec505cc255177517a37e06e3b49f5911",tooltip="Funkcja wykonujaca algorytm benchmarku. Funkcja wykonuje wczytanie danych z plikow stos..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Lista::Menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lista.html#a2921d7ad3ed24e5d0d7d59d5b39c8eb3",tooltip="Funkcja wyswietlajaca Menu klasy Lista. Deklaracja funkcji, ktora wyswietla Menu. Uzytkownik moze wyb..."];
+}
