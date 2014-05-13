@@ -1,0 +1,475 @@
+\hypertarget{class_tablica___asocjacyjna}{\subsection{\-Dokumentacja klasy \-Tablica\-\_\-\-Asocjacyjna}
+\label{class_tablica___asocjacyjna}\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+}
+
+
+{\ttfamily \#include $<$tablica\-\_\-asocjacyjna.\-hh$>$}
+
+\subsubsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tablica___asocjacyjna_ad5d13fb22675dabeb7bcdb2f5b55b79f}{\-Tablica\-\_\-\-Asocjacyjna} ()
+\item 
+\hyperlink{class_tablica___asocjacyjna_abb971aa2dfd76dc0fa6e16cb5c5da1bf}{$\sim$\-Tablica\-\_\-\-Asocjacyjna} ()
+\item 
+bool \hyperlink{class_tablica___asocjacyjna_ac82562a56d46b194775895d15c1e1e99}{is\-Empty} ()
+\item 
+int \hyperlink{class_tablica___asocjacyjna_a3058d4b413ae67c912bc824a048b5650}{\-Rozmiar} ()
+\item 
+void \hyperlink{class_tablica___asocjacyjna_a69bfbf4d9bf16309eec88cd41958baf2}{\-Dodaj\-\_\-\-Element} ()
+\item 
+void \hyperlink{class_tablica___asocjacyjna_aa56ed430bad8a52498ba2a0fd2ea3f1e}{\-Usun\-\_\-\-Element} ()
+\item 
+void \hyperlink{class_tablica___asocjacyjna_a025780c9461b4bc91e0969e9710effcd}{\-Znajdz\-\_\-\-Element} ()
+\item 
+void \hyperlink{class_tablica___asocjacyjna_a7e6d8c64d17c165c9ef0cfb0a4218c9a}{push} (string key, string element)
+\item 
+void \hyperlink{class_tablica___asocjacyjna_a0156f8fce430ab99008bd1751e18741d}{pop} (void)
+\item 
+void \hyperlink{class_tablica___asocjacyjna_ac264d7a74bd8d1450acf81d26f1b114c}{\-Wyswietl\-\_\-\-Dane} ()
+\end{DoxyCompactItemize}
+\subsubsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_tablica___asocjacyjna_a373dea57ae183cfb0a8257372a6ed34b}{rozmiar\-\_\-tab}
+\item 
+int \hyperlink{class_tablica___asocjacyjna_afb2be30a2a037038f970ee17ef16cc7d}{rozmiar\-\_\-temp}
+\item 
+string $\ast$ \hyperlink{class_tablica___asocjacyjna_a8cd88c82018c6b9dd122796a067ba30d}{tab}
+\item 
+string $\ast$ \hyperlink{class_tablica___asocjacyjna_abf5b168ac5bcff6fb07870735fde78c8}{tab\-\_\-temp}
+\item 
+string $\ast$ \hyperlink{class_tablica___asocjacyjna_a99cf05ef90ca71d2970fa462ed753cd9}{tab\-\_\-pomoc}
+\item 
+string $\ast$ \hyperlink{class_tablica___asocjacyjna_a27041d1c629b781bbeeeafd19498ed05}{tab\-\_\-key}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{\-Opis szczegółowy}
+\-Klasa \hyperlink{class_tablica___asocjacyjna}{\-Tablica\-\_\-\-Asocjacyjna} 
+
+\-Definicja w linii 23 pliku tablica\-\_\-asocjacyjna.\-hh.
+
+
+
+\subsubsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_tablica___asocjacyjna_ad5d13fb22675dabeb7bcdb2f5b55b79f}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{\-Tablica\-\_\-\-Asocjacyjna}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Tablica\-\_\-\-Asocjacyjna\-::\-Tablica\-\_\-\-Asocjacyjna} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_ad5d13fb22675dabeb7bcdb2f5b55b79f}
+
+
+\-Konstruktor klasy \-Tablica \-Asocjacyjna. \-Konstruktor jest funkcja bezparametryczna, zerujaca wszystkie skladniki zawarte w private. 
+
+
+
+\-Definicja w linii 13 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        tab = tab_temp = tab_pomoc = tab_key = 0;
+        rozmiar_tab = rozmiar_temp = 0;
+
+}
+\end{DoxyCode}
+\hypertarget{class_tablica___asocjacyjna_abb971aa2dfd76dc0fa6e16cb5c5da1bf}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!$\sim$\-Tablica\-\_\-\-Asocjacyjna@{$\sim$\-Tablica\-\_\-\-Asocjacyjna}}
+\index{$\sim$\-Tablica\-\_\-\-Asocjacyjna@{$\sim$\-Tablica\-\_\-\-Asocjacyjna}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{$\sim$\-Tablica\-\_\-\-Asocjacyjna}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Tablica\-\_\-\-Asocjacyjna\-::$\sim$\-Tablica\-\_\-\-Asocjacyjna} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_abb971aa2dfd76dc0fa6e16cb5c5da1bf}
+
+
+\-Destruktor klasy \-Tablica \-Asocjacyjna. \-Destruktor zwalnia pamiec za pomoca usuniecia dynamicznej tablicy tab i tab\-\_\-temp oraz tab\-\_\-pomoc. 
+
+
+
+\-Definicja w linii 20 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        delete[] tab;
+
+        if(rozmiar_temp != 0)
+                delete[] tab_temp;
+}
+\end{DoxyCode}
+
+
+\subsubsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_tablica___asocjacyjna_a69bfbf4d9bf16309eec88cd41958baf2}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!\-Dodaj\-\_\-\-Element@{\-Dodaj\-\_\-\-Element}}
+\index{\-Dodaj\-\_\-\-Element@{\-Dodaj\-\_\-\-Element}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{\-Dodaj\-\_\-\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Tablica\-\_\-\-Asocjacyjna\-::\-Dodaj\-\_\-\-Element} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_a69bfbf4d9bf16309eec88cd41958baf2}
+
+
+\-Definicja w linii 48 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        string klucz, wartosc;
+        cout << "Podaj nazwe klucza: ";
+        cin >> klucz;
+        cout << "Podaj wartosc klucza: ";
+        cin >> wartosc;
+        push(klucz, wartosc);
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_tablica___asocjacyjna_ac82562a56d46b194775895d15c1e1e99}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Tablica\-\_\-\-Asocjacyjna\-::is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_ac82562a56d46b194775895d15c1e1e99}
+
+
+\-Funkcja is\-Empty \-Zwraca nam czy w stosie zawarte sa jakies elementy badz tez ich brak. 
+
+
+
+\-Definicja w linii 28 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if(rozmiar_tab == 0)
+        {
+                cout << "W tablicy asocjacyjnej nie znajduja sie elementy!" << 
+      endl;
+                return false;
+        }
+        else
+        {
+                cout << "W tablicy asocjacyjnej znajduja sie elementy!" << endl
+      ;
+                return true;
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_tablica___asocjacyjna_a0156f8fce430ab99008bd1751e18741d}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!pop@{pop}}
+\index{pop@{pop}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{pop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Tablica\-\_\-\-Asocjacyjna\-::pop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_a0156f8fce430ab99008bd1751e18741d}
+
+
+\-Funkcja pop. \-Deklaracja funkcji odpowiedzialna za usuwanie elementu z tablicy asocjacyjnej. 
+
+
+
+\-Definicja w linii 132 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if (rozmiar_tab != 0)
+        {
+                tab_temp = new string[rozmiar_tab];
+                tab_pomoc = new string[rozmiar_tab];
+                
+                for (int i = 0; i < rozmiar_tab; i++)
+                {
+                        tab_temp[i] = tab[i];
+                        tab_pomoc[i] = tab_key[i];
+                }
+                delete [] tab;
+                delete [] tab_key;
+                --rozmiar_tab;
+                
+                tab = new string[rozmiar_tab];
+                tab_key = new string[rozmiar_tab];
+                
+                for (int i = 0; i < rozmiar_tab; i++)
+                {
+                        tab[i] = tab_temp[i];
+                        tab_key[i] = tab_pomoc[i];
+                }
+                delete [] tab_temp;
+                delete [] tab_pomoc;
+        }
+        else 
+                cout << "Brak elementow do usuniecia!" << endl;
+}
+\end{DoxyCode}
+\hypertarget{class_tablica___asocjacyjna_a7e6d8c64d17c165c9ef0cfb0a4218c9a}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!push@{push}}
+\index{push@{push}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Tablica\-\_\-\-Asocjacyjna\-::push} (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{string}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_a7e6d8c64d17c165c9ef0cfb0a4218c9a}
+
+
+\-Funkcja push. \-Deklaracja funkcji odpowiedzialnej za dodawanie elementu do tablicy asocjacyjnej. 
+
+
+
+\-Definicja w linii 91 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if (rozmiar_tab != 0)
+        {
+                tab_temp = new string[rozmiar_tab];
+                tab_pomoc = new string[rozmiar_tab];
+                for (int i = 0; i < rozmiar_tab; i++)
+                {
+                        tab_temp[i] = tab[i];
+                        tab_pomoc[i] = tab_key[i];
+                }
+        delete [] tab;
+        delete [] tab_key;
+        
+        ++rozmiar_tab;
+        tab = new string[rozmiar_tab];
+        tab_key = new string[rozmiar_tab];
+        
+        for (int i = 0; i < (rozmiar_tab - 1); i++)
+        {
+                tab[i] = tab_temp[i];
+                tab_key[i] = tab_pomoc[i];
+        }
+        
+        tab[rozmiar_tab - 1] = element;
+        tab_key[rozmiar_tab - 1] = key;
+        
+        delete [] tab;
+        delete [] tab_pomoc;
+        }
+        else
+        {
+                ++rozmiar_tab;
+
+                tab = new string[rozmiar_tab];
+                tab[rozmiar_tab - 1] = element;
+                tab_key = new string[rozmiar_tab];
+                tab_key[rozmiar_tab - 1] = key;
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_tablica___asocjacyjna_a3058d4b413ae67c912bc824a048b5650}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!\-Rozmiar@{\-Rozmiar}}
+\index{\-Rozmiar@{\-Rozmiar}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{\-Rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Tablica\-\_\-\-Asocjacyjna\-::\-Rozmiar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_a3058d4b413ae67c912bc824a048b5650}
+
+
+\-Definicja w linii 42 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        cout << " Rozmiar tablicy: ";
+        return rozmiar_tab;
+}
+\end{DoxyCode}
+\hypertarget{class_tablica___asocjacyjna_aa56ed430bad8a52498ba2a0fd2ea3f1e}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!\-Usun\-\_\-\-Element@{\-Usun\-\_\-\-Element}}
+\index{\-Usun\-\_\-\-Element@{\-Usun\-\_\-\-Element}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{\-Usun\-\_\-\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Tablica\-\_\-\-Asocjacyjna\-::\-Usun\-\_\-\-Element} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_aa56ed430bad8a52498ba2a0fd2ea3f1e}
+
+
+\-Definicja w linii 58 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        string key;
+        bool czy_jest_klucz = 0;
+        int temp = 0;
+
+        cout << "Jaki usunac klucz: ";
+        cin >> key;
+        for(int i = 0; i < rozmiar_tab; i++)
+        {
+                if(tab_key[i] == key)
+                {
+                        czy_jest_klucz = 1;
+                        temp = i;
+                }
+        }
+
+        if (czy_jest_klucz == 1)
+        {
+                string zmienna1, zmienna2;
+                zmienna1 = tab_key[temp];
+                zmienna2 = tab[temp];
+                tab_key[temp]=tab_key[rozmiar_tab - 1];
+                tab[temp] = tab[rozmiar_tab - 1];
+                tab_key[rozmiar_tab - 1] = zmienna1;
+                tab[rozmiar_tab - 1] = zmienna2;
+                pop();
+                        cout<<"Element o podanym kluczu: " << key << " zostal
+       usuniety!" << endl;
+        }
+        else
+                pop();
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_tablica___asocjacyjna_ac264d7a74bd8d1450acf81d26f1b114c}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!\-Wyswietl\-\_\-\-Dane@{\-Wyswietl\-\_\-\-Dane}}
+\index{\-Wyswietl\-\_\-\-Dane@{\-Wyswietl\-\_\-\-Dane}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{\-Wyswietl\-\_\-\-Dane}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Tablica\-\_\-\-Asocjacyjna\-::\-Wyswietl\-\_\-\-Dane} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_ac264d7a74bd8d1450acf81d26f1b114c}
+
+
+\-Funkcja wyswietlajaca dane. \-Funkcja odpowiedzalna za wyswietlenie elementow zawartych w tablicy asocjacyjnej. 
+
+
+
+\-Definicja w linii 190 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if(rozmiar_tab != 0)
+        {
+                cout << "Wyswietlanie elementow: " << endl;
+                for(int i = 0; i < rozmiar_tab; i++)
+                        cout << "Element o zadanym kluczu: " << tab_key[i] << "
+      : o wartosci: " << tab[i] << endl;
+        }
+        else
+                cout << "Brak elementow! " << endl;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_tablica___asocjacyjna_a025780c9461b4bc91e0969e9710effcd}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!\-Znajdz\-\_\-\-Element@{\-Znajdz\-\_\-\-Element}}
+\index{\-Znajdz\-\_\-\-Element@{\-Znajdz\-\_\-\-Element}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{\-Znajdz\-\_\-\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Tablica\-\_\-\-Asocjacyjna\-::\-Znajdz\-\_\-\-Element} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica___asocjacyjna_a025780c9461b4bc91e0969e9710effcd}
+
+
+\-Definicja w linii 163 pliku tablica\-\_\-asocjacyjna.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        string key;
+        bool czy_jest_klucz = 0;
+        int temp = 0;
+        
+        cout << "Znajdz element zawierajacy klucz: ";
+        cin >> key;
+        
+        for (int i = 0; i < rozmiar_tab; i++)
+        {
+                if (tab_key[i] == key)
+                {
+                czy_jest_klucz = 1;
+                temp = i;
+                }
+        }
+        string zmienna1, zmienna2;
+
+        if (czy_jest_klucz == 1)
+        {
+                cout << "Klucz elementu: " << key << " - ma wartosc : " << tab[
+      temp] << endl;
+        }
+        else
+                cout << "Nie ma takiego elementu o zadanym kluczu: " << key << 
+      endl;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsubsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_tablica___asocjacyjna_a373dea57ae183cfb0a8257372a6ed34b}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!rozmiar\-\_\-tab@{rozmiar\-\_\-tab}}
+\index{rozmiar\-\_\-tab@{rozmiar\-\_\-tab}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{rozmiar\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Tablica\-\_\-\-Asocjacyjna\-::rozmiar\-\_\-tab}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica___asocjacyjna_a373dea57ae183cfb0a8257372a6ed34b}
+
+
+\-Zmienna typu int, zawierajaca rozmiar tablicy. 
+
+
+
+\-Definicja w linii 29 pliku tablica\-\_\-asocjacyjna.\-hh.
+
+\hypertarget{class_tablica___asocjacyjna_afb2be30a2a037038f970ee17ef16cc7d}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!rozmiar\-\_\-temp@{rozmiar\-\_\-temp}}
+\index{rozmiar\-\_\-temp@{rozmiar\-\_\-temp}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{rozmiar\-\_\-temp}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Tablica\-\_\-\-Asocjacyjna\-::rozmiar\-\_\-temp}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica___asocjacyjna_afb2be30a2a037038f970ee17ef16cc7d}
+
+
+\-Zmienna pomocnicza typu int, zawierajaca rozmiar tablicy pomocniczej. 
+
+
+
+\-Definicja w linii 33 pliku tablica\-\_\-asocjacyjna.\-hh.
+
+\hypertarget{class_tablica___asocjacyjna_a8cd88c82018c6b9dd122796a067ba30d}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!tab@{tab}}
+\index{tab@{tab}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{tab}]{\setlength{\rightskip}{0pt plus 5cm}string$\ast$ {\bf \-Tablica\-\_\-\-Asocjacyjna\-::tab}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica___asocjacyjna_a8cd88c82018c6b9dd122796a067ba30d}
+
+
+\-Zmienna typu string, przechowuje znaki zawarte w tablicy. 
+
+
+
+\-Definicja w linii 37 pliku tablica\-\_\-asocjacyjna.\-hh.
+
+\hypertarget{class_tablica___asocjacyjna_a27041d1c629b781bbeeeafd19498ed05}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!tab\-\_\-key@{tab\-\_\-key}}
+\index{tab\-\_\-key@{tab\-\_\-key}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{tab\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}string$\ast$ {\bf \-Tablica\-\_\-\-Asocjacyjna\-::tab\-\_\-key}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica___asocjacyjna_a27041d1c629b781bbeeeafd19498ed05}
+
+
+\-Definicja w linii 43 pliku tablica\-\_\-asocjacyjna.\-hh.
+
+\hypertarget{class_tablica___asocjacyjna_a99cf05ef90ca71d2970fa462ed753cd9}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!tab\-\_\-pomoc@{tab\-\_\-pomoc}}
+\index{tab\-\_\-pomoc@{tab\-\_\-pomoc}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{tab\-\_\-pomoc}]{\setlength{\rightskip}{0pt plus 5cm}string$\ast$ {\bf \-Tablica\-\_\-\-Asocjacyjna\-::tab\-\_\-pomoc}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica___asocjacyjna_a99cf05ef90ca71d2970fa462ed753cd9}
+
+
+\-Definicja w linii 41 pliku tablica\-\_\-asocjacyjna.\-hh.
+
+\hypertarget{class_tablica___asocjacyjna_abf5b168ac5bcff6fb07870735fde78c8}{\index{\-Tablica\-\_\-\-Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}!tab\-\_\-temp@{tab\-\_\-temp}}
+\index{tab\-\_\-temp@{tab\-\_\-temp}!Tablica_Asocjacyjna@{\-Tablica\-\_\-\-Asocjacyjna}}
+\paragraph[{tab\-\_\-temp}]{\setlength{\rightskip}{0pt plus 5cm}string$\ast$ {\bf \-Tablica\-\_\-\-Asocjacyjna\-::tab\-\_\-temp}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica___asocjacyjna_abf5b168ac5bcff6fb07870735fde78c8}
+
+
+\-Definicja w linii 39 pliku tablica\-\_\-asocjacyjna.\-hh.
+

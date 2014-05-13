@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
+
+\author{Patryk Jędrzejko 200406}
+\title{Sprawozdanie z laboratorium - PAiMSI. \\Tablica Asocjacyjna.}
+
+\begin{document}
+\maketitle
+
+\section{Wprowadzenie}
+
+W danym ćwiczeniu należało zaimplementować tablicę asocjacyjną. Tablica Asocjacyjna jest to abstrakcyjny typ danych, dzięki któremu za pomocą klucza, bądź wartości możemy mieć dostęp do wartości, która kryje się właśnie pod danym kluczem.
+\\\\Jako klucze można wykorzystywać łańcuchy znaków, bądź też liczby lub znaki. Tablice asocjacyjne można zaimplementować na kilka sposób, np. jako drzewa poszukiwań lub tablice mieszające.
+\\\\Swoją implementację programu oparłem na strukturze tablicy dynamicznej, w której zawarte są dane, zaś klucze do tych elementów zawarte są w drugiej tablicy dynamicznej.
+
+\section{Wnioski:}
+\begin{itemize}
+  \item Zaimplementowanie takiej tablicy asocjacyjnej nie należy do łatwiejszych, jeśli nie wykorzystujemy standardowych bibliotek języka C++. Wykonanie takiej struktury za pomocą tablicy dynamicznej i przypisywanie danych oraz kluczów do takich tablic wydaję się najprostszym sposobem, lecz na pewno nie najszybszym.
+  \item Program po przetestowaniu działa poprawnie. W programie znajdują się funkcje: dodawania elementów do tablicy wraz z przypisaniem do niego klucza, usuwanie podanych elementów, wyszukiwanie zadanych elementów oraz wyswietlenie zawartych w tablicy danych. 
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
+
+\author{Patryk Jędrzejko 200406}
+\title{Sprawozdanie z laboratorium - PAiMSI. \\Tablica Haszująca.}
+
+\begin{document}
+\maketitle
+
+\section{Wprowadzenie}
+
+\indent W danym ćwiczeniu mieliśmy zaimplementować tablicę haszującą. Do stworzenia tablicy haszującej potrzebna jest implementacja funkcji haszującej (hash function), która dla danego zestawu danych będzie tworzyć liczbę zwaną haszem, która następnie będzie używana jako indeks w tablicy haszowanej. Wykorzystywane w tablicy haszującej haszowanie jest szybką metodą wyszukiwania danych w tablicach, jedynym jej minusem jest kolizyjność. To znaczy, że funkcja haszująca tworzy te same wartości dla wiely różnych danych.
+\\\\\indent Jeśli chodzi o złożoność obliczeniową takiej struktury, to w przypadku kiedy mogą występować duplikaty danych wartości, którę będą dopisywane na początek tablicy o indeksie równym haszowi, to klasa złożoności takiej struktury będzie wynosiła O(1).
+\\\\\indent Natomiast, gdy nie będziemy dopuszczać do duplikatów to musimy przejść przez wszystkie dane i jeśli takie nie zostaną znalezione to umieszczamy je na końcu tablicy. I wtedy, gdy nasza funkcja haszująca będzie dobrze dobrana, to rozmiar tablicy haszującej nie powinnien być dość spory i klasa złożoności wyniesie O(n). Gdzie n - rozmiar porcji.
+
+
+\section{Wnioski:}
+\begin{itemize}
+  \item Implementacja tablicy haszującej została wykonana w oparciu o tablicę asocjacyjną, również z wykorzystaniem tablicy dynamicznej. Jest to prosty sposób zaimplementowania tablicy haszującej, którą również można wykonać za pomocą listy jednokierunkowej.
+  \item Program po przetestowaniu działa poprawnie. W programie znajdują się funkcje: dodająca element do tablicy, usuwająca dany element, funkcja wyświetlająca całą tablicę haszującą oraz funkcja, która wyszukuje dany element w tablicy.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
+
+\author{Patryk Jędrzejko 200406}
+\title{Sprawozdanie z laboratorium - PAiMSI. \\Drzewo binarne.}
+
+\begin{document}
+\maketitle
+
+\section{Wprowadzenie}
+W danym ćwiczeniu mieliśmy napisać program implementujący drzewo binarne. A dokładniej drzewo poszukiwań binarnych BST
+\\\\Drzewo BST jest strukturą dynamiczną, która zawiera dane zbudowane z węzłów. Każdy węzeł może posiadać dwóch potomków oraz jednego przodka. Każdy węzeł jest również związany z kluczem.
+\\\\Dla drzewa BST koszt jakiejkolwiek operacji jest proporcjonalny do wielkości drzewa, im więcej danych jest w drzewie tym operacje wykonywane są wolniej.
+\\\\- Dla wersji optymistycznej koszt takiej operacji będzie wynosił O(log(n)).
+\\\\- Dla wersji pesymistycznej koszt wzrasta do O(n).
+
+
+\section{Wnioski:}
+\begin{itemize}
+  \item Implementacja drzewa binarnego jest mniej skomplikowana niż tablica asocjacyjna. Na pewno plusem drzewa jest to, iż można szybko wyszukać daną wartość za pośrednictwem klucza.
+  \item Program działa poprawnie, tzn. dodaje węzły do drzewa przypisując odpowiedni klucz podany przez użytkownika, usuwa podany element, wyszukuję element o zadanym kluczy oraz wyświetla całe drzewo.
+\end{itemize}
+
+\end{document}

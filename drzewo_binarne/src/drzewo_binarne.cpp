@@ -6,19 +6,19 @@
 
 using namespace std;
 
-Tablica_Asocjacyjna::Tablica_Asocjacyjna()
+Drzewo_Binarne::Drzewo_Binarne()
 {
 	korzen = NULL;
 	licznik = 0;
 }
 
-Tablica_Asocjacyjna::~Tablica_Asocjacyjna() // usuwanie listy z pamieci
+Drzewo_Binarne::~Drzewo_Binarne() // usuwanie listy z pamieci
 {
     while(korzen)
         delete(Usun(korzen));
 }
 
-void Tablica_Asocjacyjna::Usun_Drzewo(Drzewo * p) // usuwanie drzewa
+void Drzewo_Binarne::Usun_Drzewo(Drzewo * p) // usuwanie drzewa
 {
 	if(p)
 	{
@@ -28,17 +28,17 @@ void Tablica_Asocjacyjna::Usun_Drzewo(Drzewo * p) // usuwanie drzewa
 	}
 }
 
-void Tablica_Asocjacyjna::Ilosc_Wezlow()
+void Drzewo_Binarne::Ilosc_Wezlow()
 {
-    cout << "Liczba wezlow w Drzewie: " << licznik << endl;
+    cout << "Liczba wezlow w Drzewie: " << licznik << endl << endl;
 }
 
-bool Tablica_Asocjacyjna::Czy_Pusty()
+bool Drzewo_Binarne::Czy_Pusty()
 {
 	return !korzen;
 }
 
-int Tablica_Asocjacyjna::Min_klucz(Drzewo * korzen)
+int Drzewo_Binarne::Min_klucz(Drzewo * korzen)
 {
 	Drzewo * p = korzen;
 
@@ -47,7 +47,7 @@ int Tablica_Asocjacyjna::Min_klucz(Drzewo * korzen)
 	return p->klucz;
 }
 
-Drzewo * Tablica_Asocjacyjna::Min_klucz_adres(Drzewo * korzen)
+Drzewo * Drzewo_Binarne::Min_klucz_adres(Drzewo * korzen)
 {
 	Drzewo * p = korzen;
 
@@ -56,7 +56,7 @@ Drzewo * Tablica_Asocjacyjna::Min_klucz_adres(Drzewo * korzen)
 	return p;
 }
 
-int Tablica_Asocjacyjna::Max_klucz(Drzewo * korzen)
+int Drzewo_Binarne::Max_klucz(Drzewo * korzen)
 {
 	Drzewo * p = korzen;
 
@@ -65,7 +65,7 @@ int Tablica_Asocjacyjna::Max_klucz(Drzewo * korzen)
 	return p->klucz;
 }
 
-Drzewo * Tablica_Asocjacyjna::Max_klucz_adres(Drzewo * korzen)
+Drzewo * Drzewo_Binarne::Max_klucz_adres(Drzewo * korzen)
 {
 	Drzewo * p = korzen;
 
@@ -74,7 +74,7 @@ Drzewo * Tablica_Asocjacyjna::Max_klucz_adres(Drzewo * korzen)
 	return p;
 }
 
-Drzewo * Tablica_Asocjacyjna::Poprzedni_wezel(Drzewo * p)
+Drzewo * Drzewo_Binarne::Poprzedni_wezel(Drzewo * p)
 {
 	if(p->lewy)
 		return Max_klucz_adres(p->lewy);
@@ -90,7 +90,7 @@ Drzewo * Tablica_Asocjacyjna::Poprzedni_wezel(Drzewo * p)
 	return p;
 }
 
-Drzewo * Tablica_Asocjacyjna::Nastepny_wezel(Drzewo * p)
+Drzewo * Drzewo_Binarne::Nastepny_wezel(Drzewo * p)
 {
 	if(p->prawy)
 		return Min_klucz_adres(p->prawy);
@@ -106,7 +106,7 @@ Drzewo * Tablica_Asocjacyjna::Nastepny_wezel(Drzewo * p)
 	return p;
 }
 
-bool Tablica_Asocjacyjna::Dodaj_Wezel(Drzewo * wezel)
+bool Drzewo_Binarne::Dodaj_Wezel(Drzewo * wezel)
 {
 	Drzewo * r = NULL, * p = korzen;
 
@@ -137,7 +137,7 @@ bool Tablica_Asocjacyjna::Dodaj_Wezel(Drzewo * wezel)
 	return true;
 }
 
-Drzewo * Tablica_Asocjacyjna::Szukaj(int klucz)
+Drzewo * Drzewo_Binarne::Szukaj(int klucz)
 {
 	Drzewo * p = korzen;
 
@@ -150,7 +150,7 @@ Drzewo * Tablica_Asocjacyjna::Szukaj(int klucz)
 	return p;
 }
 
-Drzewo * Tablica_Asocjacyjna::Usun(Drzewo * p)
+Drzewo * Drzewo_Binarne::Usun(Drzewo * p)
 {
 	Drzewo * x = p->gora, * y;
 
@@ -182,14 +182,14 @@ Drzewo * Tablica_Asocjacyjna::Usun(Drzewo * p)
     return p;
 }
 
-void Tablica_Asocjacyjna::Wyswietl_Drzewo(Drzewo * p)
+void Drzewo_Binarne::Wyswietl_Drzewo(Drzewo * p)
 {
     cout << p->klucz << ": LEWA GALAZ-> ";
     if(p->lewy)
         cout << p->lewy->klucz;
     else
         cout << "BRAK";
-    cout << ": PRAWA GALAZ-> ";
+    cout << ", PRAWA GALAZ-> ";
     if(p->prawy)
         cout << p->prawy->klucz;
     else
@@ -201,7 +201,7 @@ void Tablica_Asocjacyjna::Wyswietl_Drzewo(Drzewo * p)
         Wyswietl_Drzewo(p->prawy);
 }
 
-void Tablica_Asocjacyjna::Przejdz_Przez_Drzewo(Drzewo * p)
+void Drzewo_Binarne::Przejdz_Przez_Drzewo(Drzewo * p)
 {
     if(p)
     {
@@ -209,4 +209,73 @@ void Tablica_Asocjacyjna::Przejdz_Przez_Drzewo(Drzewo * p)
         Przejdz_Przez_Drzewo(p->lewy);
         Przejdz_Przez_Drzewo(p->prawy);
     }
+}
+
+void Drzewo_Binarne::Dodaj(Drzewo_Binarne * temp)
+{
+    int ilosc;
+    Drzewo * p;
+
+    cout << "Dodanie nowego wezla do drzewa. " << endl;
+    cout << "--------------------------------" << endl;
+    temp->Ilosc_Wezlow();
+    
+    cout << "Wprowadz ilosc wezlow do stworzenia." << endl;
+    cout << "Nastepnie wprowadz odpowiednia liczbe kluczy: ";
+    cin >> ilosc;
+        
+    for(int i = 0; i < ilosc; i++)
+    {
+        p = new Drzewo;
+        cin >> p->klucz;
+        temp->Dodaj_Wezel(p);
+    }
+    
+    cout << endl;
+    temp->Wyswietl_Drzewo(temp->korzen);
+    temp->Ilosc_Wezlow();
+    cout << endl;
+}
+
+void Drzewo_Binarne::Usun(Drzewo_Binarne * temp)
+{
+    Drzewo * p;
+    int klucz;
+
+    cout << "Usun wezel drzewa o podanym kluczu: " << endl;
+    cout << "------------------------------------" << endl << endl;
+    cout << "Podaj klucz do usuwanego klucza: ";
+    cin >> klucz;
+    p = temp->Szukaj(klucz);
+
+    if(p)
+    {
+        delete temp->Usun(p);
+        if(temp->korzen)
+            temp->Przejdz_Przez_Drzewo(temp->korzen);
+        cout << "Liczba wezlow: ";
+        temp->Ilosc_Wezlow();
+    }
+    else
+        cout << "Brak wezla do usuniecia o zadanym kluczu!!! " << endl;
+}
+
+void Drzewo_Binarne::Szukaj_Wezla(Drzewo_Binarne * temp)
+{
+    int klucz;
+
+    cout << "Podaj klucz do wezla: ";
+    cin >> klucz;
+    cout << endl;
+
+    if(temp->Szukaj(klucz))
+        cout << "Wezel znajduje sie w Drzewie!" << endl << endl;
+    else
+        cout << "Brak wezla w Drzewie o zadanym kluczu!" << endl << endl;
+}
+
+void Drzewo_Binarne::Przejdz_Drzewo(Drzewo_Binarne * temp)
+{
+    cout << "Przechodzenie przez Drzewo: " << endl;
+    temp->Przejdz_Przez_Drzewo(temp->korzen);
 }

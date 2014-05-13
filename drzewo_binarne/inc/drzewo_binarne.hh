@@ -1,24 +1,46 @@
 #ifndef DRZEWO_BINARNE_HH_INCLUDED
 #define DRZEWO_BINARNE_HH_INCLUDED
-
+/*!
+ *\file
+ *\brief Funkcje zdefiniowane dla klasy Drzewo_Binarne.
+ */
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
 #include <ctime>
-
+/*!
+ *
+ *\brief Deklaracja klasy Drzewo_Binarne.
+ */
 using namespace std;
-
-// struktura typu wezla drzewa binarnego
+/*!
+ * Struktura wezlow drzewa binarnego.
+ */
 struct Drzewo
 {
-	Drzewo * gora, * lewy, * prawy;
-
+	/*!
+	* \brief Zmienna typu Drzewo *, przodek wezla tzw. parent.
+	*/
+	Drzewo * gora;
+	/*!
+	* \brief Zmienna typu Drzewo *, lewy potomek wezla.
+	*/
+	Drzewo * lewy;
+	/*!
+	* \brief Zmienna typu Drzewo *, prawy potomek wezla.
+	*/
+	Drzewo * prawy;
+	/*!
+	* \brief Zmienna typu int, przechowujaca wartosc klucza.
+	*/
 	int klucz;
-
+	/*!
+	* \brief Zmienna typu int, przechowujaca wartosc elementu dla danego klucza.
+	*/
 	int dane;
 };
 
-class Tablica_Asocjacyjna
+class Drzewo_Binarne
 {
 	public:
 
@@ -26,9 +48,9 @@ class Tablica_Asocjacyjna
 
 		int licznik; // zmienna zlicza ilosc wezlow
 
-		Tablica_Asocjacyjna(); // konstruktor
+		Drzewo_Binarne(); // konstruktor
 
-		~Tablica_Asocjacyjna(); // destruktor
+		~Drzewo_Binarne(); // destruktor
 
 		int Min_klucz(Drzewo * korzen);
 
@@ -57,5 +79,13 @@ class Tablica_Asocjacyjna
 		bool Dodaj_Wezel(Drzewo * wezel);
 
 		void Usun_Drzewo(Drzewo * p);
+
+		void Przejdz_Drzewo(Drzewo_Binarne * temp);
+
+		void Szukaj_Wezla(Drzewo_Binarne * temp);
+
+		void Usun(Drzewo_Binarne * temp);
+
+		void Dodaj(Drzewo_Binarne * temp);
 };
 #endif
