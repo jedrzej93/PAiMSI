@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Graf - BFS, DFS.: Dokumentacja klasy Graf</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Graf - BFS, DFS.
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Graf</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="Graf" -->
+<p><code>#include &lt;<a class="el" href="graf_8hh_source.html">graf.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla Graf:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_graf__coll__graph.png" border="0" usemap="#_graf_coll__map" alt="Collaboration graph"/></div>
+<map name="_graf_coll__map" id="_graf_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+
+<p><a href="class_graf-members.html">Lista wszystkich składowych.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a59138a26970664b24dbbe2481f4c63e3">Graf</a> (string nazwa_pliku)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ae279a6a2704442982a6f4bc4db5a28ea">Wyswietl_Graf</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a3447a562d3ac0bb21009068bbed51037">BFS</a> (string start)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ac2bd41a79316010abcb8e914d0cb6d98">DFS</a> (string start)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a4d49ad27c5f1d80b094d4ecb970e540a">Czysc_Odwiedzone</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">map&lt; string, vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb">Graf_lista</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">map&lt; string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a">Wezly</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="graf_8hh_source.html#l00022">22</a> pliku <a class="el" href="graf_8hh_source.html">graf.hh</a>.</p>
+</div><hr/><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a59138a26970664b24dbbe2481f4c63e3"></a><!-- doxytag: member="Graf::Graf" ref="a59138a26970664b24dbbe2481f4c63e3" args="(string nazwa_pliku)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graf.html#a59138a26970664b24dbbe2481f4c63e3">Graf::Graf</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nazwa_pliku</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Konstruktor klasy <a class="el" href="class_graf.html" title="Deklaracja klasy Graf - szukanie DFS, BFS.">Graf</a>. Konstruktor, ktory tworzy graf na podstawie wczytywanego pliku, w ktorym znajduje sie. </p>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00008">8</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">string</span> linijka;
+        fstream plik;
+        plik.open(nazwa_pliku.c_str());
+        <span class="keywordflow">if</span>(!plik)
+        {
+                cout &lt;&lt; <span class="stringliteral">&quot;Nie mozna otworzyc pliku!!!&quot;</span> &lt;&lt; endl;
+        }
+
+        <span class="keywordflow">while</span>(getline(plik, linijka))
+        {
+                <span class="keywordtype">string</span> wezel;
+                vector&lt;string&gt; temp;
+                istringstream iss(linijka);
+                <span class="keywordtype">string</span> wartosc;
+                <span class="keywordflow">while</span>(iss &gt;&gt; wartosc)
+                {
+                        temp.push_back(wartosc);
+                }
+                wezel = temp[0];
+                temp.erase(temp.begin());
+                <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[wezel] = temp;
+                <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[wezel] = <span class="keyword">false</span>;
+        }
+        <a class="code" href="class_graf.html#ae279a6a2704442982a6f4bc4db5a28ea" title="Funkcja wyswietlajaca wczytany graf. Funkcja wczytuje z pliku &quot;test.txt&quot; strukture danego grafu...">Wyswietl_Graf</a>();
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a3447a562d3ac0bb21009068bbed51037"></a><!-- doxytag: member="Graf::BFS" ref="a3447a562d3ac0bb21009068bbed51037" args="(string start)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a3447a562d3ac0bb21009068bbed51037">Graf::BFS</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>start</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Algorytm szukania BFS (Breadth-first search). Jest to algorytm przeszukiwania wszerz. BFS przeszukuje graf od zadanego wierzcholka i nastepnie odwiedza wszystkie wierzcholki ktore sa osiagalne dla tego wierzcholka. Algorytm ten zostal napisany z wykorzystaniem standardowych bibliotek. </p>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00065">65</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8cpp_source.html#l00014">main()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_graf.html#a4d49ad27c5f1d80b094d4ecb970e540a" title="Funkcja czyszczaca odwiedzone wezly w grafie.">Czysc_Odwiedzone</a>();
+        <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[start] = <span class="keyword">true</span>;
+        queue&lt;string&gt; wezly_bfs;
+        vector&lt;string&gt; odwiedzone;
+        odwiedzone.push_back(start);
+        <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator i = <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[start].begin(); i != <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[start].end(); i++)
+        {
+                wezly_bfs.push(*i);
+                <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[*i] = <span class="keyword">true</span>;
+        }
+        <span class="keywordflow">while</span>(!wezly_bfs.empty())
+        {
+                <span class="keywordtype">string</span> p = wezly_bfs.front();
+                wezly_bfs.pop();
+                odwiedzone.push_back(p);
+                <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator i = <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[p].begin(); i != <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[p].end(); i++)
+                {
+                        <span class="keywordflow">if</span>(!<a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[*i])
+                        {
+                                wezly_bfs.push(*i);
+                                <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[*i] = <span class="keyword">true</span>;
+                        }
+                }
+        }
+        cout &lt;&lt; <span class="stringliteral">&quot;Droga jaka przeszedl BFS podczas szukania: &quot;</span>;
+        <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator i = odwiedzone.begin(); i != odwiedzone.end(); i++)
+        {
+                cout &lt;&lt; *i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+        }
+        cout &lt;&lt; endl;
+}
+</pre></div>
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_graf_a3447a562d3ac0bb21009068bbed51037_icgraph.png" border="0" usemap="#class_graf_a3447a562d3ac0bb21009068bbed51037_icgraph" alt=""/></div>
+<map name="class_graf_a3447a562d3ac0bb21009068bbed51037_icgraph" id="class_graf_a3447a562d3ac0bb21009068bbed51037_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d49ad27c5f1d80b094d4ecb970e540a"></a><!-- doxytag: member="Graf::Czysc_Odwiedzone" ref="a4d49ad27c5f1d80b094d4ecb970e540a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a4d49ad27c5f1d80b094d4ecb970e540a">Graf::Czysc_Odwiedzone</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja czyszczaca odwiedzone wezly w grafie. </p>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00057">57</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(map&lt;string, bool&gt;::iterator i = <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>.begin(); i != <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>.end(); i++)
+        {
+                i-&gt;second = <span class="keyword">false</span>;
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ac2bd41a79316010abcb8e914d0cb6d98"></a><!-- doxytag: member="Graf::DFS" ref="ac2bd41a79316010abcb8e914d0cb6d98" args="(string start)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#ac2bd41a79316010abcb8e914d0cb6d98">Graf::DFS</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>start</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Algorytm szukania DFS (Depth-firstsearch). Jest to algorytm przeszukiwania w glab grafu. DFS przeszukuje graf odwiedzajac wszystkie krawedzie zaczynajac od zadanego wierzcholka. Po przejsciu wszystkich krawedzi wraca do danego wierzcholka z ktorego dany wierzcholek byl odwiedzony. </p>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00099">99</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8cpp_source.html#l00014">main()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_graf.html#a4d49ad27c5f1d80b094d4ecb970e540a" title="Funkcja czyszczaca odwiedzone wezly w grafie.">Czysc_Odwiedzone</a>();
+        <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[start] = <span class="keyword">true</span>;
+        stack&lt;string&gt; wezly_dfs;
+        vector&lt;string&gt; odwiedzone;
+        odwiedzone.push_back(start);
+        <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator i = <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[start].begin(); i != <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[start].end(); i++)
+        {
+                wezly_dfs.push(*i);
+                <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[*i] = <span class="keyword">true</span>;
+        }
+        <span class="keywordflow">while</span>(!wezly_dfs.empty())
+        {
+                <span class="keywordtype">string</span> p = wezly_dfs.top();
+                wezly_dfs.pop();
+                odwiedzone.push_back(p);
+                <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator i = <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[p].begin(); i != <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>[p].end(); i++)
+                {
+                        <span class="keywordflow">if</span>(!<a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[*i])
+                        {
+                                wezly_dfs.push(*i);
+                                <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>[*i] = <span class="keyword">true</span>;
+                        }
+                }
+        }
+        cout &lt;&lt; <span class="stringliteral">&quot;Droga jaka przeszedl DFS podczas szukania: &quot;</span>;
+        <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator i = odwiedzone.begin(); i != odwiedzone.end(); i++)
+        {
+                cout &lt;&lt; *i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+        }
+        cout &lt;&lt; endl;
+}</pre></div>
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_graf_ac2bd41a79316010abcb8e914d0cb6d98_icgraph.png" border="0" usemap="#class_graf_ac2bd41a79316010abcb8e914d0cb6d98_icgraph" alt=""/></div>
+<map name="class_graf_ac2bd41a79316010abcb8e914d0cb6d98_icgraph" id="class_graf_ac2bd41a79316010abcb8e914d0cb6d98_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae279a6a2704442982a6f4bc4db5a28ea"></a><!-- doxytag: member="Graf::Wyswietl_Graf" ref="ae279a6a2704442982a6f4bc4db5a28ea" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#ae279a6a2704442982a6f4bc4db5a28ea">Graf::Wyswietl_Graf</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja wyswietlajaca wczytany graf. Funkcja wczytuje z pliku "test.txt" strukture danego grafu, a nastepnie wyswietla go. </p>
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00036">36</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        cout &lt;&lt; <span class="stringliteral">&quot;Zawartosc grafu na liscie sasiedztwa: &quot;</span> &lt;&lt; endl;
+        <span class="keywordflow">for</span>(map&lt;<span class="keywordtype">string</span>, vector&lt;string&gt; &gt;::iterator i = <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>.begin(); i != <a class="code" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb" title="Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa warto...">Graf_lista</a>.end(); i++ )
+        {
+                cout &lt;&lt; i-&gt;first &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+                <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator j = i-&gt;second.begin(); j != i-&gt;second.end(); j++)
+                {
+                        cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; *j;
+                }
+                cout &lt;&lt; endl;
+        }
+                cout &lt;&lt; endl;
+                cout &lt;&lt; <span class="stringliteral">&quot;Odwiedzone wezly: &quot;</span> &lt;&lt; endl;
+                <span class="keywordflow">for</span>(map&lt;string, bool&gt;::iterator w = <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>.begin(); w != <a class="code" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a" title="Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz or...">Wezly</a>.end(); w++)
+                {       
+                        cout &lt;&lt; w-&gt;first &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; w-&gt;second &lt;&lt; endl;
+                }
+                cout &lt;&lt; endl;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="aaa7c380bf6a9ba69f5e62b01f1c8b2fb"></a><!-- doxytag: member="Graf::Graf_lista" ref="aaa7c380bf6a9ba69f5e62b01f1c8b2fb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, vector&lt;string&gt; &gt; <a class="el" href="class_graf.html#aaa7c380bf6a9ba69f5e62b01f1c8b2fb">Graf::Graf_lista</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa wartosci klucza i danej. </p>
+
+<p>Definicja w linii <a class="el" href="graf_8hh_source.html#l00028">28</a> pliku <a class="el" href="graf_8hh_source.html">graf.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22f37aaae1c0468096d3a281f661187a"></a><!-- doxytag: member="Graf::Wezly" ref="a22f37aaae1c0468096d3a281f661187a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, bool&gt; <a class="el" href="class_graf.html#a22f37aaae1c0468096d3a281f661187a">Graf::Wezly</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz oraz informacji czy dany wezel istnieje. </p>
+
+<p>Definicja w linii <a class="el" href="graf_8hh_source.html#l00033">33</a> pliku <a class="el" href="graf_8hh_source.html">graf.hh</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Thu May 22 2014 19:21:03 dla Graf - BFS, DFS. programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

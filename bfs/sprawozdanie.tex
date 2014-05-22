@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
+
+\author{Patryk Jędrzejko 200406}
+\title{Sprawozdanie z laboratorium - PAiMSI. \\Graf - algorytmy przeszukiwania BFS oraz DFS.}
+
+\begin{document}
+\maketitle
+
+\section{Wprowadzenie}
+W danym ćwiczeniu mieliśmy napisać program implementujący algorytmy przeszukiwań wszerz oraz w głąb, tzn.
+algortym BFS (Breadth-first search) oraz DFS (Depth-first search). Oba algorytmy miały być oparte o zaimplementowany graf. W moim przypadku graf jest tworzony na podstawie danych zawartych w pliku, w którym
+znajdują się liczby tworzące dany graf, tym plikiem jest test.txt zawarty w folderze programu. Budowa grafu jak i 
+algorytmów przeszukiwań jest oparta na liście sąsiedztwa oraz wykorzystywane są standardowe biblioteki STL, w tym przypadku vector, map, queue oraz stack.
+\\\\Algorytm BFS - jest to algorytm, który przeszukuje graf wszerz, startuje od podanego wierzchołka i kolejno 
+przeszukuje kolejne wierzchołki, które są w zasięgu wierzchołka początkowego. Algorytm ten wyszkuje najkrótszą drogę w grafie.
+\\ Dla algorytmu BFS złożoność pamięciowa w tym przypadku dla struktury listy sąsiedztwa wynosi O(|V|+|E|), gdzie V-to liczba węzłów a E-liczba krawędzi.
+\\Natomiast złożoność czasowa dla przeszukiwania wszerz wynosi O(|V|+|E|).
+\\\\Algorytm DFS - algorytm przeszukiwania grafu, który przeszukuje w głąb, tzn. bada wszystkie krawędzie wychodzące z zadanego wierzchołka początkowego, po zbadaniu wszystkich krawędzi wychodzących z tego wierzchołka DFS powraca do wierzchołka, z którego dany wierzchołek został odwiedzony.
+\\W tym przypadku złożoność obliczeniowa jest mniejsza niż złożoność przeszukiwania wszerz, ponieważ w tym algorytmie potrzebuje zapamiętać tylko ścieżkę od wierzchołka początkowego, czyli od korzenia. A w przypadku BFS musimy zapamiętać wszystkie węzły w danej odległości od korzenia. Zatem złożoność pamięciowa wynosi O(h), gdzie h - dłogość najdłuższej prostej ścieżki.
+\\Zaś złożoność czasowa wynosi O(|V|+|E|), ponieważ algorytm musi odwiedzić wszystkie wierzchołki oraz krawędzie.
+
+\section{Wnioski:}
+\begin{itemize}
+  \item Porównując czasy dla obu algorytmów zauważyłem iż algorytm DFS jest nieznacznie szybszy od algorytmu BFS. Dla większej ilości danych w grafie różnica czasowa pomiędzy tymi algorytmami powinna być znaczniej większa. 
+  \item Program działa poprawnie. Program jest wykonywany w trybie wsadowym i wyświetla cały proces, tzn. zostaje wyświetlony graf zawarty w pliku test.txt następnie jakie węzły zostały odwiedzone podczas przeszukiwań oraz poszczególne ścieżki przeszykiwań algorytmów DFS i BFS oraz poszczególne czasy wykonania algorytmów.
+\end{itemize}
+
+\end{document}

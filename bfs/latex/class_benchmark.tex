@@ -1,0 +1,187 @@
+\hypertarget{class_benchmark}{\section{\-Dokumentacja klasy \-Benchmark}
+\label{class_benchmark}\index{\-Benchmark@{\-Benchmark}}
+}
+
+
+{\ttfamily \#include $<$benchmark.\-hh$>$}
+
+
+
+\-Diagram współpracy dla \-Benchmark\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_benchmark_acfca497989836a688d44477802e822d8}{\-Benchmark} ()
+\item 
+void \hyperlink{class_benchmark_ac55ca7809108ed22a644d6d41071d187}{\-Start} ()
+\item 
+void \hyperlink{class_benchmark_aa3ca94f8984beb0ecbfa77d50cbe5c3a}{\-Stop} ()
+\item 
+double \hyperlink{class_benchmark_aee4890492aa777816da1d63fa7a8c4c2}{\-Czas\-\_\-\-Operacji} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+timeval \hyperlink{class_benchmark_a461847eb9a01e511e19af6cd7bcc057e}{czas1}
+\item 
+timeval \hyperlink{class_benchmark_a56ec92a30b650825403d14907a321eea}{czas2}
+\item 
+double \hyperlink{class_benchmark_accd4af9649210ce216db513c0676c401}{\-Czas\-Operacji}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Klasa \hyperlink{class_benchmark}{\-Benchmark} w owej klasie definiujemy funkcje odpowiedzialne za wykonanie algorytmu benchmarku, ktory zwraca nam czas w ms jaki uplynal podczas wykonywania operacji. 
+
+\-Definicja w linii 21 pliku benchmark.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_benchmark_acfca497989836a688d44477802e822d8}{\index{\-Benchmark@{\-Benchmark}!\-Benchmark@{\-Benchmark}}
+\index{\-Benchmark@{\-Benchmark}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Benchmark}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Benchmark\-::\-Benchmark} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_benchmark_acfca497989836a688d44477802e822d8}
+
+
+\-Konstruktor klasy \hyperlink{class_benchmark}{\-Benchmark}. \-Konstruktor jest funkcja bezparametryczna. 
+
+
+
+\-Definicja w linii 37 pliku benchmark.\-hh.
+
+
+\begin{DoxyCode}
+{}
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_benchmark_aee4890492aa777816da1d63fa7a8c4c2}{\index{\-Benchmark@{\-Benchmark}!\-Czas\-\_\-\-Operacji@{\-Czas\-\_\-\-Operacji}}
+\index{\-Czas\-\_\-\-Operacji@{\-Czas\-\_\-\-Operacji}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Czas\-\_\-\-Operacji}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Benchmark\-::\-Czas\-\_\-\-Operacji} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_aee4890492aa777816da1d63fa7a8c4c2}
+
+
+\-Funkcja zawieracaja czas operacji zegaru. \-Funkcja zwraca nam czas calkowity wykonanej operacji w ms. 
+
+
+
+\-Definicja w linii 24 pliku benchmark.\-cpp.
+
+
+
+\-Odwołania w main().
+
+
+\begin{DoxyCode}
+{
+        CzasOperacji = (czas2.tv_sec - czas1.tv_sec)*1000.0;
+        CzasOperacji += (czas2.tv_usec - czas1.tv_usec) / 1000.0;
+        cout << "Czas znalezienia: " << CzasOperacji << "ms." << endl;
+
+        return CzasOperacji;
+}\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_benchmark_ac55ca7809108ed22a644d6d41071d187}{\index{\-Benchmark@{\-Benchmark}!\-Start@{\-Start}}
+\index{\-Start@{\-Start}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Benchmark\-::\-Start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_ac55ca7809108ed22a644d6d41071d187}
+
+
+\-Funkcja startujaca zegar. \-Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki danymi wczytanymi z pliku. 
+
+
+
+\-Definicja w linii 14 pliku benchmark.\-cpp.
+
+
+
+\-Odwołania w main().
+
+
+\begin{DoxyCode}
+{
+        gettimeofday(&czas1, NULL);
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_benchmark_aa3ca94f8984beb0ecbfa77d50cbe5c3a}{\index{\-Benchmark@{\-Benchmark}!\-Stop@{\-Stop}}
+\index{\-Stop@{\-Stop}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Benchmark\-::\-Stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_aa3ca94f8984beb0ecbfa77d50cbe5c3a}
+
+
+\-Funkcja zatrzymujaca zegar. \-Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kolejki danymi wczytanymi z pliku. 
+
+
+
+\-Definicja w linii 19 pliku benchmark.\-cpp.
+
+
+
+\-Odwołania w main().
+
+
+\begin{DoxyCode}
+{
+        gettimeofday(&czas2, NULL);
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_benchmark_a461847eb9a01e511e19af6cd7bcc057e}{\index{\-Benchmark@{\-Benchmark}!czas1@{czas1}}
+\index{czas1@{czas1}!Benchmark@{\-Benchmark}}
+\subsubsection[{czas1}]{\setlength{\rightskip}{0pt plus 5cm}timeval {\bf \-Benchmark\-::czas1}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_benchmark_a461847eb9a01e511e19af6cd7bcc057e}
+
+
+\-Zmienne typu timeval, zmienne przyjmujace wartosci czasu start i stop. 
+
+
+
+\-Definicja w linii 27 pliku benchmark.\-hh.
+
+\hypertarget{class_benchmark_a56ec92a30b650825403d14907a321eea}{\index{\-Benchmark@{\-Benchmark}!czas2@{czas2}}
+\index{czas2@{czas2}!Benchmark@{\-Benchmark}}
+\subsubsection[{czas2}]{\setlength{\rightskip}{0pt plus 5cm}timeval {\bf \-Benchmark\-::czas2}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_benchmark_a56ec92a30b650825403d14907a321eea}
+
+
+\-Definicja w linii 27 pliku benchmark.\-hh.
+
+\hypertarget{class_benchmark_accd4af9649210ce216db513c0676c401}{\index{\-Benchmark@{\-Benchmark}!\-Czas\-Operacji@{\-Czas\-Operacji}}
+\index{\-Czas\-Operacji@{\-Czas\-Operacji}!Benchmark@{\-Benchmark}}
+\subsubsection[{\-Czas\-Operacji}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Benchmark\-::\-Czas\-Operacji}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_benchmark_accd4af9649210ce216db513c0676c401}
+
+
+\-Zmienna typu double, zawiera wartosc czasu operacji. 
+
+
+
+\-Definicja w linii 31 pliku benchmark.\-hh.
+

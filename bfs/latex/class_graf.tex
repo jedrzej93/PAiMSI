@@ -1,0 +1,300 @@
+\hypertarget{class_graf}{\section{\-Dokumentacja klasy \-Graf}
+\label{class_graf}\index{\-Graf@{\-Graf}}
+}
+
+
+{\ttfamily \#include $<$graf.\-hh$>$}
+
+
+
+\-Diagram współpracy dla \-Graf\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graf_a59138a26970664b24dbbe2481f4c63e3}{\-Graf} (string nazwa\-\_\-pliku)
+\item 
+void \hyperlink{class_graf_ae279a6a2704442982a6f4bc4db5a28ea}{\-Wyswietl\-\_\-\-Graf} ()
+\item 
+void \hyperlink{class_graf_a3447a562d3ac0bb21009068bbed51037}{\-B\-F\-S} (string start)
+\item 
+void \hyperlink{class_graf_ac2bd41a79316010abcb8e914d0cb6d98}{\-D\-F\-S} (string start)
+\item 
+void \hyperlink{class_graf_a4d49ad27c5f1d80b094d4ecb970e540a}{\-Czysc\-\_\-\-Odwiedzone} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, vector$<$ string $>$ $>$ \hyperlink{class_graf_aaa7c380bf6a9ba69f5e62b01f1c8b2fb}{\-Graf\-\_\-lista}
+\item 
+map$<$ string, bool $>$ \hyperlink{class_graf_a22f37aaae1c0468096d3a281f661187a}{\-Wezly}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 22 pliku graf.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_graf_a59138a26970664b24dbbe2481f4c63e3}{\index{\-Graf@{\-Graf}!\-Graf@{\-Graf}}
+\index{\-Graf@{\-Graf}!Graf@{\-Graf}}
+\subsubsection[{\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Graf\-::\-Graf} (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa\-\_\-pliku}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a59138a26970664b24dbbe2481f4c63e3}
+
+
+\-Konstruktor klasy \hyperlink{class_graf}{\-Graf}. \-Konstruktor, ktory tworzy graf na podstawie wczytywanego pliku, w ktorym znajduje sie. 
+
+
+
+\-Definicja w linii 8 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        string linijka;
+        fstream plik;
+        plik.open(nazwa_pliku.c_str());
+        if(!plik)
+        {
+                cout << "Nie mozna otworzyc pliku!!!" << endl;
+        }
+
+        while(getline(plik, linijka))
+        {
+                string wezel;
+                vector<string> temp;
+                istringstream iss(linijka);
+                string wartosc;
+                while(iss >> wartosc)
+                {
+                        temp.push_back(wartosc);
+                }
+                wezel = temp[0];
+                temp.erase(temp.begin());
+                Graf_lista[wezel] = temp;
+                Wezly[wezel] = false;
+        }
+        Wyswietl_Graf();
+}
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_graf_a3447a562d3ac0bb21009068bbed51037}{\index{\-Graf@{\-Graf}!\-B\-F\-S@{\-B\-F\-S}}
+\index{\-B\-F\-S@{\-B\-F\-S}!Graf@{\-Graf}}
+\subsubsection[{\-B\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Graf\-::\-B\-F\-S} (
+\begin{DoxyParamCaption}
+\item[{string}]{start}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a3447a562d3ac0bb21009068bbed51037}
+
+
+\-Algorytm szukania \-B\-F\-S (\-Breadth-\/first search). \-Jest to algorytm przeszukiwania wszerz. \-B\-F\-S przeszukuje graf od zadanego wierzcholka i nastepnie odwiedza wszystkie wierzcholki ktore sa osiagalne dla tego wierzcholka. \-Algorytm ten zostal napisany z wykorzystaniem standardowych bibliotek. 
+
+
+
+\-Definicja w linii 65 pliku graf.\-cpp.
+
+
+
+\-Odwołania w main().
+
+
+\begin{DoxyCode}
+{
+        Czysc_Odwiedzone();
+        Wezly[start] = true;
+        queue<string> wezly_bfs;
+        vector<string> odwiedzone;
+        odwiedzone.push_back(start);
+        for(vector<string>::iterator i = Graf_lista[start].begin(); i != 
+      Graf_lista[start].end(); i++)
+        {
+                wezly_bfs.push(*i);
+                Wezly[*i] = true;
+        }
+        while(!wezly_bfs.empty())
+        {
+                string p = wezly_bfs.front();
+                wezly_bfs.pop();
+                odwiedzone.push_back(p);
+                for(vector<string>::iterator i = Graf_lista[p].begin(); i != 
+      Graf_lista[p].end(); i++)
+                {
+                        if(!Wezly[*i])
+                        {
+                                wezly_bfs.push(*i);
+                                Wezly[*i] = true;
+                        }
+                }
+        }
+        cout << "Droga jaka przeszedl BFS podczas szukania: ";
+        for(vector<string>::iterator i = odwiedzone.begin(); i != odwiedzone.
+      end(); i++)
+        {
+                cout << *i << " ";
+        }
+        cout << endl;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a4d49ad27c5f1d80b094d4ecb970e540a}{\index{\-Graf@{\-Graf}!\-Czysc\-\_\-\-Odwiedzone@{\-Czysc\-\_\-\-Odwiedzone}}
+\index{\-Czysc\-\_\-\-Odwiedzone@{\-Czysc\-\_\-\-Odwiedzone}!Graf@{\-Graf}}
+\subsubsection[{\-Czysc\-\_\-\-Odwiedzone}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Graf\-::\-Czysc\-\_\-\-Odwiedzone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a4d49ad27c5f1d80b094d4ecb970e540a}
+
+
+\-Funkcja czyszczaca odwiedzone wezly w grafie. 
+
+
+
+\-Definicja w linii 57 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        for(map<string, bool>::iterator i = Wezly.begin(); i != Wezly.end(); i+
+      +)
+        {
+                i->second = false;
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_graf_ac2bd41a79316010abcb8e914d0cb6d98}{\index{\-Graf@{\-Graf}!\-D\-F\-S@{\-D\-F\-S}}
+\index{\-D\-F\-S@{\-D\-F\-S}!Graf@{\-Graf}}
+\subsubsection[{\-D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Graf\-::\-D\-F\-S} (
+\begin{DoxyParamCaption}
+\item[{string}]{start}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ac2bd41a79316010abcb8e914d0cb6d98}
+
+
+\-Algorytm szukania \-D\-F\-S (\-Depth-\/firstsearch). \-Jest to algorytm przeszukiwania w glab grafu. \-D\-F\-S przeszukuje graf odwiedzajac wszystkie krawedzie zaczynajac od zadanego wierzcholka. \-Po przejsciu wszystkich krawedzi wraca do danego wierzcholka z ktorego dany wierzcholek byl odwiedzony. 
+
+
+
+\-Definicja w linii 99 pliku graf.\-cpp.
+
+
+
+\-Odwołania w main().
+
+
+\begin{DoxyCode}
+{
+        Czysc_Odwiedzone();
+        Wezly[start] = true;
+        stack<string> wezly_dfs;
+        vector<string> odwiedzone;
+        odwiedzone.push_back(start);
+        for(vector<string>::iterator i = Graf_lista[start].begin(); i != 
+      Graf_lista[start].end(); i++)
+        {
+                wezly_dfs.push(*i);
+                Wezly[*i] = true;
+        }
+        while(!wezly_dfs.empty())
+        {
+                string p = wezly_dfs.top();
+                wezly_dfs.pop();
+                odwiedzone.push_back(p);
+                for(vector<string>::iterator i = Graf_lista[p].begin(); i != 
+      Graf_lista[p].end(); i++)
+                {
+                        if(!Wezly[*i])
+                        {
+                                wezly_dfs.push(*i);
+                                Wezly[*i] = true;
+                        }
+                }
+        }
+        cout << "Droga jaka przeszedl DFS podczas szukania: ";
+        for(vector<string>::iterator i = odwiedzone.begin(); i != odwiedzone.
+      end(); i++)
+        {
+                cout << *i << " ";
+        }
+        cout << endl;
+}\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_ae279a6a2704442982a6f4bc4db5a28ea}{\index{\-Graf@{\-Graf}!\-Wyswietl\-\_\-\-Graf@{\-Wyswietl\-\_\-\-Graf}}
+\index{\-Wyswietl\-\_\-\-Graf@{\-Wyswietl\-\_\-\-Graf}!Graf@{\-Graf}}
+\subsubsection[{\-Wyswietl\-\_\-\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Graf\-::\-Wyswietl\-\_\-\-Graf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ae279a6a2704442982a6f4bc4db5a28ea}
+
+
+\-Funkcja wyswietlajaca wczytany graf. \-Funkcja wczytuje z pliku \char`\"{}test.\-txt\char`\"{} strukture danego grafu, a nastepnie wyswietla go. 
+
+
+
+\-Definicja w linii 36 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        cout << "Zawartosc grafu na liscie sasiedztwa: " << endl;
+        for(map<string, vector<string> >::iterator i = Graf_lista.begin(); i !=
+       Graf_lista.end(); i++ )
+        {
+                cout << i->first << " ";
+                for(vector<string>::iterator j = i->second.begin(); j != i->
+      second.end(); j++)
+                {
+                        cout << " " << *j;
+                }
+                cout << endl;
+        }
+                cout << endl;
+                cout << "Odwiedzone wezly: " << endl;
+                for(map<string, bool>::iterator w = Wezly.begin(); w != Wezly.
+      end(); w++)
+                {       
+                        cout << w->first << " " << w->second << endl;
+                }
+                cout << endl;
+}
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_graf_aaa7c380bf6a9ba69f5e62b01f1c8b2fb}{\index{\-Graf@{\-Graf}!\-Graf\-\_\-lista@{\-Graf\-\_\-lista}}
+\index{\-Graf\-\_\-lista@{\-Graf\-\_\-lista}!Graf@{\-Graf}}
+\subsubsection[{\-Graf\-\_\-lista}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ string, vector$<$string$>$ $>$ {\bf \-Graf\-::\-Graf\-\_\-lista}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_graf_aaa7c380bf6a9ba69f5e62b01f1c8b2fb}
+
+
+\-Kontener asocjacyjny zawierajacy dane dotyczace grafu na liscie sasiedztwa, w ktorym zawarte sa wartosci klucza i danej. 
+
+
+
+\-Definicja w linii 28 pliku graf.\-hh.
+
+\hypertarget{class_graf_a22f37aaae1c0468096d3a281f661187a}{\index{\-Graf@{\-Graf}!\-Wezly@{\-Wezly}}
+\index{\-Wezly@{\-Wezly}!Graf@{\-Graf}}
+\subsubsection[{\-Wezly}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ string, bool$>$ {\bf \-Graf\-::\-Wezly}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_graf_a22f37aaae1c0468096d3a281f661187a}
+
+
+\-Kontener asocjacyjny zawierajacy dane dotyczacych wezlow grafu, w ktorym zawarte sa wartosci klucz oraz informacji czy dany wezel istnieje. 
+
+
+
+\-Definicja w linii 33 pliku graf.\-hh.
+

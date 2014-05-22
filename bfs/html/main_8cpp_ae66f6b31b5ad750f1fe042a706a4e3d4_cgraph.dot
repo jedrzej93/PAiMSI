@@ -1,0 +1,17 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Benchmark::Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_benchmark.html#ac55ca7809108ed22a644d6d41071d187",tooltip="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Graf::BFS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a3447a562d3ac0bb21009068bbed51037",tooltip="Algorytm szukania BFS (Breadth-first search). Jest to algorytm przeszukiwania wszerz. BFS przeszukuje graf od zadanego wierzcholka i nastepnie odwiedza wszystkie wierzcholki ktore sa osiagalne dla tego wierzcholka. Algorytm ten zostal napisany z wykorzystaniem standardowych bibliotek."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Benchmark::Stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a",tooltip="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Benchmark::Czas_Operacji",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2",tooltip="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Graf::DFS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#ac2bd41a79316010abcb8e914d0cb6d98",tooltip="Algorytm szukania DFS (Depth-firstsearch). Jest to algorytm przeszukiwania w glab grafu..."];
+}
