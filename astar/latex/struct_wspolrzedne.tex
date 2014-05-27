@@ -1,0 +1,109 @@
+\hypertarget{struct_wspolrzedne}{\section{\-Dokumentacja struktury \-Wspolrzedne}
+\label{struct_wspolrzedne}\index{\-Wspolrzedne@{\-Wspolrzedne}}
+}
+
+
+\-Diagram współpracy dla \-Wspolrzedne\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_wspolrzedne_ac2806dd6a5335ed83c314d5a5388e5ed}{operator==} (\hyperlink{struct_wspolrzedne}{\-Wspolrzedne} wsp)
+\item 
+bool \hyperlink{struct_wspolrzedne_afb597b0f04d5c4c28bf4eb9a056050bb}{operator!=} (\hyperlink{struct_wspolrzedne}{\-Wspolrzedne} wsp)
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_wspolrzedne_a027622be3ecb22703f46714b2c2cb6b5}{x}
+\item 
+int \hyperlink{struct_wspolrzedne_a0c7f103c4e9929641316706fea318d1d}{y}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 38 pliku astar.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{struct_wspolrzedne_afb597b0f04d5c4c28bf4eb9a056050bb}{\index{\-Wspolrzedne@{\-Wspolrzedne}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wspolrzedne@{\-Wspolrzedne}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Wspolrzedne\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Wspolrzedne}}]{wsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{struct_wspolrzedne_afb597b0f04d5c4c28bf4eb9a056050bb}
+
+
+\-Zdefiniowany operator relacji. 
+
+
+
+\-Definicja w linii 59 pliku astar.\-hh.
+
+
+\begin{DoxyCode}
+        {
+                return !(*this == wsp);
+        }
+\end{DoxyCode}
+\hypertarget{struct_wspolrzedne_ac2806dd6a5335ed83c314d5a5388e5ed}{\index{\-Wspolrzedne@{\-Wspolrzedne}!operator==@{operator==}}
+\index{operator==@{operator==}!Wspolrzedne@{\-Wspolrzedne}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Wspolrzedne\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Wspolrzedne}}]{wsp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{struct_wspolrzedne_ac2806dd6a5335ed83c314d5a5388e5ed}
+
+
+\-Zdefiniowany operator porownania. \-Jezeli zmienne x i y sa rowne wspolrzednym tych zmiennych to zwracana jest wartosc niezerowa. 
+
+
+
+\-Definicja w linii 52 pliku astar.\-hh.
+
+
+
+\-Odwołuje się do x i y.
+
+
+\begin{DoxyCode}
+        {
+                return x == wsp.x && y == wsp.y;
+        }
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{struct_wspolrzedne_a027622be3ecb22703f46714b2c2cb6b5}{\index{\-Wspolrzedne@{\-Wspolrzedne}!x@{x}}
+\index{x@{x}!Wspolrzedne@{\-Wspolrzedne}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Wspolrzedne\-::x}}}\label{struct_wspolrzedne_a027622be3ecb22703f46714b2c2cb6b5}
+
+
+\-Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x. 
+
+
+
+\-Definicja w linii 43 pliku astar.\-hh.
+
+
+
+\-Odwołania w \-Graf\-::\-A\-Star(), \-Graf\-::\-Oblicz\-\_\-\-F(), \-Graf\-::\-Oblicz\-\_\-\-H(), operator==(), \-Graf\-::\-Stworz\-\_\-\-Siatke() i \-Graf\-::\-Wyswietl\-\_\-\-Rozwiazanie().
+
+\hypertarget{struct_wspolrzedne_a0c7f103c4e9929641316706fea318d1d}{\index{\-Wspolrzedne@{\-Wspolrzedne}!y@{y}}
+\index{y@{y}!Wspolrzedne@{\-Wspolrzedne}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Wspolrzedne\-::y}}}\label{struct_wspolrzedne_a0c7f103c4e9929641316706fea318d1d}
+
+
+\-Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y. 
+
+
+
+\-Definicja w linii 47 pliku astar.\-hh.
+
+
+
+\-Odwołania w \-Graf\-::\-A\-Star(), \-Graf\-::\-Oblicz\-\_\-\-F(), \-Graf\-::\-Oblicz\-\_\-\-H(), operator==(), \-Graf\-::\-Stworz\-\_\-\-Siatke() i \-Graf\-::\-Wyswietl\-\_\-\-Rozwiazanie().
+

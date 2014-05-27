@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Algorytm A*: Plik źródłowy astar.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Algorytm A*
+   
+   </div>
+   <div id="projectbrief">v1.0</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">astar.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="astar_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef ASTAR_HH_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define ASTAR_HH_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;map&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;math.h&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a><a class="code" href="astar_8hh.html#a771583e9e87d083150a9a329f44c5f7e">00013</a> <span class="preprocessor">#define WYSOKOSC 10</span>
+<a name="l00014"></a><a class="code" href="astar_8hh.html#acd0b90760065a9ea20a0bf6e9f01289c">00014</a> <span class="preprocessor"></span><span class="preprocessor">#define SZEROKOSC 10</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="keyword">using namespace </span>std;
+<a name="l00023"></a><a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2">00023</a> <span class="keyword">typedef</span> <span class="keyword">enum</span>
+<a name="l00024"></a>00024 {
+<a name="l00025"></a><a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e">00025</a>         <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e">Wierzcholek_Typ_F</a>, 
+<a name="l00026"></a>00026         
+<a name="l00027"></a><a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e">00027</a>         <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e">Wierzcholek_Typ_W</a>, 
+<a name="l00028"></a>00028         
+<a name="l00029"></a><a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88">00029</a>         <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88">Wierzcholek_Typ_P</a>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 }<a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2" title="Deklaracja zmiennych przechowujacych ustalone wartosci dla odpowiedniego typu danych. F - dla wierzcholkow wolnych, W - dla wierzcholkow znajdujacych sie w siatce oraz P - wierzcholki, ktore sa rozwiazaniami.">Wierzcholek_Typ</a>;
+<a name="l00038"></a><a class="code" href="struct_wspolrzedne.html">00038</a> <span class="keyword">struct </span><a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a>
+<a name="l00039"></a>00039 {
+<a name="l00043"></a><a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5">00043</a>         <span class="keywordtype">int</span> <a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>;
+<a name="l00047"></a><a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d">00047</a>         <span class="keywordtype">int</span> <a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>;
+<a name="l00052"></a><a class="code" href="struct_wspolrzedne.html#ac2806dd6a5335ed83c314d5a5388e5ed">00052</a>         <span class="keywordtype">bool</span> operator == (<a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> wsp)
+<a name="l00053"></a>00053         {
+<a name="l00054"></a>00054                 <span class="keywordflow">return</span> x == wsp.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> &amp;&amp; y == wsp.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>;
+<a name="l00055"></a>00055         }
+<a name="l00059"></a><a class="code" href="struct_wspolrzedne.html#afb597b0f04d5c4c28bf4eb9a056050bb">00059</a>         <span class="keywordtype">bool</span> operator != (<a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> wsp)
+<a name="l00060"></a>00060         {
+<a name="l00061"></a>00061                 <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == wsp);
+<a name="l00062"></a>00062         }
+<a name="l00063"></a>00063 };
+<a name="l00068"></a><a class="code" href="struct_wierzcholek.html">00068</a> <span class="keyword">struct </span><a class="code" href="struct_wierzcholek.html" title="Struktura Wierzcholek. Przechowuje deklaracje zwiazane z ta klasa.">Wierzcholek</a>
+<a name="l00069"></a>00069 {
+<a name="l00073"></a><a class="code" href="struct_wierzcholek.html#ac812fe482bda5f924cf38d48340aa018">00073</a>         <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2" title="Deklaracja zmiennych przechowujacych ustalone wartosci dla odpowiedniego typu danych. F - dla wierzcholkow wolnych, W - dla wierzcholkow znajdujacych sie w siatce oraz P - wierzcholki, ktore sa rozwiazaniami.">Wierzcholek_Typ</a> <a class="code" href="struct_wierzcholek.html#ac812fe482bda5f924cf38d48340aa018" title="Zmienna typu Wierzcholek_Typ, okreslajaca jaki typ wierzcholka bedzie wykorzystywany.">typ</a>;
+<a name="l00077"></a><a class="code" href="struct_wierzcholek.html#ac7bb6b2e9a5254904bc67b33b76d34e4">00077</a>         <span class="keywordtype">int</span> f, g, <a class="code" href="struct_wierzcholek.html#ac7bb6b2e9a5254904bc67b33b76d34e4">h</a>;
+<a name="l00081"></a><a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2">00081</a>         <a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> <a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>;
+<a name="l00085"></a><a class="code" href="struct_wierzcholek.html#a5333fedf15fe355de30763ff2be59eaf">00085</a>         <a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> <a class="code" href="struct_wierzcholek.html#a5333fedf15fe355de30763ff2be59eaf" title="Zmienna typu Wspolrzedne zawiera informacje o punktcie przed wezlem.">rodzic</a>;
+<a name="l00086"></a>00086 };
+<a name="l00090"></a><a class="code" href="class_graf.html">00090</a> <span class="keyword">class </span><a class="code" href="class_graf.html" title="Deklaracja klasy Astar.">Graf</a>
+<a name="l00091"></a>00091 {
+<a name="l00096"></a><a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca">00096</a>                 <a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> <a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>;
+<a name="l00100"></a><a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a">00100</a>                 <a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>;
+<a name="l00107"></a>00107                 <span class="keywordtype">void</span> Stworz_Siatke();
+<a name="l00113"></a>00113                 <span class="keywordtype">void</span> Ustaw_Wspolrzedne();
+<a name="l00118"></a>00118                 <span class="keywordtype">void</span> Oblicz_H();
+<a name="l00123"></a>00123                 <span class="keywordtype">void</span> Oblicz_G();
+<a name="l00130"></a>00130                 <span class="keywordtype">void</span> Oblicz_F();
+<a name="l00134"></a>00134                 <span class="keywordtype">void</span> Oblicz_H(<a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> _w);
+<a name="l00138"></a><a class="code" href="class_graf.html#af297ae5bd3d0622add85e00fc746cdad">00138</a>                 <span class="keywordtype">void</span> <a class="code" href="class_graf.html#af297ae5bd3d0622add85e00fc746cdad" title="Funkcja obliczajaca droge o zadanym punkcie.">Oblicz_G</a>(<a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> _w) {}
+<a name="l00142"></a>00142                 <span class="keywordtype">void</span> Oblicz_F(<a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> _w);
+<a name="l00148"></a>00148                 <span class="keywordtype">void</span> Zapisz_Graf_Do_Pliku();
+<a name="l00152"></a>00152                 <span class="keywordtype">void</span> Wyswietl_Rozwiazanie();
+<a name="l00153"></a>00153         
+<a name="l00154"></a>00154         <span class="keyword">public</span>:
+<a name="l00158"></a><a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f">00158</a>                 vector&lt; vector&lt;Wierzcholek&gt; &gt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>;
+<a name="l00164"></a>00164                 <a class="code" href="class_graf.html" title="Deklaracja klasy Astar.">Graf</a>();
+<a name="l00170"></a><a class="code" href="class_graf.html#a87780917bdeff5239d6c235878dd3a81">00170</a>                 <span class="keyword">friend</span> ostream&amp; operator &lt;&lt; (ostream&amp; wyjscie, <a class="code" href="class_graf.html" title="Deklaracja klasy Astar.">Graf</a>&amp; zmienna)
+<a name="l00171"></a>00171                 {
+<a name="l00172"></a>00172                         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; zmienna.<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+<a name="l00173"></a>00173                         {
+<a name="l00174"></a>00174                                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; zmienna.<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); j++)
+<a name="l00175"></a>00175                                 {
+<a name="l00176"></a>00176                                         wyjscie &lt;&lt; zmienna.<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].typ &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+<a name="l00177"></a>00177                                 }
+<a name="l00178"></a>00178                                 wyjscie &lt;&lt; endl;
+<a name="l00179"></a>00179                         }
+<a name="l00180"></a>00180                 <span class="keywordflow">return</span> wyjscie;
+<a name="l00181"></a>00181                 }
+<a name="l00187"></a>00187                 <span class="keywordtype">void</span> AStar();
+<a name="l00188"></a>00188 
+<a name="l00189"></a>00189 };
+<a name="l00190"></a>00190 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Wed May 28 2014 01:48:26 dla Algorytm A* programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

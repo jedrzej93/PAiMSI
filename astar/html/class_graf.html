@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Algorytm A*: Dokumentacja klasy Graf</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Algorytm A*
+   
+   </div>
+   <div id="projectbrief">v1.0</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="#friends">Przyjaciele</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Graf</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="Graf" --><div class="dynheader">
+Diagram współpracy dla Graf:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_graf__coll__graph.png" border="0" usemap="#_graf_coll__map" alt="Collaboration graph"/></div>
+<map name="_graf_coll__map" id="_graf_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+
+<p><a href="class_graf-members.html">Lista wszystkich składowych.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a05a504069321858769df57555045d808">Graf</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ae29b8306166b7a81b2724cb7959883bf">AStar</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; <a class="el" href="struct_wierzcholek.html">Wierzcholek</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f">w</a></td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a58d43194a95c49a2132d037d2a83714e">Stworz_Siatke</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#aeaedcc5c95ab356ed279a3d022a328a3">Ustaw_Wspolrzedne</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a54b3f23c0da32fa746e6b991d987bf14">Oblicz_H</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a1d71b0030082e1ed99276ea518d5867a">Oblicz_G</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a272156ba0b40ce841d21d6e3871a47cb">Oblicz_F</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a818a19c813f0a45546c358fceef4dd75">Oblicz_H</a> (<a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a> _w)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#af297ae5bd3d0622add85e00fc746cdad">Oblicz_G</a> (<a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a> _w)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a1d7648e65898a7f44c66441083317232">Oblicz_F</a> (<a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a> _w)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a98ad839ecc5724d26565296dfb27aeed">Zapisz_Graf_Do_Pliku</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ae344019ceba0448c2b32cfe5fa448788">Wyswietl_Rozwiazanie</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca">poczatek</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a">koniec</a></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Przyjaciele</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a87780917bdeff5239d6c235878dd3a81">operator&lt;&lt;</a> (ostream &amp;wyjscie, <a class="el" href="class_graf.html">Graf</a> &amp;zmienna)</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00090">90</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+</div><hr/><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a05a504069321858769df57555045d808"></a><!-- doxytag: member="Graf::Graf" ref="a05a504069321858769df57555045d808" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graf.html#a05a504069321858769df57555045d808">Graf::Graf</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Konstruktor klasy <a class="el" href="class_graf.html" title="Deklaracja klasy Astar.">Graf</a>. W konstruktorze tworzony jest graf o zdefiniowanej szerokosci oraz wysokosci, ustawiane sa punkte startowe oraz tworzona jest siatka dla algorytmu A*. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00099">99</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="astar_8hh_source.html#l00014">SZEROKOSC</a> i <a class="el" href="astar_8hh_source.html#l00013">WYSOKOSC</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.resize(<a class="code" href="astar_8hh.html#a771583e9e87d083150a9a329f44c5f7e">WYSOKOSC</a>);
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+        {
+                <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i].resize(<a class="code" href="astar_8hh.html#acd0b90760065a9ea20a0bf6e9f01289c">SZEROKOSC</a>);
+        }
+
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+        {
+                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); j++)
+                {
+                        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].punkt.x = i;
+                        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].punkt.y = j;
+                }
+        }
+        <a class="code" href="class_graf.html#a58d43194a95c49a2132d037d2a83714e" title="Funkcja tworzaca siatke. Funkcja tworzy siatke na ktorej algorytm AStar przeszukuje wartosci...">Stworz_Siatke</a>();
+        <a class="code" href="class_graf.html#aeaedcc5c95ab356ed279a3d022a328a3" title="Funkcja ustawiajace wspolrzedne. Funkcja ustala poczatkowe wspolrzedne oraz przydziela je do danego t...">Ustaw_Wspolrzedne</a>();
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="ae29b8306166b7a81b2724cb7959883bf"></a><!-- doxytag: member="Graf::AStar" ref="ae29b8306166b7a81b2724cb7959883bf" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#ae29b8306166b7a81b2724cb7959883bf">Graf::AStar</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja AStar. Funkcja implementujaca algorytm przeszukiwania A*. Zaimplementowala za pomoca standardowych funkcji z biblioteki STL. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00119">119</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="astar_8hh_source.html#l00077">Wierzcholek::g</a>, <a class="el" href="astar_8hh_source.html#l00081">Wierzcholek::punkt</a>, <a class="el" href="astar_8hh_source.html#l00027">Wierzcholek_Typ_W</a>, <a class="el" href="astar_8hh_source.html#l00043">Wspolrzedne::x</a> i <a class="el" href="astar_8hh_source.html#l00047">Wspolrzedne::y</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8cpp_source.html#l00011">main()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    multimap&lt;int, Wierzcholek&gt; zamkniety, otwarty;
+        
+    <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].g = 0;
+    <a class="code" href="class_graf.html#a54b3f23c0da32fa746e6b991d987bf14" title="Funkcja heurestyczna. Funkcja oblicza przyblizona droge jaka algorytm musi przejsc, aby odnalezc cel.">Oblicz_H</a>(<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>);
+    <a class="code" href="class_graf.html#a272156ba0b40ce841d21d6e3871a47cb" title="Funkcja obliczajaca wspolczynnik f. Funkcja oblicza wspolczynnik f, ktory okresla dany wierzcholek...">Oblicz_F</a>(<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>);
+    <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].rodzic = <a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>;
+
+    otwarty.insert(make_pair(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f, <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>]));
+        
+    <span class="keywordflow">while</span> (!otwarty.empty()) 
+    {
+        <a class="code" href="struct_wierzcholek.html" title="Struktura Wierzcholek. Przechowuje deklaracje zwiazane z ta klasa.">Wierzcholek</a> p = otwarty.begin()-&gt;second;
+        otwarty.erase(otwarty.begin());
+        <span class="keywordflow">if</span> (p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> == <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> &amp;&amp; p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> == <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>) 
+        {
+            cout &lt;&lt; <span class="stringliteral">&quot; Znaleziono cel! &quot;</span> &lt;&lt; endl;
+            <span class="keywordflow">break</span>;
+        }
+        
+        zamkniety.insert(make_pair(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f, <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>]));
+            
+        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = -1; i &lt;= 1; ++i) 
+        {
+            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = -1; j &lt;= 1; ++j) 
+            {
+                <span class="keywordtype">int</span> koszt;
+                                <span class="comment">// zmiana kosztu szukania</span>
+                <span class="keywordflow">if</span> (i &amp;&amp; j)
+                    koszt = 2;
+                <span class="keywordflow">else</span>
+                    koszt = 1;
+                    
+                <span class="keywordflow">if</span> (i &amp;&amp; j)
+                    <span class="keywordflow">continue</span>;
+                    
+                <a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> v;
+                v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> = p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> + i;
+                v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> = p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> + j;
+                <span class="keywordflow">if</span> (v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> &lt; 0 || v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> &gt;= <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size() || v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> &lt; 0 || v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> &gt;= <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>].size() || <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].typ == <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e">Wierzcholek_Typ_W</a>) 
+                {
+                        <span class="keywordflow">continue</span>;
+                }
+                
+                <span class="keywordflow">if</span> (zamkniety.find(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f) != zamkniety.end()) 
+                {
+                    <span class="keywordflow">continue</span>;
+                }
+                
+                <span class="keywordflow">if</span> (otwarty.find(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f) == otwarty.end()) 
+                {
+                    <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].g = <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].g + koszt;
+                    <a class="code" href="class_graf.html#a54b3f23c0da32fa746e6b991d987bf14" title="Funkcja heurestyczna. Funkcja oblicza przyblizona droge jaka algorytm musi przejsc, aby odnalezc cel.">Oblicz_H</a>(v);
+                    <a class="code" href="class_graf.html#a272156ba0b40ce841d21d6e3871a47cb" title="Funkcja obliczajaca wspolczynnik f. Funkcja oblicza wspolczynnik f, ktory okresla dany wierzcholek...">Oblicz_F</a>(v);
+                    <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].rodzic = p.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>;
+                                        
+                    otwarty.insert(make_pair(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f, <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>]));
+                }
+                <span class="keywordflow">else</span> 
+                {
+                    <a class="code" href="struct_wierzcholek.html" title="Struktura Wierzcholek. Przechowuje deklaracje zwiazane z ta klasa.">Wierzcholek</a> x = otwarty.find(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f)-&gt;second;
+                    <span class="keywordflow">if</span> (x.<a class="code" href="struct_wierzcholek.html#a040d7401732673a65daf8cdbdaa7e2c1">g</a> &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].g) 
+                    {
+                        otwarty.erase(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[x.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][x.<a class="code" href="struct_wierzcholek.html#adec40be68641a9c7b6ba1f70da808ba2" title="Zmienna typu Wspolrzedne, odnosi sie do danego punktu na siatce.">punkt</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f);
+                        otwarty.insert(make_pair(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f, <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[v.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][v.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>]));
+                    }
+                }
+            }
+        }
+    }
+    <a class="code" href="class_graf.html#ae344019ceba0448c2b32cfe5fa448788" title="Funkcja wyswietlajaca rozwiazanie przeszukiwania przez algorytm.">Wyswietl_Rozwiazanie</a>();
+}</pre></div>
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_graf_ae29b8306166b7a81b2724cb7959883bf_icgraph.png" border="0" usemap="#class_graf_ae29b8306166b7a81b2724cb7959883bf_icgraph" alt=""/></div>
+<map name="class_graf_ae29b8306166b7a81b2724cb7959883bf_icgraph" id="class_graf_ae29b8306166b7a81b2724cb7959883bf_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a272156ba0b40ce841d21d6e3871a47cb"></a><!-- doxytag: member="Graf::Oblicz_F" ref="a272156ba0b40ce841d21d6e3871a47cb" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a272156ba0b40ce841d21d6e3871a47cb">Graf::Oblicz_F</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja obliczajaca wspolczynnik f. Funkcja oblicza wspolczynnik f, ktory okresla dany wierzcholek. Na podstawie tego algorytm A* wybiera wierzcholek o najnizszym wspolczynniku przez ktory przeszukuje graf. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00054">54</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+        {
+                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); j++)
+                {
+                        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].f = <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].h + <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].g;
+                }
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a1d7648e65898a7f44c66441083317232"></a><!-- doxytag: member="Graf::Oblicz_F" ref="a1d7648e65898a7f44c66441083317232" args="(Wspolrzedne _w)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a272156ba0b40ce841d21d6e3871a47cb">Graf::Oblicz_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a>&#160;</td>
+          <td class="paramname"><em>_w</em></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja obliczajaca wspolczynnik f o zadanym punkcie. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00070">70</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="astar_8hh_source.html#l00043">Wspolrzedne::x</a> i <a class="el" href="astar_8hh_source.html#l00047">Wspolrzedne::y</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[_w.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][_w.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].f = <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[_w.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][_w.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].h + <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[_w.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][_w.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].g;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a1d71b0030082e1ed99276ea518d5867a"></a><!-- doxytag: member="Graf::Oblicz_G" ref="a1d71b0030082e1ed99276ea518d5867a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a1d71b0030082e1ed99276ea518d5867a">Graf::Oblicz_G</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja obliczajaca droge. Funkcja oblicza odleglosc pomiedzy wierzcholkiem poczatkowym a punktem x na siatce. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00043">43</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+        {
+                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); j++)
+                {
+                        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].g = fabs(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].punkt.x - <a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>) + fabs(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].punkt.y - <a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>);
+                }
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af297ae5bd3d0622add85e00fc746cdad"></a><!-- doxytag: member="Graf::Oblicz_G" ref="af297ae5bd3d0622add85e00fc746cdad" args="(Wspolrzedne _w)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a1d71b0030082e1ed99276ea518d5867a">Graf::Oblicz_G</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a>&#160;</td>
+          <td class="paramname"><em>_w</em></td><td>)</td>
+          <td><code> [inline, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja obliczajaca droge o zadanym punkcie. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00138">138</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+<div class="fragment"><pre class="fragment">{}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a54b3f23c0da32fa746e6b991d987bf14"></a><!-- doxytag: member="Graf::Oblicz_H" ref="a54b3f23c0da32fa746e6b991d987bf14" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a54b3f23c0da32fa746e6b991d987bf14">Graf::Oblicz_H</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja heurestyczna. Funkcja oblicza przyblizona droge jaka algorytm musi przejsc, aby odnalezc cel. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00032">32</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+        {
+                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); j++)
+                {
+                        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].h = fabs(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].punkt.x - <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>) + fabs(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].punkt.y - <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>);
+                }
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a818a19c813f0a45546c358fceef4dd75"></a><!-- doxytag: member="Graf::Oblicz_H" ref="a818a19c813f0a45546c358fceef4dd75" args="(Wspolrzedne _w)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a54b3f23c0da32fa746e6b991d987bf14">Graf::Oblicz_H</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a>&#160;</td>
+          <td class="paramname"><em>_w</em></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja heurestyczna obliczajaca droge o zdanym punkcie. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00065">65</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="astar_8hh_source.html#l00043">Wspolrzedne::x</a> i <a class="el" href="astar_8hh_source.html#l00047">Wspolrzedne::y</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[_w.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][_w.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].h = fabs(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[_w.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][_w.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].punkt.x - <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>) + fabs(<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[_w.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][_w.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].punkt.y - <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a58d43194a95c49a2132d037d2a83714e"></a><!-- doxytag: member="Graf::Stworz_Siatke" ref="a58d43194a95c49a2132d037d2a83714e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a58d43194a95c49a2132d037d2a83714e">Graf::Stworz_Siatke</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja tworzaca siatke. Funkcja tworzy siatke na ktorej algorytm AStar przeszukuje wartosci. Okreslany jest punkt startowy oraz punkt koncowy dla ktorych sa tworzone wartosci na siatce. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00012">12</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="astar_8hh_source.html#l00027">Wierzcholek_Typ_W</a>, <a class="el" href="astar_8hh_source.html#l00043">Wspolrzedne::x</a> i <a class="el" href="astar_8hh_source.html#l00047">Wspolrzedne::y</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> start, meta;
+        start.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> = 1; start.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> = 4; meta.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> = 4; meta.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> = 7;
+
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = start.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>; i &lt;= meta.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>; i++)
+        {
+                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = start.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>; j &lt;= meta.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>; j++)
+                        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].typ = <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e">Wierzcholek_Typ_W</a>;
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aeaedcc5c95ab356ed279a3d022a328a3"></a><!-- doxytag: member="Graf::Ustaw_Wspolrzedne" ref="aeaedcc5c95ab356ed279a3d022a328a3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#aeaedcc5c95ab356ed279a3d022a328a3">Graf::Ustaw_Wspolrzedne</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja ustawiajace wspolrzedne. Funkcja ustala poczatkowe wspolrzedne oraz przydziela je do danego typu wierzcholka. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00024">24</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="astar_8hh_source.html#l00029">Wierzcholek_Typ_P</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> = 3; <a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> = 1; <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a> = 6; <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a> = 7;
+
+        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].typ = <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88">Wierzcholek_Typ_P</a>;
+        <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[<a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][<a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].typ = <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88">Wierzcholek_Typ_P</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ae344019ceba0448c2b32cfe5fa448788"></a><!-- doxytag: member="Graf::Wyswietl_Rozwiazanie" ref="ae344019ceba0448c2b32cfe5fa448788" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#ae344019ceba0448c2b32cfe5fa448788">Graf::Wyswietl_Rozwiazanie</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja wyswietlajaca rozwiazanie przeszukiwania przez algorytm. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00088">88</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="astar_8hh_source.html#l00029">Wierzcholek_Typ_P</a>, <a class="el" href="astar_8hh_source.html#l00043">Wspolrzedne::x</a> i <a class="el" href="astar_8hh_source.html#l00047">Wspolrzedne::y</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> p = <a class="code" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej koncowej.">koniec</a>;
+        <span class="keywordflow">while</span>(p != <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][<a class="code" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca" title="Zmienna typu Wspolrzedne przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* st...">poczatek</a>.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].rodzic)
+        {
+                <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[p.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][p.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].typ = <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88">Wierzcholek_Typ_P</a>;
+                p = <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[p.<a class="code" href="struct_wspolrzedne.html#a027622be3ecb22703f46714b2c2cb6b5" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej x.">x</a>][p.<a class="code" href="struct_wspolrzedne.html#a0c7f103c4e9929641316706fea318d1d" title="Zmienna typu int, odpowiadzialna za przechowywanie wartosci wspolrzednej y.">y</a>].rodzic;
+        }
+        <a class="code" href="class_graf.html#a98ad839ecc5724d26565296dfb27aeed" title="Funkcja zapisujaca graf do pliku. Funkcja za pomoca funkcji fstream zapisuje dane do pliku tekstowego...">Zapisz_Graf_Do_Pliku</a>();
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a98ad839ecc5724d26565296dfb27aeed"></a><!-- doxytag: member="Graf::Zapisz_Graf_Do_Pliku" ref="a98ad839ecc5724d26565296dfb27aeed" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a98ad839ecc5724d26565296dfb27aeed">Graf::Zapisz_Graf_Do_Pliku</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funkcja zapisujaca graf do pliku. Funkcja za pomoca funkcji fstream zapisuje dane do pliku tekstowego "graf.txt". </p>
+
+<p>Definicja w linii <a class="el" href="astar_8cpp_source.html#l00075">75</a> pliku <a class="el" href="astar_8cpp_source.html">astar.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        fstream plik(<span class="stringliteral">&quot;...astar/graf.txt&quot;</span>);
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+        {
+                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); j++)
+                {
+                        plik &lt;&lt; <a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].typ &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+                }
+                plik &lt;&lt; endl;
+        }
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja przyjaciół i funkcji związanych</h2>
+<a class="anchor" id="a87780917bdeff5239d6c235878dd3a81"></a><!-- doxytag: member="Graf::operator&lt;&lt;" ref="a87780917bdeff5239d6c235878dd3a81" args="(ostream &amp;wyjscie, Graf &amp;zmienna)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>wyjscie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_graf.html">Graf</a> &amp;&#160;</td>
+          <td class="paramname"><em>zmienna</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Zdefiniowany operator przesuniecia bitowego. Operator wypisuje na wyjsciu utworzone dane. Zwracany jest /param wyjscie. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00170">170</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+<div class="fragment"><pre class="fragment">                {
+                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; zmienna.<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); i++)
+                        {
+                                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; zmienna.<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>.size(); j++)
+                                {
+                                        wyjscie &lt;&lt; zmienna.<a class="code" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f" title="Zmienna vector, zawierajaca vector dotyczacy struktury Wierzcholek.">w</a>[i][j].typ &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+                                }
+                                wyjscie &lt;&lt; endl;
+                        }
+                <span class="keywordflow">return</span> wyjscie;
+                }
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="accfdd27fd52eb481438f3368d63a756a"></a><!-- doxytag: member="Graf::koniec" ref="accfdd27fd52eb481438f3368d63a756a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a> <a class="el" href="class_graf.html#accfdd27fd52eb481438f3368d63a756a">Graf::koniec</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Zmienna typu <a class="el" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> przechowujaca informajce o wspolrzednej koncowej. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00100">100</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd2b15a19a211c56df5f401ef6e940ca"></a><!-- doxytag: member="Graf::poczatek" ref="acd2b15a19a211c56df5f401ef6e940ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a> <a class="el" href="class_graf.html#acd2b15a19a211c56df5f401ef6e940ca">Graf::poczatek</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Zmienna typu <a class="el" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a> przechowujaca informajce o wspolrzednej poczatkowej, z ktorej algortym A* startuje. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00096">96</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a735e94e0248b6cc21ff6766369f23d7f"></a><!-- doxytag: member="Graf::w" ref="a735e94e0248b6cc21ff6766369f23d7f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; vector&lt;<a class="el" href="struct_wierzcholek.html">Wierzcholek</a>&gt; &gt; <a class="el" href="class_graf.html#a735e94e0248b6cc21ff6766369f23d7f">Graf::w</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Zmienna vector, zawierajaca vector dotyczacy struktury <a class="el" href="struct_wierzcholek.html" title="Struktura Wierzcholek. Przechowuje deklaracje zwiazane z ta klasa.">Wierzcholek</a>. </p>
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00158">158</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Wed May 28 2014 01:48:26 dla Algorytm A* programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

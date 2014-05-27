@@ -1,0 +1,37 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
+
+\author{Patryk Jędrzejko 200406}
+\title{Sprawozdanie z laboratorium - PAiMSI. \\Graf - algorytm A*.}
+
+\begin{document}
+\maketitle
+
+\section{Wprowadzenie}
+W danym ćwiczeniu mieliśmy napisać program implementujący algorytm A*.
+Algorytm A* jest to algorytm heurystyczny przeszukiwania grafu, który ma na celu znalezienia najkrotszej drogi z jednego wierzchołka do drugiego, zaczynając z punktu startowego, kończąc w punkcie docelowym. Algorytm ten sprawdza pola, które znajdują się w otoczeniu punktu oraz takie, które nie były rozpatrywane, prowadzące potencjalnie do celu. 
+\\\\ W algorytmie tym ważny jest dobór funkcji heurystycznej - funkcji h - obliczająca wartość parametru H, która oblicza poszczególne punkty w przestrzeni. Funkcja taka nie oblicza najkrótszej drogi jaką ma pokonać algorytm A*, natomiast określa najoptymalniejszą drogę, która bliska jest drodze faktycznej jaką trzeba przejść aby znaleźć cel. Przy wzroście jakości szacowania, szybkość działania algorytmu A* wzrasta oraz nasza funkcja heurystyczna zostanie zaadoptowana to nasz algorytm ograniczy liczbę przeszukiwań. Niestety może to prowadzić do tego, iż nie otrzymamy rozwiązania optymalnego.
+\\\\ Algorytm A* wybiera ścieżkę przeszukiwania dzięki funkcji f(x) = g(x) + h(x), gdzie kolejno:
+\begin{itemize}
+  \item g(x) - jest drogą (kosztem) pomiędzy wierzchołkiem początkowym, a punktem x. 
+  \item h(x) - wyżej wspomniana funkcja heurystyczna, czyli droga od punktu x do wierzchołka docelowego.
+\end{itemize}
+Algorytm dzięki funkcji f oblicza współczynnik i kolejno wybiera drogę wybierając ścieżkę o mniejszym współczynniku f, aż do punktu docelowego.
+\\\\Złożoność obliczeniowa algorytmu A*:
+\begin{itemize}
+  \item W zależności od zastosowanej heurystyki algorytm A* posiada inną złożoność czasową. Jeżeli mamy najgorszy przypadek to obliczeniowa złożoność czasowa spełnia następujący warunek: 
+|h(x)-h*(x)| = O(logh*(x)), gdzie h* - to optymalna heurystyka. 
+\end{itemize}
+W przypadku mojej implementacji programy, algorytm A* musi pokonac drogę na siatce o wymiarach 10x10, gdzie ustalone ma współrzędne startowe oraz końcowe. Wygenerowana jest również ściana, przez którą algorytm nie może przejść. Ściana oznaczona jest cyfrą "1", zaś ścieżka jaką pokonuje algorytm cyfrą "2". Po włączeniu programu można zobaczyć działanie owej implementacji algorytmu A*. \textbf{Czas znalezienia celu przez algorytm A* wynosił średnio: 0,342 ms. }
+\section{Wnioski:}
+\begin{itemize}
+  \item Za każdym razem algorytm A* znajdował najkrótszą ścieżkę. Zatem można stwierdzić, iż implementacja algorytmu jest poprawna i działa sprawnie. 
+  \item Można również stwierdzić, że czas znalezienia celu przez A* zależy od zadanej wartości współrzędnych oraz umieszczenia ściany. Zapewne wielkość jak i szerokość również będą wpływ na czas wykonania się algorytmu. Zatem budowa grafu - w tym przypadku siatki ma znaczenie na wydajność algorytmu A*.
+\end{itemize}
+
+\end{document}

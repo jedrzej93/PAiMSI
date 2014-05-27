@@ -1,0 +1,89 @@
+\hypertarget{astar_8hh}{\section{\-Dokumentacja pliku astar.\-hh}
+\label{astar_8hh}\index{astar.\-hh@{astar.\-hh}}
+}
+\subsection*{\-Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wspolrzedne}{\-Wspolrzedne}
+\begin{DoxyCompactList}\small\item\em \-Struktura \hyperlink{struct_wspolrzedne}{\-Wspolrzedne}. \-W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowywanie pozycji na siatce. \-Rowniez zdefiniowane sa operator przypisania oraz operator logiczny relacji. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_wierzcholek}{\-Wierzcholek}
+\begin{DoxyCompactList}\small\item\em \-Struktura \hyperlink{struct_wierzcholek}{\-Wierzcholek}. \-Przechowuje deklaracje zwiazane z ta klasa. \end{DoxyCompactList}\item 
+class \hyperlink{class_graf}{\-Graf}
+\begin{DoxyCompactList}\small\item\em \-Deklaracja klasy \-Astar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{astar_8hh_a771583e9e87d083150a9a329f44c5f7e}{\-W\-Y\-S\-O\-K\-O\-S\-C}~10
+\item 
+\#define \hyperlink{astar_8hh_acd0b90760065a9ea20a0bf6e9f01289c}{\-S\-Z\-E\-R\-O\-K\-O\-S\-C}~10
+\end{DoxyCompactItemize}
+\subsection*{\-Wyliczenia}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{astar_8hh_af54d448689b4613c3715929ca2a914a2}{\-Wierzcholek\-\_\-\-Typ} \{ \hyperlink{astar_8hh_af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e}{\-Wierzcholek\-\_\-\-Typ\-\_\-\-F}, 
+\hyperlink{astar_8hh_af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e}{\-Wierzcholek\-\_\-\-Typ\-\_\-\-W}, 
+\hyperlink{astar_8hh_af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88}{\-Wierzcholek\-\_\-\-Typ\-\_\-\-P}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Dokumentacja definicji}
+\hypertarget{astar_8hh_acd0b90760065a9ea20a0bf6e9f01289c}{\index{astar.\-hh@{astar.\-hh}!\-S\-Z\-E\-R\-O\-K\-O\-S\-C@{\-S\-Z\-E\-R\-O\-K\-O\-S\-C}}
+\index{\-S\-Z\-E\-R\-O\-K\-O\-S\-C@{\-S\-Z\-E\-R\-O\-K\-O\-S\-C}!astar.hh@{astar.\-hh}}
+\subsubsection[{\-S\-Z\-E\-R\-O\-K\-O\-S\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-Z\-E\-R\-O\-K\-O\-S\-C}~10}}\label{astar_8hh_acd0b90760065a9ea20a0bf6e9f01289c}
+
+
+\-Definicja w linii 14 pliku astar.\-hh.
+
+
+
+\-Odwołania w \-Graf\-::\-Graf().
+
+\hypertarget{astar_8hh_a771583e9e87d083150a9a329f44c5f7e}{\index{astar.\-hh@{astar.\-hh}!\-W\-Y\-S\-O\-K\-O\-S\-C@{\-W\-Y\-S\-O\-K\-O\-S\-C}}
+\index{\-W\-Y\-S\-O\-K\-O\-S\-C@{\-W\-Y\-S\-O\-K\-O\-S\-C}!astar.hh@{astar.\-hh}}
+\subsubsection[{\-W\-Y\-S\-O\-K\-O\-S\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-Y\-S\-O\-K\-O\-S\-C}~10}}\label{astar_8hh_a771583e9e87d083150a9a329f44c5f7e}
+
+
+\-Definicja w linii 13 pliku astar.\-hh.
+
+
+
+\-Odwołania w \-Graf\-::\-Graf().
+
+
+
+\subsection{\-Dokumentacja typów wyliczanych}
+\hypertarget{astar_8hh_af54d448689b4613c3715929ca2a914a2}{\index{astar.\-hh@{astar.\-hh}!\-Wierzcholek\-\_\-\-Typ@{\-Wierzcholek\-\_\-\-Typ}}
+\index{\-Wierzcholek\-\_\-\-Typ@{\-Wierzcholek\-\_\-\-Typ}!astar.hh@{astar.\-hh}}
+\subsubsection[{\-Wierzcholek\-\_\-\-Typ}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-Wierzcholek\-\_\-\-Typ}}}\label{astar_8hh_af54d448689b4613c3715929ca2a914a2}
+
+
+\-Deklaracja zmiennych przechowujacych ustalone wartosci dla odpowiedniego typu danych. \-F -\/ dla wierzcholkow wolnych, \-W -\/ dla wierzcholkow znajdujacych sie w siatce oraz \-P -\/ wierzcholki, ktore sa rozwiazaniami. 
+
+\begin{Desc}
+\item[\-Wartości wyliczeń\-: ]\par
+\begin{description}
+\index{\-Wierzcholek\-\_\-\-Typ\-\_\-\-F@{\-Wierzcholek\-\_\-\-Typ\-\_\-\-F}!astar.\-hh@{astar.\-hh}}\index{astar.\-hh@{astar.\-hh}!\-Wierzcholek\-\_\-\-Typ\-\_\-\-F@{\-Wierzcholek\-\_\-\-Typ\-\_\-\-F}}\item[{\em 
+\hypertarget{astar_8hh_af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e}{\-Wierzcholek\-\_\-\-Typ\-\_\-\-F}\label{astar_8hh_af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e}
+}]\index{\-Wierzcholek\-\_\-\-Typ\-\_\-\-W@{\-Wierzcholek\-\_\-\-Typ\-\_\-\-W}!astar.\-hh@{astar.\-hh}}\index{astar.\-hh@{astar.\-hh}!\-Wierzcholek\-\_\-\-Typ\-\_\-\-W@{\-Wierzcholek\-\_\-\-Typ\-\_\-\-W}}\item[{\em 
+\hypertarget{astar_8hh_af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e}{\-Wierzcholek\-\_\-\-Typ\-\_\-\-W}\label{astar_8hh_af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e}
+}]\index{\-Wierzcholek\-\_\-\-Typ\-\_\-\-P@{\-Wierzcholek\-\_\-\-Typ\-\_\-\-P}!astar.\-hh@{astar.\-hh}}\index{astar.\-hh@{astar.\-hh}!\-Wierzcholek\-\_\-\-Typ\-\_\-\-P@{\-Wierzcholek\-\_\-\-Typ\-\_\-\-P}}\item[{\em 
+\hypertarget{astar_8hh_af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88}{\-Wierzcholek\-\_\-\-Typ\-\_\-\-P}\label{astar_8hh_af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definicja w linii 23 pliku astar.\-hh.
+
+
+\begin{DoxyCode}
+{
+        Wierzcholek_Typ_F, 
+        
+        Wierzcholek_Typ_W, 
+        
+        Wierzcholek_Typ_P
+
+}Wierzcholek_Typ;
+\end{DoxyCode}

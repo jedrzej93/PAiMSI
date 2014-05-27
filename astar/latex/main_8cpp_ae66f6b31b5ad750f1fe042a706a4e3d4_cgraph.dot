@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Graf::AStar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#ae29b8306166b7a81b2724cb7959883bf",tooltip="Funkcja AStar. Funkcja implementujaca algorytm przeszukiwania A*. Zaimplementowala za pomoca standard..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Benchmark::Czas_Operacji",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_benchmark.html#aee4890492aa777816da1d63fa7a8c4c2",tooltip="Funkcja zawieracaja czas operacji zegaru. Funkcja zwraca nam czas calkowity wykonanej operacji w ms..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Benchmark::Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_benchmark.html#ac55ca7809108ed22a644d6d41071d187",tooltip="Funkcja startujaca zegar. Funkcja odpala zegar, ktory liczy czas zapelnienia stosu czy tez kolejki da..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Benchmark::Stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_benchmark.html#aa3ca94f8984beb0ecbfa77d50cbe5c3a",tooltip="Funkcja zatrzymujaca zegar. Funkcja zatrzymuje zegar, ktory liczy czas zapelnienia stosu czy tez kole..."];
+}

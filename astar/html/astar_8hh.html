@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Algorytm A*: Dokumentacja pliku astar.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Algorytm A*
+   
+   </div>
+   <div id="projectbrief">v1.0</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#enum-members">Wyliczenia</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku astar.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="astar_8hh_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wspolrzedne.html">Wspolrzedne</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura <a class="el" href="struct_wspolrzedne.html" title="Struktura Wspolrzedne. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowy...">Wspolrzedne</a>. W ktorej zdefiniowane sa dwie zmienne x oraz y, ktore odpowiadaja za przechowywanie pozycji na siatce. Rowniez zdefiniowane sa operator przypisania oraz operator logiczny relacji.  <a href="struct_wspolrzedne.html#details">Więcej...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wierzcholek.html">Wierzcholek</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura <a class="el" href="struct_wierzcholek.html" title="Struktura Wierzcholek. Przechowuje deklaracje zwiazane z ta klasa.">Wierzcholek</a>. Przechowuje deklaracje zwiazane z ta klasa.  <a href="struct_wierzcholek.html#details">Więcej...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html">Graf</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Deklaracja klasy Astar.  <a href="class_graf.html#details">Więcej...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="astar_8hh.html#a771583e9e87d083150a9a329f44c5f7e">WYSOKOSC</a>&#160;&#160;&#160;10</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="astar_8hh.html#acd0b90760065a9ea20a0bf6e9f01289c">SZEROKOSC</a>&#160;&#160;&#160;10</td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2">Wierzcholek_Typ</a> { <a class="el" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e">Wierzcholek_Typ_F</a>, 
+<a class="el" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e">Wierzcholek_Typ_W</a>, 
+<a class="el" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88">Wierzcholek_Typ_P</a>
+ }</td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="acd0b90760065a9ea20a0bf6e9f01289c"></a><!-- doxytag: member="astar.hh::SZEROKOSC" ref="acd0b90760065a9ea20a0bf6e9f01289c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="astar_8hh.html#acd0b90760065a9ea20a0bf6e9f01289c">SZEROKOSC</a>&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00014">14</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+
+<p>Odwołania w <a class="el" href="astar_8cpp_source.html#l00099">Graf::Graf()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a771583e9e87d083150a9a329f44c5f7e"></a><!-- doxytag: member="astar.hh::WYSOKOSC" ref="a771583e9e87d083150a9a329f44c5f7e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="astar_8hh.html#a771583e9e87d083150a9a329f44c5f7e">WYSOKOSC</a>&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00013">13</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+
+<p>Odwołania w <a class="el" href="astar_8cpp_source.html#l00099">Graf::Graf()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja typów wyliczanych</h2>
+<a class="anchor" id="af54d448689b4613c3715929ca2a914a2"></a><!-- doxytag: member="astar.hh::Wierzcholek_Typ" ref="af54d448689b4613c3715929ca2a914a2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2">Wierzcholek_Typ</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Deklaracja zmiennych przechowujacych ustalone wartosci dla odpowiedniego typu danych. F - dla wierzcholkow wolnych, W - dla wierzcholkow znajdujacych sie w siatce oraz P - wierzcholki, ktore sa rozwiazaniami. </p>
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e"></a><!-- doxytag: member="Wierzcholek_Typ_F" ref="af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e" args="" -->Wierzcholek_Typ_F</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e"></a><!-- doxytag: member="Wierzcholek_Typ_W" ref="af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e" args="" -->Wierzcholek_Typ_W</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88"></a><!-- doxytag: member="Wierzcholek_Typ_P" ref="af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88" args="" -->Wierzcholek_Typ_P</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="astar_8hh_source.html#l00023">23</a> pliku <a class="el" href="astar_8hh_source.html">astar.hh</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a5021d874406808a1d631fdfed6b05e5e">Wierzcholek_Typ_F</a>, 
+        
+        <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a2912fc7f312fe8def0f224eac198f59e">Wierzcholek_Typ_W</a>, 
+        
+        <a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2a8dcf1159c22e0950df6e214e2a39ac88">Wierzcholek_Typ_P</a>
+
+}<a class="code" href="astar_8hh.html#af54d448689b4613c3715929ca2a914a2" title="Deklaracja zmiennych przechowujacych ustalone wartosci dla odpowiedniego typu danych. F - dla wierzcholkow wolnych, W - dla wierzcholkow znajdujacych sie w siatce oraz P - wierzcholki, ktore sa rozwiazaniami.">Wierzcholek_Typ</a>;
+</pre></div>
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Wed May 28 2014 01:48:26 dla Algorytm A* programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
