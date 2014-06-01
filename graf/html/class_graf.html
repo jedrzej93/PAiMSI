@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Graf
-   &#160;<span id="projectnumber">v1.0</span>
+   &#160;<span id="projectnumber">v1.1</span>
    </div>
    
   </td>
@@ -71,12 +71,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
       <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Metody publiczne</a>  </div>
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="#friends">Przyjaciele</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy Graf</div>  </div>
 </div><!--header-->
@@ -86,41 +90,452 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </p>
 
 <p><code>#include &lt;<a class="el" href="graf_8hh_source.html">graf.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla Graf:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_graf__coll__graph.png" border="0" usemap="#_graf_coll__map" alt="Collaboration graph"/></div>
+<map name="_graf_coll__map" id="_graf_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
 
 <p><a href="class_graf-members.html">Lista wszystkich składowych.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf_1_1_wezel.html">Wezel</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Deklaracja klasy <a class="el" href="class_graf_1_1_wezel.html" title="Deklaracja klasy Wezel w klasie Graf.">Wezel</a> w klasie <a class="el" href="class_graf.html" title="Deklaracja klasy Graf.">Graf</a>.  <a href="class_graf_1_1_wezel.html#details">Więcej...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4809653f3bc65a77b29a0a25bf18d519"></a><!-- doxytag: member="Graf::Graf" ref="a4809653f3bc65a77b29a0a25bf18d519" args="(int wezel)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Graf</b> (int wezel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed19c3f131d93d626fa531ef0c741ca0"></a><!-- doxytag: member="Graf::Czy_Sasiad" ref="aed19c3f131d93d626fa531ef0c741ca0" args="(int v1, int v2)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Czy_Sasiad</b> (int v1, int v2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32a73f0f791aed133b4de2350faa6ff1"></a><!-- doxytag: member="Graf::Sasiedztwo" ref="a32a73f0f791aed133b4de2350faa6ff1" args="(int v)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Sasiedztwo</b> (int v)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a175e4896f8088e647bb6146a974ec344"></a><!-- doxytag: member="Graf::Dodaj_Wierzcholek" ref="a175e4896f8088e647bb6146a974ec344" args="(int v)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Dodaj_Wierzcholek</b> (int v)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f0eea39cc667502ac52c23945af9391"></a><!-- doxytag: member="Graf::Usun_Wierzcholek" ref="a2f0eea39cc667502ac52c23945af9391" args="(int v)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Usun_Wierzcholek</b> (int v)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb56e6b6e3286b32988ec5aca590433f"></a><!-- doxytag: member="Graf::Dodaj_Krawedz" ref="adb56e6b6e3286b32988ec5aca590433f" args="(int v1, int v2)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Dodaj_Krawedz</b> (int v1, int v2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e8d0fac6774225ab6f51b5ecfd1cda3"></a><!-- doxytag: member="Graf::Usun_Krawedz" ref="a6e8d0fac6774225ab6f51b5ecfd1cda3" args="(int v1, int v2)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Usun_Krawedz</b> (int v1, int v2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae279a6a2704442982a6f4bc4db5a28ea"></a><!-- doxytag: member="Graf::Wyswietl_Graf" ref="ae279a6a2704442982a6f4bc4db5a28ea" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wyswietl_Graf</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f85f47394575c1623e6def0445ab2f"></a><!-- doxytag: member="Graf::DFS" ref="a65f85f47394575c1623e6def0445ab2f" args="(int v)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DFS</b> (int v)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a05a504069321858769df57555045d808">Graf</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_graf.html" title="Deklaracja klasy Graf.">Graf</a>. Funkcja zeruje zmienna wezel.  <a href="#a05a504069321858769df57555045d808"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#aedb6daaad2182cab92ca02111585ac3f">Graf</a> (const <a class="el" href="class_graf.html">Graf</a> &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_graf.html" title="Deklaracja klasy Graf.">Graf</a>.  <a href="#aedb6daaad2182cab92ca02111585ac3f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a4ff3904fd04f367ac0219b52719c567e">~Graf</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klasy <a class="el" href="class_graf.html" title="Deklaracja klasy Graf.">Graf</a>. Funkcja zwalnia pamiec poprzez usuniecie utworzonych wezlow.  <a href="#a4ff3904fd04f367ac0219b52719c567e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ada96a79ee31368459870c750da454980">Szukaj_Wezel</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja szukajaca wezla. Funkcja wyszukuje wezla o podanym kluczu.  <a href="#ada96a79ee31368459870c750da454980"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graf_1_1_wezel.html">Graf::Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a098635fa014ba2abf86254fe08751971">Znajdz_Wezel</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja znajdujaca wezel. Funkcja z klasy <a class="el" href="class_graf_1_1_wezel.html" title="Deklaracja klasy Wezel w klasie Graf.">Wezel</a> w klasie <a class="el" href="class_graf.html" title="Deklaracja klasy Graf.">Graf</a>, znajdujaca wezel o podanym kluczu oraz sprawdzajaca czy dany wezel zostal znaleziony.  <a href="#a098635fa014ba2abf86254fe08751971"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a982895b4684becfc56f7450bdb4994ff">empty</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdzajaca czy istnieja wezly w grafie.  <a href="#a982895b4684becfc56f7450bdb4994ff"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a0bd61f77e5effca3dc5d15a2369af18c">Dodaj_Wezel</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodajaca wezel do grafu. Funkcja dodaje wezel o zadanym kluczu.  <a href="#a0bd61f77e5effca3dc5d15a2369af18c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#aa74b3dfd5b06687670ebed618602115d">Dodaj_Krawedz</a> (int, int, int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodajaca krawedz do grafu. Funkcja dodaje krawedz o zdanych trzech zmiennych - klucz do wezla z ktorym ma byc utworzona krawedz, zmienna cel oraz waga tej krawedzi.  <a href="#aa74b3dfd5b06687670ebed618602115d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a15e1c56c11939feec1a7f6a02617d6f4">Usun_Wezel</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja usuwajaca wezel. Funkcja usuwa dany wezel w grafie o zadanym kluczu.  <a href="#a15e1c56c11939feec1a7f6a02617d6f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ac007a6830e12861f5171ae4d1efc8f21">Usun_Istniejace_Krawedzie</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja usuwajaca stworzone krawedzie. Funkcja usuwajaca krawedzie, ktore zostaly stworzone i w danym momencie znajduja sie w grafie. Jest to funkcja pomocnicza do usuwania wezla w grafie.  <a href="#ac007a6830e12861f5171ae4d1efc8f21"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a8e1326354ca128e984b222e27725fde5">Usun_Krawedz</a> (int, int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja usuwajaca krawedz. Funkcja usuwa dana krawedz z grafu o zadanym kluczu wezla i celu.  <a href="#a8e1326354ca128e984b222e27725fde5"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graf_1_1_wezel.html">Wezel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c">wezel</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna typu <a class="el" href="class_graf_1_1_wezel.html" title="Deklaracja klasy Wezel w klasie Graf.">Wezel</a>, jest to wskaznik na dany wezel w grafie.  <a href="#a2a803d800eeb0f46bcf4a954083f157c"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Przyjaciele</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a71c306f353f570fcd00a464889f32a6d">operator&lt;&lt;</a> (ostream &amp;, const <a class="el" href="class_graf.html">Graf</a> &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator przesuniecia bitowego. Operator sluzy do wyswietlenia stworzonego grafu.  <a href="#a71c306f353f570fcd00a464889f32a6d"></a><br/></td></tr>
 </table>
-<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li><a class="el" href="graf_8hh_source.html">graf.hh</a></li>
-<li>graf.cpp</li>
-</ul>
+<hr/><a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="graf_8hh_source.html#l00014">14</a> pliku <a class="el" href="graf_8hh_source.html">graf.hh</a>.</p>
+</div><hr/><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a05a504069321858769df57555045d808"></a><!-- doxytag: member="Graf::Graf" ref="a05a504069321858769df57555045d808" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graf.html#a05a504069321858769df57555045d808">Graf::Graf</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00008">8</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a> = 0;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aedb6daaad2182cab92ca02111585ac3f"></a><!-- doxytag: member="Graf::Graf" ref="aedb6daaad2182cab92ca02111585ac3f" args="(const Graf &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graf.html#a05a504069321858769df57555045d808">Graf::Graf</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_graf.html">Graf</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ff3904fd04f367ac0219b52719c567e"></a><!-- doxytag: member="Graf::~Graf" ref="a4ff3904fd04f367ac0219b52719c567e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graf.html#a4ff3904fd04f367ac0219b52719c567e">Graf::~Graf</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00013">13</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(this-&gt;<a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>)
+                <span class="keyword">delete</span> this-&gt;<a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="aa74b3dfd5b06687670ebed618602115d"></a><!-- doxytag: member="Graf::Dodaj_Krawedz" ref="aa74b3dfd5b06687670ebed618602115d" args="(int, int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#aa74b3dfd5b06687670ebed618602115d">Graf::Dodaj_Krawedz</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wezel_klucz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>waga</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00079">79</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(this-&gt;<a class="code" href="class_graf.html#ada96a79ee31368459870c750da454980" title="Funkcja szukajaca wezla. Funkcja wyszukuje wezla o podanym kluczu.">Szukaj_Wezel</a>(wezel_klucz) &amp;&amp; this-&gt;<a class="code" href="class_graf.html#ada96a79ee31368459870c750da454980" title="Funkcja szukajaca wezla. Funkcja wyszukuje wezla o podanym kluczu.">Szukaj_Wezel</a>(cel))
+                this-&gt;<a class="code" href="class_graf.html#a098635fa014ba2abf86254fe08751971" title="Funkcja znajdujaca wezel. Funkcja z klasy Wezel w klasie Graf, znajdujaca wezel o podanym kluczu oraz...">Znajdz_Wezel</a>(wezel_klucz)-&gt;<a class="code" href="class_graf_1_1_wezel.html#a2c1ead09b503f31130a53041b5454356" title="Funkcja dodaja krawedz. Funkcja dodaje krawedz o zadanym celu oraz nadajac wage tej krawedzi...">Dodaj_Krawedz</a>(cel, waga);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a0bd61f77e5effca3dc5d15a2369af18c"></a><!-- doxytag: member="Graf::Dodaj_Wezel" ref="a0bd61f77e5effca3dc5d15a2369af18c" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a0bd61f77e5effca3dc5d15a2369af18c">Graf::Dodaj_Wezel</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>klucz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00060">60</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(this-&gt;<a class="code" href="class_graf.html#a982895b4684becfc56f7450bdb4994ff" title="Funkcja sprawdzajaca czy istnieja wezly w grafie.">empty</a>())
+        {
+                Wezel * _wezel = <span class="keyword">new</span> Wezel(klucz);
+                <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a> = _wezel;
+        }
+        <span class="keywordflow">else</span>
+        {
+                <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="class_graf.html#ada96a79ee31368459870c750da454980" title="Funkcja szukajaca wezla. Funkcja wyszukuje wezla o podanym kluczu.">Szukaj_Wezel</a>(klucz))
+                {
+                        Wezel * _wezel = <span class="keyword">new</span> Wezel(klucz);
+                        _wezel-&gt;nastepny = <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+                        <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a> = _wezel;
+                }
+        }
+        
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a982895b4684becfc56f7450bdb4994ff"></a><!-- doxytag: member="Graf::empty" ref="a982895b4684becfc56f7450bdb4994ff" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_graf.html#a982895b4684becfc56f7450bdb4994ff">Graf::empty</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00043">43</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">return</span> !<a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ada96a79ee31368459870c750da454980"></a><!-- doxytag: member="Graf::Szukaj_Wezel" ref="ada96a79ee31368459870c750da454980" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_graf.html#ada96a79ee31368459870c750da454980">Graf::Szukaj_Wezel</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>klucz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00032">32</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        Wezel * temp = <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+        <span class="keywordflow">while</span>(temp)
+                <span class="keywordflow">if</span>(temp-&gt;klucz == klucz)
+                        <span class="keywordflow">return</span> <span class="keyword">true</span>;
+                <span class="keywordflow">else</span>
+                        temp = temp-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a>;
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ac007a6830e12861f5171ae4d1efc8f21"></a><!-- doxytag: member="Graf::Usun_Istniejace_Krawedzie" ref="ac007a6830e12861f5171ae4d1efc8f21" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#ac007a6830e12861f5171ae4d1efc8f21">Graf::Usun_Istniejace_Krawedzie</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>klucz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00113">113</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(!<a class="code" href="class_graf.html#a982895b4684becfc56f7450bdb4994ff" title="Funkcja sprawdzajaca czy istnieja wezly w grafie.">empty</a>())
+        {
+                Wezel * temp = <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+                <span class="keywordflow">while</span>(temp)
+                {
+                        temp-&gt;<a class="code" href="class_graf_1_1_wezel.html#a885bcf8cd789650a88ca9cc625b3ac02" title="Funkcja usuwajaca krawedz. Funkcja usuwa dana krawedz o zadanym celu.">Usun_Krawedz</a>(klucz);
+                        temp = temp-&gt;nastepny;
+                }
+        }
+}
+</pre></div>
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_graf_ac007a6830e12861f5171ae4d1efc8f21_cgraph.png" border="0" usemap="#class_graf_ac007a6830e12861f5171ae4d1efc8f21_cgraph" alt=""/></div>
+<map name="class_graf_ac007a6830e12861f5171ae4d1efc8f21_cgraph" id="class_graf_ac007a6830e12861f5171ae4d1efc8f21_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e1326354ca128e984b222e27725fde5"></a><!-- doxytag: member="Graf::Usun_Krawedz" ref="a8e1326354ca128e984b222e27725fde5" args="(int, int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a8e1326354ca128e984b222e27725fde5">Graf::Usun_Krawedz</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wezel_klucz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00126">126</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(this-&gt;<a class="code" href="class_graf.html#ada96a79ee31368459870c750da454980" title="Funkcja szukajaca wezla. Funkcja wyszukuje wezla o podanym kluczu.">Szukaj_Wezel</a>(wezel_klucz))
+                this-&gt;<a class="code" href="class_graf.html#a098635fa014ba2abf86254fe08751971" title="Funkcja znajdujaca wezel. Funkcja z klasy Wezel w klasie Graf, znajdujaca wezel o podanym kluczu oraz...">Znajdz_Wezel</a>(wezel_klucz)-&gt;<a class="code" href="class_graf_1_1_wezel.html#a885bcf8cd789650a88ca9cc625b3ac02" title="Funkcja usuwajaca krawedz. Funkcja usuwa dana krawedz o zadanym celu.">Usun_Krawedz</a>(cel);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a15e1c56c11939feec1a7f6a02617d6f4"></a><!-- doxytag: member="Graf::Usun_Wezel" ref="a15e1c56c11939feec1a7f6a02617d6f4" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_graf.html#a15e1c56c11939feec1a7f6a02617d6f4">Graf::Usun_Wezel</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>klucz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00085">85</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(!<a class="code" href="class_graf.html#a982895b4684becfc56f7450bdb4994ff" title="Funkcja sprawdzajaca czy istnieja wezly w grafie.">empty</a>())
+        {
+                <span class="keywordflow">if</span>(<a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>-&gt;<a class="code" href="class_graf_1_1_wezel.html#a3ec9c69e3f5ad7de599064420a252d0c" title="Zmienna pomocnicza typu int, nadaje odpowiedni klucz wezlom, dzieki temu mozemy wyszukiwac po kluczu ...">klucz</a> == klucz)
+                {
+                        Wezel * usun = <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+                        <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a> = <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a>;
+                        usun-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a> = 0;
+                        <span class="keyword">delete</span> usun;
+                }
+                <span class="keywordflow">else</span>
+                {
+                        Wezel * temp = <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+                        <span class="keywordflow">while</span>(temp-&gt;nastepny &amp;&amp; temp-&gt;nastepny-&gt;klucz != klucz)
+                                temp = temp-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a>;
+                        <span class="keywordflow">if</span>(temp-&gt;nastepny &amp;&amp; temp-&gt;nastepny-&gt;klucz == klucz)
+                        {
+                                Wezel * usun = temp-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a>;
+                                temp-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a> = temp-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a>-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a>;
+                                usun-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a> = 0;
+                                <span class="keyword">delete</span> usun;
+                        }
+                }
+                this-&gt;<a class="code" href="class_graf.html#ac007a6830e12861f5171ae4d1efc8f21" title="Funkcja usuwajaca stworzone krawedzie. Funkcja usuwajaca krawedzie, ktore zostaly stworzone i w danym...">Usun_Istniejace_Krawedzie</a>(klucz);
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a098635fa014ba2abf86254fe08751971"></a><!-- doxytag: member="Graf::Znajdz_Wezel" ref="a098635fa014ba2abf86254fe08751971" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graf_1_1_wezel.html">Graf::Wezel</a> * <a class="el" href="class_graf.html#a098635fa014ba2abf86254fe08751971">Graf::Znajdz_Wezel</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>klucz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00048">48</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        Wezel * temp = <a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>;
+        <span class="keywordtype">bool</span> znaleziony = <span class="keyword">false</span>;
+        <span class="keywordflow">while</span>(!znaleziony &amp;&amp; temp)
+                <span class="keywordflow">if</span>(temp-&gt;klucz == klucz)
+                        znaleziony = <span class="keyword">true</span>;
+                <span class="keywordflow">else</span>
+                        temp = temp-&gt;<a class="code" href="class_graf_1_1_wezel.html#a81da02b086fccaf3d497b0eb13376c38" title="Zmienna typu Wezel, wskaznik na nastepny element dodawany do wezla.">nastepny</a>;
+        <span class="keywordflow">return</span> (znaleziony) ? temp : 0;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja przyjaciół i funkcji związanych</h2>
+<a class="anchor" id="a71c306f353f570fcd00a464889f32a6d"></a><!-- doxytag: member="Graf::operator&lt;&lt;" ref="a71c306f353f570fcd00a464889f32a6d" args="(ostream &amp;, const Graf &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>wyjscie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_graf.html">Graf</a> &amp;&#160;</td>
+          <td class="paramname"><em>graf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8cpp_source.html#l00019">19</a> pliku <a class="el" href="graf_8cpp_source.html">graf.cpp</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        wyjscie &lt;&lt; <span class="stringliteral">&quot;Graf:&quot;</span>;
+        <span class="keywordflow">if</span>(graf.<a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>)
+        {
+                wyjscie &lt;&lt; endl;
+                wyjscie &lt;&lt; *(graf.<a class="code" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c" title="Zmienna typu Wezel, jest to wskaznik na dany wezel w grafie.">wezel</a>); 
+                wyjscie &lt;&lt; endl;
+        }
+        wyjscie &lt;&lt; <span class="stringliteral">&quot;&quot;</span>;
+        <span class="keywordflow">return</span> wyjscie;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="a2a803d800eeb0f46bcf4a954083f157c"></a><!-- doxytag: member="Graf::wezel" ref="a2a803d800eeb0f46bcf4a954083f157c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_graf_1_1_wezel.html">Wezel</a>* <a class="el" href="class_graf.html#a2a803d800eeb0f46bcf4a954083f157c">Graf::wezel</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="graf_8hh_source.html#l00183">183</a> pliku <a class="el" href="graf_8hh_source.html">graf.hh</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Przyjaciele</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,7 +547,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DFS</b> (int v)</td><
 
 
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano Wed Apr 30 2014 00:03:16 dla Graf programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Sat May 31 2014 13:51:30 dla Graf programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

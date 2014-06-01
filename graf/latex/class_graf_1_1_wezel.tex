@@ -1,0 +1,268 @@
+\hypertarget{class_graf_1_1_wezel}{\section{\-Dokumentacja klasy \-Graf\-:\-:\-Wezel}
+\label{class_graf_1_1_wezel}\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}}
+}
+
+
+\-Deklaracja klasy \hyperlink{class_graf_1_1_wezel}{\-Wezel} w klasie \hyperlink{class_graf}{\-Graf}.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-hh$>$}
+
+
+
+\-Diagram współpracy dla \-Graf\-:\-:\-Wezel\-:
+\subsection*{\-Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_graf_1_1_wezel_1_1_krawedz}{\-Krawedz}
+\begin{DoxyCompactList}\small\item\em \-Deklaracja klasy \hyperlink{class_graf_1_1_wezel_1_1_krawedz}{\-Krawedz} w klasie \hyperlink{class_graf_1_1_wezel}{\-Wezel}, w klasie \hyperlink{class_graf}{\-Graf}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graf_1_1_wezel_a8f37eac643fe669538f3f7150269a432}{\-Wezel} (int)
+\begin{DoxyCompactList}\small\item\em \-Konstruktor klasy \hyperlink{class_graf_1_1_wezel}{\-Wezel}. \-W konstruktorze przydzielany jest klucz do danego wezla oraz zerowane sa zmienne nastepny oraz krawedz. \end{DoxyCompactList}\item 
+\hyperlink{class_graf_1_1_wezel_a784050cc96ba5ea6b5d94aea3bfe7226}{$\sim$\-Wezel} ()
+\begin{DoxyCompactList}\small\item\em \-Destruktor klasy \hyperlink{class_graf_1_1_wezel}{\-Wezel}. \-Funkcja zwalnia pamiec poprzez usuniecie utworzonych wezlow. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_1_1_wezel_a258afb6559f712f79192a233bc4ce8fc}{\-Szukaj\-\_\-\-Krawedz} (int)
+\begin{DoxyCompactList}\small\item\em \-Funkcja szukajaca dana krawedz. \-Funkcja o zadanym celu wyszukuje dana krawedz, przyrownujac czy dana krawedz jest rowna zadanemu celu. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_1_1_wezel_acbe2d6b3cb389d24dfa02f295c870715}{empty} ()
+\begin{DoxyCompactList}\small\item\em \-Funkcja sprawdzajaca czy istnieja krawedzie w wezle. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_1_1_wezel_a2c1ead09b503f31130a53041b5454356}{\-Dodaj\-\_\-\-Krawedz} (int, int)
+\begin{DoxyCompactList}\small\item\em \-Funkcja dodaja krawedz. \-Funkcja dodaje krawedz o zadanym celu oraz nadajac wage tej krawedzi. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_1_1_wezel_a885bcf8cd789650a88ca9cc625b3ac02}{\-Usun\-\_\-\-Krawedz} (int)
+\begin{DoxyCompactList}\small\item\em \-Funkcja usuwajaca krawedz. \-Funkcja usuwa dana krawedz o zadanym celu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_graf_1_1_wezel_a3ec9c69e3f5ad7de599064420a252d0c}{klucz}
+\begin{DoxyCompactList}\small\item\em \-Zmienna pomocnicza typu int, nadaje odpowiedni klucz wezlom, dzieki temu mozemy wyszukiwac po kluczu dane wezly. \end{DoxyCompactList}\item 
+\hyperlink{class_graf_1_1_wezel}{\-Wezel} $\ast$ \hyperlink{class_graf_1_1_wezel_a81da02b086fccaf3d497b0eb13376c38}{nastepny}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu \hyperlink{class_graf_1_1_wezel}{\-Wezel}, wskaznik na nastepny element dodawany do wezla. \end{DoxyCompactList}\item 
+\hyperlink{class_graf_1_1_wezel_1_1_krawedz}{\-Krawedz} $\ast$ \hyperlink{class_graf_1_1_wezel_afad1099bb7f0eb0fbc5ca6482f3e1bde}{krawedz}
+\begin{DoxyCompactList}\small\item\em \-Zmienna typu \hyperlink{class_graf_1_1_wezel_1_1_krawedz}{\-Krawedz}, wskaznik na dana krawedz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_graf_1_1_wezel_a9201be58f6a5b637792928252f3dc8e2}{operator$<$$<$} (ostream \&, const \hyperlink{class_graf_1_1_wezel}{\-Wezel} \&)
+\begin{DoxyCompactList}\small\item\em \-Operator przesuniecia bitowego. \-Operator sluzy do wyswietlenia stworzonych wezlow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 39 pliku graf.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_graf_1_1_wezel_a8f37eac643fe669538f3f7150269a432}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!\-Wezel@{\-Wezel}}
+\index{\-Wezel@{\-Wezel}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{\-Wezel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Graf\-::\-Wezel\-::\-Wezel} (
+\begin{DoxyParamCaption}
+\item[{int}]{klucz}
+\end{DoxyParamCaption}
+)}}\label{class_graf_1_1_wezel_a8f37eac643fe669538f3f7150269a432}
+
+
+\-Definicja w linii 132 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        this->klucz = klucz;
+        nastepny = 0;
+        krawedz = 0;
+}
+\end{DoxyCode}
+\hypertarget{class_graf_1_1_wezel_a784050cc96ba5ea6b5d94aea3bfe7226}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!$\sim$\-Wezel@{$\sim$\-Wezel}}
+\index{$\sim$\-Wezel@{$\sim$\-Wezel}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{$\sim$\-Wezel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Graf\-::\-Wezel\-::$\sim$\-Wezel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_1_1_wezel_a784050cc96ba5ea6b5d94aea3bfe7226}
+
+
+\-Definicja w linii 139 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if(this->krawedz)
+                delete this->krawedz;
+        if(this->nastepny)
+                delete this->nastepny;
+}
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_graf_1_1_wezel_a2c1ead09b503f31130a53041b5454356}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!\-Dodaj\-\_\-\-Krawedz@{\-Dodaj\-\_\-\-Krawedz}}
+\index{\-Dodaj\-\_\-\-Krawedz@{\-Dodaj\-\_\-\-Krawedz}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{\-Dodaj\-\_\-\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Graf\-::\-Wezel\-::\-Dodaj\-\_\-\-Krawedz} (
+\begin{DoxyParamCaption}
+\item[{int}]{cel, }
+\item[{int}]{waga}
+\end{DoxyParamCaption}
+)}}\label{class_graf_1_1_wezel_a2c1ead09b503f31130a53041b5454356}
+
+
+\-Definicja w linii 175 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if(this->empty())
+        {
+                Krawedz * _krawedz = new Krawedz(cel, waga);
+                krawedz = _krawedz;
+        }
+        else
+        {
+                if(!this->Szukaj_Krawedz(cel))
+                {
+                        Krawedz * _krawedz = new Krawedz(cel, waga);
+                        _krawedz->nastepny = this->krawedz;
+                        this->krawedz = _krawedz;
+                }
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_graf_1_1_wezel_acbe2d6b3cb389d24dfa02f295c870715}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!empty@{empty}}
+\index{empty@{empty}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Graf\-::\-Wezel\-::empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_1_1_wezel_acbe2d6b3cb389d24dfa02f295c870715}
+
+
+\-Definicja w linii 170 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        return !krawedz;
+}
+\end{DoxyCode}
+\hypertarget{class_graf_1_1_wezel_a258afb6559f712f79192a233bc4ce8fc}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!\-Szukaj\-\_\-\-Krawedz@{\-Szukaj\-\_\-\-Krawedz}}
+\index{\-Szukaj\-\_\-\-Krawedz@{\-Szukaj\-\_\-\-Krawedz}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{\-Szukaj\-\_\-\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Graf\-::\-Wezel\-::\-Szukaj\-\_\-\-Krawedz} (
+\begin{DoxyParamCaption}
+\item[{int}]{cel}
+\end{DoxyParamCaption}
+)}}\label{class_graf_1_1_wezel_a258afb6559f712f79192a233bc4ce8fc}
+
+
+\-Definicja w linii 159 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        Krawedz * temp = krawedz;
+        while(temp)
+                if(temp->cel == cel)
+                        return true;
+                else
+                        temp = temp->nastepny;
+        return false;
+}
+\end{DoxyCode}
+\hypertarget{class_graf_1_1_wezel_a885bcf8cd789650a88ca9cc625b3ac02}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!\-Usun\-\_\-\-Krawedz@{\-Usun\-\_\-\-Krawedz}}
+\index{\-Usun\-\_\-\-Krawedz@{\-Usun\-\_\-\-Krawedz}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{\-Usun\-\_\-\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Graf\-::\-Wezel\-::\-Usun\-\_\-\-Krawedz} (
+\begin{DoxyParamCaption}
+\item[{int}]{cel}
+\end{DoxyParamCaption}
+)}}\label{class_graf_1_1_wezel_a885bcf8cd789650a88ca9cc625b3ac02}
+
+
+\-Definicja w linii 193 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        if(!empty())
+        {
+                if(krawedz->cel == cel)
+                {
+                        Krawedz * usun = krawedz;
+                        krawedz = krawedz->nastepny;
+                        usun->nastepny = 0;
+                        delete usun;
+                }
+                else
+                {
+                        Krawedz * temp = krawedz;
+                        while(temp->nastepny && temp->nastepny->cel != cel)
+                                temp = temp->nastepny;
+                        if(temp->nastepny && temp->nastepny->cel == cel)
+                        {
+                                Krawedz * usun = temp->nastepny;
+                                temp->nastepny = temp->nastepny->nastepny;
+                                usun->nastepny = 0;
+                                delete usun;
+                        }
+                }
+        }
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{class_graf_1_1_wezel_a9201be58f6a5b637792928252f3dc8e2}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{wyjscie, }
+\item[{const {\bf \-Wezel} \&}]{wezel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{class_graf_1_1_wezel_a9201be58f6a5b637792928252f3dc8e2}
+
+
+\-Definicja w linii 147 pliku graf.\-cpp.
+
+
+\begin{DoxyCode}
+{
+        wyjscie << wezel.klucz;
+        if(wezel.krawedz)
+                wyjscie << *(wezel.krawedz);
+        if(wezel.nastepny)
+        {
+                wyjscie << endl << *(wezel.nastepny);
+        }
+        return wyjscie;
+}
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_graf_1_1_wezel_a3ec9c69e3f5ad7de599064420a252d0c}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!klucz@{klucz}}
+\index{klucz@{klucz}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{klucz}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Graf\-::\-Wezel\-::klucz}}}\label{class_graf_1_1_wezel_a3ec9c69e3f5ad7de599064420a252d0c}
+
+
+\-Definicja w linii 102 pliku graf.\-hh.
+
+\hypertarget{class_graf_1_1_wezel_afad1099bb7f0eb0fbc5ca6482f3e1bde}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!krawedz@{krawedz}}
+\index{krawedz@{krawedz}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{krawedz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Krawedz}$\ast$ {\bf \-Graf\-::\-Wezel\-::krawedz}}}\label{class_graf_1_1_wezel_afad1099bb7f0eb0fbc5ca6482f3e1bde}
+
+
+\-Definicja w linii 110 pliku graf.\-hh.
+
+\hypertarget{class_graf_1_1_wezel_a81da02b086fccaf3d497b0eb13376c38}{\index{\-Graf\-::\-Wezel@{\-Graf\-::\-Wezel}!nastepny@{nastepny}}
+\index{nastepny@{nastepny}!Graf::Wezel@{\-Graf\-::\-Wezel}}
+\subsubsection[{nastepny}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Wezel}$\ast$ {\bf \-Graf\-::\-Wezel\-::nastepny}}}\label{class_graf_1_1_wezel_a81da02b086fccaf3d497b0eb13376c38}
+
+
+\-Definicja w linii 106 pliku graf.\-hh.
+
