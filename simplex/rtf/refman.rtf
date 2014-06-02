@@ -1,0 +1,803 @@
+{\rtf1\ansi\ansicpg1250\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset238\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset238\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset238\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\comment begin body}
+{\info 
+{\title {\comment Algorytm Simplex. }Algorytm Simplex.}
+{\comment Wygenerowano przezDoxgyen. }
+{\creatim \yr2014\mo6\dy2\hr23\min13\sec59}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt TITLE}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt CREATEDATE}}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Spis tre\'9Cci\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indeks klas\par \pard\plain 
+{\tc \v Indeks klas}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista klas\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Tutaj znajduj\'B9 si\'EA klasy, struktury, unie i interfejsy wraz z ich kr\'F3tkimi opisami:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Simplex} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deklaracja klasy {\b Simplex} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indeks plik\'F3w\par \pard\plain 
+{\tc \v Indeks plik\'F3w}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista plik\'F3w\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Tutaj znajduje si\'EA lista wszystkich plik\'F3w z ich kr\'F3tkimi opisami:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b simplex.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b simplex.hh} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Dokumentacja klas{\tc \v Dokumentacja klas}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Dokumentacja klasy Simplex\par \pard\plain 
+{\tc\tcl2 \v Simplex}
+{\xe \v Simplex}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Diagram wsp\'F3\'B3pracy dla Simplex:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_simplex__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Metody publiczne\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Stworz} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Wypelnij} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b Zakoncz_Test} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int * {\b Obroc_Pivot} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Pivot} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double ** {\b Zwroc_Macierz} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Wyswietl} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Rozwiazanie} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Atrybuty prywatne\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double ** {\b macierz}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b wiersze}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b kolumny}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b powt_test} [2]\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b powt_test1} [2]\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int * {\b w_zmienne}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int * {\b k_zmienne}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Dokumentacja funkcji sk\'B3adowych\par
+\pard\plain 
+{\xe \v Obroc_Pivot\:Simplex}
+{\xe \v Simplex\:Obroc_Pivot}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int * {\b Simplex::Obroc_Pivot} ()}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja obracajaca pivota. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        bool* cel_test = new bool[kolumny];\par
+        int *poz_pivota = new int[2];\par
+\par
+        poz_pivota[0] = 0;\par
+        poz_pivota[1] = 0;\par
+\par
+        double wsp = -1; // wspolczynnik\par
+\par
+        for(int i = 0; i < kolumny - 1; i++)\par
+        \{\par
+                if(macierz[wiersze - 1][i] > 0)\par
+                        cel_test[i] = 1;\par
+        \}\par
+\par
+        for(int j = 0; j < kolumny - 1; j++)\par
+        \{\par
+                if(cel_test[j] == 1)\par
+                \{\par
+                        for(int k = 0; k < wiersze - 1; k++)\par
+                        \{\par
+                                if(macierz[k][j] != 0 && macierz[k][j] > 0 && abs(macierz[k][kolumny - 1]) / macierz[k][j] <= wsp || wsp == -1)\par
+                                \{\par
+                                        poz_pivota[0] = k;\par
+                                        poz_pivota[1] = j;\par
+\par
+                                        wsp = abs(macierz[poz_pivota[0]][kolumny - 1] / macierz[poz_pivota[0]][poz_pivota[1]]);\par
+                                \}\par
+                        \}\par
+                \}\par
+        \}\par
+        cout << "Punkt obrotu znajduje sie (" << poz_pivota[0] + 1 << "," << poz_pivota[1] + 1 << ") o wartosci: " << macierz[poz_pivota[0]][poz_pivota[1]] << endl; \par
+\par
+        return poz_pivota;\par
+\}\par
+}
+}
+{\xe \v Pivot\:Simplex}
+{\xe \v Simplex\:Pivot}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\b Simplex::Pivot} ()}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja pivota. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        int* poz_pivota = Obroc_Pivot();\par
+        int temp;\par
+\par
+        temp = k_zmienne[poz_pivota[1]];\par
+        k_zmienne[poz_pivota[1]] = w_zmienne[poz_pivota[0]];\par
+        w_zmienne[poz_pivota[0]] = temp;\par
+\par
+        powt_test[0] = powt_test1[0];\par
+        powt_test1[1] = powt_test1[1];\par
+        powt_test1[0] = poz_pivota[0];\par
+        powt_test1[1] = poz_pivota[1];\par
+\par
+        double wartosc = macierz[poz_pivota[0]][poz_pivota[1]];\par
+\par
+        for(int x = 0; x < kolumny; x++)\par
+        \{\par
+                macierz[poz_pivota[0]][x] /= wartosc;\par
+        \}\par
+\par
+        for(int u1 = 0; u1 < wiersze; u1++)\par
+        \{\par
+                if(u1 != poz_pivota[0])\par
+                \{\par
+                        for(int u2 = 0; u2 < kolumny; u2++)\par
+                        \{\par
+                                if(u2 != poz_pivota[1])\par
+                                        macierz[u1][u2] -= macierz[poz_pivota[0]][u2] * macierz[u1][poz_pivota[1]];\par
+                        \}\par
+                \}\par
+        \}\par
+        for(int w = 0; w < wiersze; w++)\par
+        \{\par
+                if(w != poz_pivota[0])\par
+                        macierz[w][poz_pivota[1]] /= -wartosc;\par
+                else\par
+                        macierz[w][poz_pivota[1]] /= wartosc;\par
+        \}\par
+\}\par
+}
+{
+Oto graf wywo\'B3ywa\'F1 tej funkcji:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_simplex_a5a5b218ab5c3d5bc74132c64d94421e6_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v Rozwiazanie\:Simplex}
+{\xe \v Simplex\:Rozwiazanie}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\b Simplex::Rozwiazanie} ()}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja rozwiazujaca podane rowniania w celu znalezienia optymalnego rozwiazania. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        bool rozwiazanie = 1;\par
+\par
+        for(int a = 0; a < kolumny - 1; a++)\par
+        \{\par
+                if(macierz[wiersze - 1][a] > 0)\par
+                        rozwiazanie = 0;\par
+        \}\par
+\par
+        if(rozwiazanie == 1)\par
+        \{\par
+                double* rozwiazanie = new double[kolumny - 1];\par
+\par
+                for(int b = 0; b < kolumny - 1; b++)\par
+                        rozwiazanie[b] = 0;\par
+\par
+                for(int a = 0; a < kolumny - 1; a++)\par
+                        if(w_zmienne[a] < 0)\par
+                                rozwiazanie[-(w_zmienne[a] + 1)] = -macierz[a][kolumny - 1];\par
+\par
+                        cout << "Optymalne rozwiazanie " << macierz[wiersze - 1][kolumny - 1] << " gdzie";\par
+\par
+                        for(int i = 0; i < kolumny - 1; i++)\par
+                        \{\par
+                                cout << ", x" << i + 1 <<" = " << rozwiazanie[i];\par
+                        \}\par
+                cout << endl;\par
+        \}\par
+        else\par
+                cout << "Nie ma optymalnego rozwiazania!" << endl;\par
+\}}
+{
+Oto graf wywo\'B3ywa\'F1 tej funkcji:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_simplex_ad699adc1ea1428f8a8439e60a6d56703_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v Stworz\:Simplex}
+{\xe \v Simplex\:Stworz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\b Simplex::Stworz} ()}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja tworzaca macierz dla algorytmu simplex. Funkcja tworzy o zadanej liczbie rownan oraz zmiennych decyzyjnych czyli np x1, x2 itp tworzac tablice dynamiczna dla wierszy oraz kolumn. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        cout << " Podaj liczbe rownan: ";\par
+        cin >> wiersze;\par
+        wiersze += 1;\par
+        cout << "Podaj liczbe zmienych decyzyjnych: ";\par
+        cin >> kolumny;\par
+        kolumny += 1;\par
+\par
+        macierz = new double*[wiersze];\par
+        for(int i = 0; i < wiersze; i++)\par
+                macierz[i] = new double[kolumny];\par
+        \par
+        k_zmienne = new int[kolumny - 1];\par
+        for(int j = 0; j < kolumny - 1; j++)\par
+                k_zmienne[j] = -1*(j + 1);\par
+\par
+        w_zmienne = new int[wiersze - 1];\par
+        for(int i = 0; i < wiersze - 1; i++)\par
+                w_zmienne[i] = i;\par
+\par
+        powt_test[0] = 0;\par
+        powt_test[1] = -1;\par
+        powt_test1[0] = -2;\par
+        powt_test1[1] = -3;\par
+\}\par
+}
+{
+Oto graf wywo\'B3ywa\'F1 tej funkcji:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_simplex_aded4345510c78f73041c286fe4fc8e52_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v Wypelnij\:Simplex}
+{\xe \v Simplex\:Wypelnij}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\b Simplex::Wypelnij} ()}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja wypelniajaca macierz simplex. Funkcja zapelnia stworzona wczesniej macierz, poprzez uzytkownika, ktory wprowadza poszczegolne zmienne - wartosci funkcji celu. A nastepnie sa wyswietlane utworzone rownania oraz rozmiar macierzy M. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        cout << "Dla kolumn " << kolumny - 1 << " wprowadz wartosci funkcji celu: ";\par
+        for(int i = 0; i < kolumny - 1; i++)\par
+        \{\par
+                cin >> macierz[wiersze - 1][i];\par
+        \}\par
+        macierz[wiersze - 1][kolumny - 1] = 0;\par
+        cout << endl;\par
+\par
+        cout << "M = ";\par
+        for(int j; j < kolumny - 2; j++)\par
+        \{\par
+                cout << macierz[wiersze - 1][j] << "x" << j + 1 << " + ";\par
+        \}\par
+\par
+        if(kolumny - 2 >= 0)\par
+                cout << macierz[wiersze - 1][kolumny - 2] << "x" << kolumny - 1 << endl;\par
+        cout << "Forma zapisu ax1 + bx2... <= c - zestaw wejscia zamowienia." << endl;\par
+\par
+        for(int i = 0; i < wiersze - 1; i++)\par
+        \{\par
+                cout << "Dla kolumn " << kolumny - 1 << " wprowadz wartosci funkcji celu: ";\par
+                for(int j = 0; j < kolumny; j++)\par
+                \{\par
+                        cin >> macierz[i][j];\par
+                \}\par
+\par
+                cout << macierz[i][0] << "x1";\par
+\par
+                for(int x = 1; x < kolumny - 1; x++)\par
+                \{\par
+                        cout << " + " << macierz[i][x] << "*x" << x + 1;\par
+                \}\par
+\par
+                if(kolumny -2 >= 0)\par
+                        cout << " <= " << macierz[i][kolumny - 1] << endl;\par
+                macierz[i][kolumny - 1] *= -1;\par
+        \}\par
+        cout << endl;\par
+\}\par
+}
+{
+Oto graf wywo\'B3ywa\'F1 tej funkcji:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_simplex_a5b60e490fe0cebf26b08f1050ff54d03_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v Wyswietl\:Simplex}
+{\xe \v Simplex\:Wyswietl}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void {\b Simplex::Wyswietl} ()}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja wyswietlajaca macierz z wartosciami poszczegolnych wartosci celu. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        for(int i = 0; i < wiersze; i++)\par
+        \{\par
+                if(i == wiersze - 1)\par
+                        for(int k = 0; k < kolumny; k++)\par
+                                cout << "___";\par
+                        cout << endl;\par
+\par
+                        for(int j = 0; j < kolumny; j++)\par
+                        \{\par
+                                if(j == kolumny - 1)\par
+                                        cout << "|";\par
+                                cout << macierz[i][j];\par
+                        \}\par
+                        cout << endl;\par
+        \}\par
+\}\par
+}
+{
+Oto graf wywo\'B3ywa\'F1 tej funkcji:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_simplex_ae8e7349892161f76863a27ada36d266a_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v Zakoncz_Test\:Simplex}
+{\xe \v Simplex\:Zakoncz_Test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool {\b Simplex::Zakoncz_Test} ()}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja konczaca wykonanie testu dla algorytmu simplex. Funkcja sprawdza czy poszczegolne wartosci w utworzonych wierszach oraz kolumnach w macierzy sa wieksze niz zero, aby bylo to rownanie do obliczenia. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        bool test = false;\par
+        if(powt_test[0] == powt_test1[0] && powt_test[1] == powt_test1[1])\par
+                return false;\par
+        for(int i = 0; i < wiersze - 1; i++)\par
+                if(macierz[i][kolumny - 1] > 0)\par
+                        return false;\par
+\par
+        for(int j = 0; j < kolumny - 1; j++)\par
+        \{\par
+                if(macierz[wiersze - 1][j] > 0)\par
+                        for(int x = 0; x < wiersze - 1; x++)\par
+                        \{\par
+                                if(macierz[x][j] > 0)\par
+                                        return true;\par
+                        \}\par
+        \}\par
+        return false;\par
+\}\par
+}
+{
+Oto graf wywo\'B3ywa\'F1 tej funkcji:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_simplex_ae4e0bb58320a4f10b9efe8faeaabbfbe_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v Zwroc_Macierz\:Simplex}
+{\xe \v Simplex\:Zwroc_Macierz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double ** {\b Simplex::Zwroc_Macierz} ()}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Funkcja wskaznikowa zwracajaca zmienna macierz. }}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        return macierz;\par
+\}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Dokumentacja atrybut\'F3w sk\'B3adowych\par
+\pard\plain 
+{\xe \v k_zmienne\:Simplex}
+{\xe \v Simplex\:k_zmienne}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int* {\b Simplex::k_zmienne}{\f2  [private]}}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Zmienna wskaznikowa typu int, zawierajaca zmienne znajdujace sie w kolumnach macierzy simplex. }}\par
+}
+{\xe \v kolumny\:Simplex}
+{\xe \v Simplex\:kolumny}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int {\b Simplex::kolumny}{\f2  [private]}}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Zmienna typu int odpowiadajaca za kolumny w macierzy simplex. }}\par
+}
+{\xe \v macierz\:Simplex}
+{\xe \v Simplex\:macierz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double** {\b Simplex::macierz}{\f2  [private]}}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Zmienna wskaznikowa typu double, tworzaca macierz dla algorytmu {\b Simplex}. }}\par
+}
+{\xe \v powt_test\:Simplex}
+{\xe \v Simplex\:powt_test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int {\b Simplex::powt_test}[2]{\f2  [private]}}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tablica pomocnicza nr 1 trojelementowa typu int do wykonywania algorytmu simplex. }}\par
+}
+{\xe \v powt_test1\:Simplex}
+{\xe \v Simplex\:powt_test1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int {\b Simplex::powt_test1}[2]{\f2  [private]}}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tablica pomocnicza nr2 trojelementowa typu int do wykonywania algorytmu simplex. }}\par
+}
+{\xe \v w_zmienne\:Simplex}
+{\xe \v Simplex\:w_zmienne}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int* {\b Simplex::w_zmienne}{\f2  [private]}}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Zmienna wskaznikowa typu int, zawierajace zmienne wierszy w macierzy simplex. }}\par
+}
+{\xe \v wiersze\:Simplex}
+{\xe \v Simplex\:wiersze}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int {\b Simplex::wiersze}{\f2  [private]}}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Zmienna typu int odpowiadajaca za wiersze w tworzonej macierzy dla algorytmu simplex. }}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Dokumentacja dla tej klasy zosta\'B3a wygenerowana z plik\'F3w:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b simplex.hh}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b simplex.cpp}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Dokumentacja plik\'F3w{\tc \v Dokumentacja plik\'F3w}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Dokumentacja pliku main.cpp\par \pard\plain 
+{\tc\tcl2 \v main.cpp}
+{\xe \v main.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funkcje\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Dokumentacja funkcji\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int {\b main} ()}}
+\par
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+        Simplex S;\par
+        bool petla = 1;\par
+        // petla rozpoczynajaca dzialanie programu\par
+        while(petla == 1)\par
+        \{\par
+                S.Stworz(); // tworzymy macierz\par
+\par
+                S.Wypelnij(); // wypelniamy zmiennymi\par
+                S.Wyswietl(); // wyswietlamy zmienne celu\par
+\par
+                while(S.Zakoncz_Test() == true)\par
+                \{\par
+                        S.Pivot();\par
+                        S.Wyswietl();\par
+                \}\par
+\par
+                cout << endl;\par
+                S.Rozwiazanie();\par
+                cout << "Wpisz: 1 - wykonanie programu jeszcze raz; 0 - zakoncz program. ";\par
+                cin >> petla;\par
+        \}\par
+        return 0;\par
+\}}
+{
+Oto graf wywo\'B3a\'F1 dla tej funkcji:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Dokumentacja pliku simplex.cpp\par \pard\plain 
+{\tc\tcl2 \v simplex.cpp}
+{\xe \v simplex.cpp}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Dokumentacja pliku simplex.hh\par \pard\plain 
+{\tc\tcl2 \v simplex.hh}
+{\xe \v simplex.hh}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Komponenty\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Simplex}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deklaracja klasy {\b Simplex}. }}}
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Indeks\par 
+\pard\plain 
+{\tc \v Indeks}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

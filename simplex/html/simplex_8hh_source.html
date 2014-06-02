@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Algorytm Simplex.: Plik źródłowy simplex.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Algorytm Simplex.
+   
+   </div>
+   <div id="projectbrief">v1.0</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">simplex.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="simplex_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef SIMPLEX_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define SIMPLEX_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;iomanip&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;cmath&gt;</span>
+<a name="l00011"></a>00011 <span class="keyword">using namespace </span>std;
+<a name="l00015"></a><a class="code" href="class_simplex.html">00015</a> <span class="keyword">class </span><a class="code" href="class_simplex.html" title="Deklaracja klasy Simplex.">Simplex</a>
+<a name="l00016"></a>00016 {
+<a name="l00017"></a>00017         <span class="keyword">private</span>:
+<a name="l00021"></a><a class="code" href="class_simplex.html#ae1aa6bc039eca109d9af4fc423a49510">00021</a>                 <span class="keywordtype">double</span>** <a class="code" href="class_simplex.html#ae1aa6bc039eca109d9af4fc423a49510" title="Zmienna wskaznikowa typu double, tworzaca macierz dla algorytmu Simplex.">macierz</a>;
+<a name="l00026"></a><a class="code" href="class_simplex.html#a20249757e630443b5a5580c6e1787a5e">00026</a>                 <span class="keywordtype">int</span> <a class="code" href="class_simplex.html#a20249757e630443b5a5580c6e1787a5e" title="Zmienna typu int odpowiadajaca za wiersze w tworzonej macierzy dla algorytmu simplex.">wiersze</a>;
+<a name="l00030"></a><a class="code" href="class_simplex.html#ae237c38eca2984b94334ade925758eb9">00030</a>                 <span class="keywordtype">int</span> <a class="code" href="class_simplex.html#ae237c38eca2984b94334ade925758eb9" title="Zmienna typu int odpowiadajaca za kolumny w macierzy simplex.">kolumny</a>;
+<a name="l00034"></a><a class="code" href="class_simplex.html#a106e79929804646eec2f30382195ee1a">00034</a>                 <span class="keywordtype">int</span> powt_test[2];
+<a name="l00038"></a><a class="code" href="class_simplex.html#a5f74bdeb5992f39d279d7cd9a43b856b">00038</a>                 <span class="keywordtype">int</span> powt_test1[2];
+<a name="l00042"></a><a class="code" href="class_simplex.html#a7e15401f583fe525e4ad3c6b4b78a7f5">00042</a>                 <span class="keywordtype">int</span>* <a class="code" href="class_simplex.html#a7e15401f583fe525e4ad3c6b4b78a7f5" title="Zmienna wskaznikowa typu int, zawierajace zmienne wierszy w macierzy simplex.">w_zmienne</a>;
+<a name="l00046"></a><a class="code" href="class_simplex.html#a3a8d24917c4108603c676b2ffa67c689">00046</a>                 <span class="keywordtype">int</span>* <a class="code" href="class_simplex.html#a3a8d24917c4108603c676b2ffa67c689" title="Zmienna wskaznikowa typu int, zawierajaca zmienne znajdujace sie w kolumnach macierzy simplex...">k_zmienne</a>;
+<a name="l00047"></a>00047                 
+<a name="l00048"></a>00048         <span class="keyword">public</span>:
+<a name="l00054"></a>00054                 <span class="keywordtype">void</span> Stworz();
+<a name="l00060"></a>00060                 <span class="keywordtype">void</span> Wypelnij();
+<a name="l00066"></a>00066                 <span class="keywordtype">bool</span> Zakoncz_Test();
+<a name="l00070"></a>00070                 <span class="keywordtype">int</span>* Obroc_Pivot();
+<a name="l00074"></a>00074                 <span class="keywordtype">void</span> Pivot();
+<a name="l00078"></a>00078                 <span class="keywordtype">double</span>** Zwroc_Macierz();
+<a name="l00083"></a>00083                 <span class="keywordtype">void</span> Wyswietl();
+<a name="l00088"></a>00088                 <span class="keywordtype">void</span> Rozwiazanie();
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090 };
+<a name="l00091"></a>00091 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Mon Jun 2 2014 23:13:59 dla Algorytm Simplex. programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
+
+\author{Patryk Jędrzejko 200406}
+\title{Sprawozdanie z laboratorium - PAiMSI. \\Algorytm Simplex.}
+
+\begin{document}
+\maketitle
+
+\section{Wprowadzenie}
+W danym ćwiczeniu należało zaimplementować \textbf{algorytm simplex}, który będzie obliczał optymalne rozwiązanie
+dla zadanych równań z dowolnie wybranymi zmiennymi.
+\\\\\textbf{Algorytm simplex}, bądź też sympleksowy jest to algorytm, który stosowany jest jako metoda do rozwiązywanie zadań z programowania liniowego. Znajdując optymalne rozwiązania. 
+\\\\W algorytmie tym mamy do czynienia z funkcjami celu, czyli funkcjami liniowymi w których szukamy optymalne rozwiązanie minimalne bądź też maksymalne.
+\\\\Aby znaleźć optymalne rozwiązanie, \textbf{algorytm simplex} wyznacza wierzchołki, w których wylicza wartości rozwiązań funkcji celu i jeżeli w kolejnym wierzchołku celowa funkcja osiąga lepsze wartości to odrzucamy poprzedni wierzchołek i przechodzimy do kolejnego aż uzyskamy najbardziej optymalne rozwiązanie.
+\section{Działanie programu}
+Implementacja \textbf{algorytmu \textbf{simplex}} nie jest do końca dopracowana, opiera się na stworzeniu macierzy, która zawiera wiersze oraz kolumny o zadanych wartościach funkcji celu, które podaje użytkownik na początku programu.Następnie
+użytkowniku wyświetlane są stworzone równania układu równań oraz wyświetlana jest tablica sympleksowa. Na końcu użytkownik dostaje optymalne rozwiązanie danego układu równań wraz z wartościami funkcji celu.
+
+\section{Wnioski:}
+\begin{itemize}
+  \item Program działa poprawnie, ale nie jest to do końca prawidłowa implementacja. Wymaga paru poprawek.
+  \item Dzięki algorytmowi simplex możemy w łatwy sposób rozwiązać bardziej skomplikowane układy równań i w szybki sposób dostać optymalne rozwiązania co jest bardzo przydatne dla wielu firm transportowych, produkcyjnych czy też wielu innych.
+  \item Implementacja algorytmu simplex choć może wydawać się trudna, to taka nie jest. Sprawa komplikuje się jeżeli chcemy obliczać rozwiązania dla wielo wymiarowych układów równań. Również ważne są deklaracje poszczególnych funkcji w całym simplex'ie, które w sposób szybki i sprawny oraz najważniejsze w prawidłowy sposób krok po kroku rozwiążą zadany problem.
+\end{itemize}
+
+\end{document}

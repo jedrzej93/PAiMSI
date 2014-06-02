@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Simplex::Stworz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simplex.html#aded4345510c78f73041c286fe4fc8e52",tooltip="Funkcja tworzaca macierz dla algorytmu simplex. Funkcja tworzy o zadanej liczbie rownan oraz zmiennyc..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Simplex::Wypelnij",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simplex.html#a5b60e490fe0cebf26b08f1050ff54d03",tooltip="Funkcja wypelniajaca macierz simplex. Funkcja zapelnia stworzona wczesniej macierz, poprzez uzytkownika, ktory wprowadza poszczegolne zmienne - wartosci funkcji celu. A nastepnie sa wyswietlane utworzone rownania oraz rozmiar macierzy M."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Simplex::Wyswietl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simplex.html#ae8e7349892161f76863a27ada36d266a",tooltip="Funkcja wyswietlajaca macierz z wartosciami poszczegolnych wartosci celu."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Simplex::Zakoncz_Test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simplex.html#ae4e0bb58320a4f10b9efe8faeaabbfbe",tooltip="Funkcja konczaca wykonanie testu dla algorytmu simplex. Funkcja sprawdza czy poszczegolne wartosci w ..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Simplex::Pivot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simplex.html#a5a5b218ab5c3d5bc74132c64d94421e6",tooltip="Funkcja pivota."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Simplex::Rozwiazanie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simplex.html#ad699adc1ea1428f8a8439e60a6d56703",tooltip="Funkcja rozwiazujaca podane rowniania w celu znalezienia optymalnego rozwiazania."];
+}

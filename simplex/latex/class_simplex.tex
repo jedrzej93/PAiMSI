@@ -1,0 +1,465 @@
+\hypertarget{class_simplex}{\section{\-Dokumentacja klasy \-Simplex}
+\label{class_simplex}\index{\-Simplex@{\-Simplex}}
+}
+
+
+\-Diagram współpracy dla \-Simplex\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_simplex_aded4345510c78f73041c286fe4fc8e52}{\-Stworz} ()
+\item 
+void \hyperlink{class_simplex_a5b60e490fe0cebf26b08f1050ff54d03}{\-Wypelnij} ()
+\item 
+bool \hyperlink{class_simplex_ae4e0bb58320a4f10b9efe8faeaabbfbe}{\-Zakoncz\-\_\-\-Test} ()
+\item 
+int $\ast$ \hyperlink{class_simplex_afd2eb51388cd5055b6b1fa219435514b}{\-Obroc\-\_\-\-Pivot} ()
+\item 
+void \hyperlink{class_simplex_a5a5b218ab5c3d5bc74132c64d94421e6}{\-Pivot} ()
+\item 
+double $\ast$$\ast$ \hyperlink{class_simplex_af986941bf1abbc27a059a40ca2a9def2}{\-Zwroc\-\_\-\-Macierz} ()
+\item 
+void \hyperlink{class_simplex_ae8e7349892161f76863a27ada36d266a}{\-Wyswietl} ()
+\item 
+void \hyperlink{class_simplex_ad699adc1ea1428f8a8439e60a6d56703}{\-Rozwiazanie} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$$\ast$ \hyperlink{class_simplex_ae1aa6bc039eca109d9af4fc423a49510}{macierz}
+\item 
+int \hyperlink{class_simplex_a20249757e630443b5a5580c6e1787a5e}{wiersze}
+\item 
+int \hyperlink{class_simplex_ae237c38eca2984b94334ade925758eb9}{kolumny}
+\item 
+int \hyperlink{class_simplex_a106e79929804646eec2f30382195ee1a}{powt\-\_\-test} \mbox{[}2\mbox{]}
+\item 
+int \hyperlink{class_simplex_a5f74bdeb5992f39d279d7cd9a43b856b}{powt\-\_\-test1} \mbox{[}2\mbox{]}
+\item 
+int $\ast$ \hyperlink{class_simplex_a7e15401f583fe525e4ad3c6b4b78a7f5}{w\-\_\-zmienne}
+\item 
+int $\ast$ \hyperlink{class_simplex_a3a8d24917c4108603c676b2ffa67c689}{k\-\_\-zmienne}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_simplex_afd2eb51388cd5055b6b1fa219435514b}{\index{\-Simplex@{\-Simplex}!\-Obroc\-\_\-\-Pivot@{\-Obroc\-\_\-\-Pivot}}
+\index{\-Obroc\-\_\-\-Pivot@{\-Obroc\-\_\-\-Pivot}!Simplex@{\-Simplex}}
+\subsubsection[{\-Obroc\-\_\-\-Pivot}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ {\bf \-Simplex\-::\-Obroc\-\_\-\-Pivot} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_afd2eb51388cd5055b6b1fa219435514b}
+
+
+\-Funkcja obracajaca pivota. 
+
+
+\begin{DoxyCode}
+{
+        bool* cel_test = new bool[kolumny];
+        int *poz_pivota = new int[2];
+
+        poz_pivota[0] = 0;
+        poz_pivota[1] = 0;
+
+        double wsp = -1; // wspolczynnik
+
+        for(int i = 0; i < kolumny - 1; i++)
+        {
+                if(macierz[wiersze - 1][i] > 0)
+                        cel_test[i] = 1;
+        }
+
+        for(int j = 0; j < kolumny - 1; j++)
+        {
+                if(cel_test[j] == 1)
+                {
+                        for(int k = 0; k < wiersze - 1; k++)
+                        {
+                                if(macierz[k][j] != 0 && macierz[k][j] > 0 && 
+      abs(macierz[k][kolumny - 1]) / macierz[k][j] <= wsp || wsp == -1)
+                                {
+                                        poz_pivota[0] = k;
+                                        poz_pivota[1] = j;
+
+                                        wsp = abs(macierz[poz_pivota[0]][
+      kolumny - 1] / macierz[poz_pivota[0]][poz_pivota[1]]);
+                                }
+                        }
+                }
+        }
+        cout << "Punkt obrotu znajduje sie (" << poz_pivota[0] + 1 << "," << 
+      poz_pivota[1] + 1 << ") o wartosci: " << macierz[poz_pivota[0]][poz_pivota[1]] << 
+      endl; 
+
+        return poz_pivota;
+}
+\end{DoxyCode}
+\hypertarget{class_simplex_a5a5b218ab5c3d5bc74132c64d94421e6}{\index{\-Simplex@{\-Simplex}!\-Pivot@{\-Pivot}}
+\index{\-Pivot@{\-Pivot}!Simplex@{\-Simplex}}
+\subsubsection[{\-Pivot}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Simplex\-::\-Pivot} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_a5a5b218ab5c3d5bc74132c64d94421e6}
+
+
+\-Funkcja pivota. 
+
+
+\begin{DoxyCode}
+{
+        int* poz_pivota = Obroc_Pivot();
+        int temp;
+
+        temp = k_zmienne[poz_pivota[1]];
+        k_zmienne[poz_pivota[1]] = w_zmienne[poz_pivota[0]];
+        w_zmienne[poz_pivota[0]] = temp;
+
+        powt_test[0] = powt_test1[0];
+        powt_test1[1] = powt_test1[1];
+        powt_test1[0] = poz_pivota[0];
+        powt_test1[1] = poz_pivota[1];
+
+        double wartosc = macierz[poz_pivota[0]][poz_pivota[1]];
+
+        for(int x = 0; x < kolumny; x++)
+        {
+                macierz[poz_pivota[0]][x] /= wartosc;
+        }
+
+        for(int u1 = 0; u1 < wiersze; u1++)
+        {
+                if(u1 != poz_pivota[0])
+                {
+                        for(int u2 = 0; u2 < kolumny; u2++)
+                        {
+                                if(u2 != poz_pivota[1])
+                                        macierz[u1][u2] -= macierz[poz_pivota[0
+      ]][u2] * macierz[u1][poz_pivota[1]];
+                        }
+                }
+        }
+        for(int w = 0; w < wiersze; w++)
+        {
+                if(w != poz_pivota[0])
+                        macierz[w][poz_pivota[1]] /= -wartosc;
+                else
+                        macierz[w][poz_pivota[1]] /= wartosc;
+        }
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_simplex_ad699adc1ea1428f8a8439e60a6d56703}{\index{\-Simplex@{\-Simplex}!\-Rozwiazanie@{\-Rozwiazanie}}
+\index{\-Rozwiazanie@{\-Rozwiazanie}!Simplex@{\-Simplex}}
+\subsubsection[{\-Rozwiazanie}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Simplex\-::\-Rozwiazanie} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_ad699adc1ea1428f8a8439e60a6d56703}
+
+
+\-Funkcja rozwiazujaca podane rowniania w celu znalezienia optymalnego rozwiazania. 
+
+
+\begin{DoxyCode}
+{
+        bool rozwiazanie = 1;
+
+        for(int a = 0; a < kolumny - 1; a++)
+        {
+                if(macierz[wiersze - 1][a] > 0)
+                        rozwiazanie = 0;
+        }
+
+        if(rozwiazanie == 1)
+        {
+                double* rozwiazanie = new double[kolumny - 1];
+
+                for(int b = 0; b < kolumny - 1; b++)
+                        rozwiazanie[b] = 0;
+
+                for(int a = 0; a < kolumny - 1; a++)
+                        if(w_zmienne[a] < 0)
+                                rozwiazanie[-(w_zmienne[a] + 1)] = -macierz[a][
+      kolumny - 1];
+
+                        cout << "Optymalne rozwiazanie " << macierz[wiersze - 1
+      ][kolumny - 1] << " gdzie";
+
+                        for(int i = 0; i < kolumny - 1; i++)
+                        {
+                                cout << ", x" << i + 1 <<" = " << rozwiazanie[i
+      ];
+                        }
+                cout << endl;
+        }
+        else
+                cout << "Nie ma optymalnego rozwiazania!" << endl;
+}\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_simplex_aded4345510c78f73041c286fe4fc8e52}{\index{\-Simplex@{\-Simplex}!\-Stworz@{\-Stworz}}
+\index{\-Stworz@{\-Stworz}!Simplex@{\-Simplex}}
+\subsubsection[{\-Stworz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Simplex\-::\-Stworz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_aded4345510c78f73041c286fe4fc8e52}
+
+
+\-Funkcja tworzaca macierz dla algorytmu simplex. \-Funkcja tworzy o zadanej liczbie rownan oraz zmiennych decyzyjnych czyli np x1, x2 itp tworzac tablice dynamiczna dla wierszy oraz kolumn. 
+
+
+\begin{DoxyCode}
+{
+        cout << " Podaj liczbe rownan: ";
+        cin >> wiersze;
+        wiersze += 1;
+        cout << "Podaj liczbe zmienych decyzyjnych: ";
+        cin >> kolumny;
+        kolumny += 1;
+
+        macierz = new double*[wiersze];
+        for(int i = 0; i < wiersze; i++)
+                macierz[i] = new double[kolumny];
+        
+        k_zmienne = new int[kolumny - 1];
+        for(int j = 0; j < kolumny - 1; j++)
+                k_zmienne[j] = -1*(j + 1);
+
+        w_zmienne = new int[wiersze - 1];
+        for(int i = 0; i < wiersze - 1; i++)
+                w_zmienne[i] = i;
+
+        powt_test[0] = 0;
+        powt_test[1] = -1;
+        powt_test1[0] = -2;
+        powt_test1[1] = -3;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_simplex_a5b60e490fe0cebf26b08f1050ff54d03}{\index{\-Simplex@{\-Simplex}!\-Wypelnij@{\-Wypelnij}}
+\index{\-Wypelnij@{\-Wypelnij}!Simplex@{\-Simplex}}
+\subsubsection[{\-Wypelnij}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Simplex\-::\-Wypelnij} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_a5b60e490fe0cebf26b08f1050ff54d03}
+
+
+\-Funkcja wypelniajaca macierz simplex. \-Funkcja zapelnia stworzona wczesniej macierz, poprzez uzytkownika, ktory wprowadza poszczegolne zmienne -\/ wartosci funkcji celu. \-A nastepnie sa wyswietlane utworzone rownania oraz rozmiar macierzy \-M. 
+
+
+\begin{DoxyCode}
+{
+        cout << "Dla kolumn " << kolumny - 1 << " wprowadz wartosci funkcji
+       celu: ";
+        for(int i = 0; i < kolumny - 1; i++)
+        {
+                cin >> macierz[wiersze - 1][i];
+        }
+        macierz[wiersze - 1][kolumny - 1] = 0;
+        cout << endl;
+
+        cout << "M = ";
+        for(int j; j < kolumny - 2; j++)
+        {
+                cout << macierz[wiersze - 1][j] << "x" << j + 1 << " + ";
+        }
+
+        if(kolumny - 2 >= 0)
+                cout << macierz[wiersze - 1][kolumny - 2] << "x" << kolumny - 1
+       << endl;
+        cout << "Forma zapisu ax1 + bx2... <= c - zestaw wejscia zamowienia." <
+      < endl;
+
+        for(int i = 0; i < wiersze - 1; i++)
+        {
+                cout << "Dla kolumn " << kolumny - 1 << " wprowadz wartosci
+       funkcji celu: ";
+                for(int j = 0; j < kolumny; j++)
+                {
+                        cin >> macierz[i][j];
+                }
+
+                cout << macierz[i][0] << "x1";
+
+                for(int x = 1; x < kolumny - 1; x++)
+                {
+                        cout << " + " << macierz[i][x] << "*x" << x + 1;
+                }
+
+                if(kolumny -2 >= 0)
+                        cout << " <= " << macierz[i][kolumny - 1] << endl;
+                macierz[i][kolumny - 1] *= -1;
+        }
+        cout << endl;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_simplex_ae8e7349892161f76863a27ada36d266a}{\index{\-Simplex@{\-Simplex}!\-Wyswietl@{\-Wyswietl}}
+\index{\-Wyswietl@{\-Wyswietl}!Simplex@{\-Simplex}}
+\subsubsection[{\-Wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Simplex\-::\-Wyswietl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_ae8e7349892161f76863a27ada36d266a}
+
+
+\-Funkcja wyswietlajaca macierz z wartosciami poszczegolnych wartosci celu. 
+
+
+\begin{DoxyCode}
+{
+        for(int i = 0; i < wiersze; i++)
+        {
+                if(i == wiersze - 1)
+                        for(int k = 0; k < kolumny; k++)
+                                cout << "___";
+                        cout << endl;
+
+                        for(int j = 0; j < kolumny; j++)
+                        {
+                                if(j == kolumny - 1)
+                                        cout << "|";
+                                cout << macierz[i][j];
+                        }
+                        cout << endl;
+        }
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_simplex_ae4e0bb58320a4f10b9efe8faeaabbfbe}{\index{\-Simplex@{\-Simplex}!\-Zakoncz\-\_\-\-Test@{\-Zakoncz\-\_\-\-Test}}
+\index{\-Zakoncz\-\_\-\-Test@{\-Zakoncz\-\_\-\-Test}!Simplex@{\-Simplex}}
+\subsubsection[{\-Zakoncz\-\_\-\-Test}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Simplex\-::\-Zakoncz\-\_\-\-Test} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_ae4e0bb58320a4f10b9efe8faeaabbfbe}
+
+
+\-Funkcja konczaca wykonanie testu dla algorytmu simplex. \-Funkcja sprawdza czy poszczegolne wartosci w utworzonych wierszach oraz kolumnach w macierzy sa wieksze niz zero, aby bylo to rownanie do obliczenia. 
+
+
+\begin{DoxyCode}
+{
+        bool test = false;
+        if(powt_test[0] == powt_test1[0] && powt_test[1] == powt_test1[1])
+                return false;
+        for(int i = 0; i < wiersze - 1; i++)
+                if(macierz[i][kolumny - 1] > 0)
+                        return false;
+
+        for(int j = 0; j < kolumny - 1; j++)
+        {
+                if(macierz[wiersze - 1][j] > 0)
+                        for(int x = 0; x < wiersze - 1; x++)
+                        {
+                                if(macierz[x][j] > 0)
+                                        return true;
+                        }
+        }
+        return false;
+}
+\end{DoxyCode}
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_simplex_af986941bf1abbc27a059a40ca2a9def2}{\index{\-Simplex@{\-Simplex}!\-Zwroc\-\_\-\-Macierz@{\-Zwroc\-\_\-\-Macierz}}
+\index{\-Zwroc\-\_\-\-Macierz@{\-Zwroc\-\_\-\-Macierz}!Simplex@{\-Simplex}}
+\subsubsection[{\-Zwroc\-\_\-\-Macierz}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$$\ast$ {\bf \-Simplex\-::\-Zwroc\-\_\-\-Macierz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_af986941bf1abbc27a059a40ca2a9def2}
+
+
+\-Funkcja wskaznikowa zwracajaca zmienna macierz. 
+
+
+\begin{DoxyCode}
+{
+        return macierz;
+}
+\end{DoxyCode}
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_simplex_a3a8d24917c4108603c676b2ffa67c689}{\index{\-Simplex@{\-Simplex}!k\-\_\-zmienne@{k\-\_\-zmienne}}
+\index{k\-\_\-zmienne@{k\-\_\-zmienne}!Simplex@{\-Simplex}}
+\subsubsection[{k\-\_\-zmienne}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-Simplex\-::k\-\_\-zmienne}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a3a8d24917c4108603c676b2ffa67c689}
+
+
+\-Zmienna wskaznikowa typu int, zawierajaca zmienne znajdujace sie w kolumnach macierzy simplex. 
+
+\hypertarget{class_simplex_ae237c38eca2984b94334ade925758eb9}{\index{\-Simplex@{\-Simplex}!kolumny@{kolumny}}
+\index{kolumny@{kolumny}!Simplex@{\-Simplex}}
+\subsubsection[{kolumny}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Simplex\-::kolumny}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_ae237c38eca2984b94334ade925758eb9}
+
+
+\-Zmienna typu int odpowiadajaca za kolumny w macierzy simplex. 
+
+\hypertarget{class_simplex_ae1aa6bc039eca109d9af4fc423a49510}{\index{\-Simplex@{\-Simplex}!macierz@{macierz}}
+\index{macierz@{macierz}!Simplex@{\-Simplex}}
+\subsubsection[{macierz}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ {\bf \-Simplex\-::macierz}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_ae1aa6bc039eca109d9af4fc423a49510}
+
+
+\-Zmienna wskaznikowa typu double, tworzaca macierz dla algorytmu \hyperlink{class_simplex}{\-Simplex}. 
+
+\hypertarget{class_simplex_a106e79929804646eec2f30382195ee1a}{\index{\-Simplex@{\-Simplex}!powt\-\_\-test@{powt\-\_\-test}}
+\index{powt\-\_\-test@{powt\-\_\-test}!Simplex@{\-Simplex}}
+\subsubsection[{powt\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Simplex\-::powt\-\_\-test}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a106e79929804646eec2f30382195ee1a}
+
+
+\-Tablica pomocnicza nr 1 trojelementowa typu int do wykonywania algorytmu simplex. 
+
+\hypertarget{class_simplex_a5f74bdeb5992f39d279d7cd9a43b856b}{\index{\-Simplex@{\-Simplex}!powt\-\_\-test1@{powt\-\_\-test1}}
+\index{powt\-\_\-test1@{powt\-\_\-test1}!Simplex@{\-Simplex}}
+\subsubsection[{powt\-\_\-test1}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Simplex\-::powt\-\_\-test1}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a5f74bdeb5992f39d279d7cd9a43b856b}
+
+
+\-Tablica pomocnicza nr2 trojelementowa typu int do wykonywania algorytmu simplex. 
+
+\hypertarget{class_simplex_a7e15401f583fe525e4ad3c6b4b78a7f5}{\index{\-Simplex@{\-Simplex}!w\-\_\-zmienne@{w\-\_\-zmienne}}
+\index{w\-\_\-zmienne@{w\-\_\-zmienne}!Simplex@{\-Simplex}}
+\subsubsection[{w\-\_\-zmienne}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-Simplex\-::w\-\_\-zmienne}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a7e15401f583fe525e4ad3c6b4b78a7f5}
+
+
+\-Zmienna wskaznikowa typu int, zawierajace zmienne wierszy w macierzy simplex. 
+
+\hypertarget{class_simplex_a20249757e630443b5a5580c6e1787a5e}{\index{\-Simplex@{\-Simplex}!wiersze@{wiersze}}
+\index{wiersze@{wiersze}!Simplex@{\-Simplex}}
+\subsubsection[{wiersze}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Simplex\-::wiersze}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a20249757e630443b5a5580c6e1787a5e}
+
+
+\-Zmienna typu int odpowiadajaca za wiersze w tworzonej macierzy dla algorytmu simplex. 
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{simplex_8hh}{simplex.\-hh}\item 
+\hyperlink{simplex_8cpp}{simplex.\-cpp}\end{DoxyCompactItemize}
