@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Wprowadzenie}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Budowa programu}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Opis gry k\IeC {\'o}\IeC {\l }ko i krzy\IeC {\.z}yk}{4}{0}{1}
+\beamer@sectionintoc {2}{Co to jest algorytm minimax?}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Definicja algorytmu}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Jak dzia\IeC {\l }a?}{5}{0}{2}

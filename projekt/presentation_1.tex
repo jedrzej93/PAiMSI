@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Prezentacja]{Laboratorium PAiMSI - projekt gry Kółko i Krzyżyk.} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Patryk Jędrzejko 200406} % Your name
+\institute[Politechnika Wrocławska] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Politechnika Wrocławska \\ % Your institution for the title page
+\medskip
+\textit{} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Wprowadzenie} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Wprowadzenie}
+
+\subsection{Budowa programu}
+\frametitle{Budowa programu}
+Po wystartowaniu programu wyświetlane zostaje menu, w którym użytkownik może wybrać opcje:
+\\ - Rozpoczęcia gry - 1
+\\ - Wyświetlenie informacji - 2
+\\ - Zakończenie programu - 0
+\\Po wyborze opcji nr "1" graczowi ukazuje się plansza do gry, a następnie możliwość wyboru pola na którym chce postawić krzyżyk.
+\\Natomiast po wyborze opcji drugiej wyświetlane zostają informację dotyczące gry, tzn. jak trzeba wpisać współrzędne do postawienia krzyżyka na planszy oraz krótkie zasady jak gra przebiega.
+\\Po wyborze "0" kończymy grę.
+\end{frame}
+
+\subsection{Opis gry kółko i krzyżyk}
+\begin{frame}
+\frametitle{Opis gry kółko i krzyżyk}
+Gra kółko i krzyżyk toczy się na planszy zbudowanej z 9 pól ułożonych w 3 wiersze oraz w 3 kolumny. Grę zaczyna użytkownik, następnie ruch wykonuje komputer. Użytkownik wpisuje współrzędne pola na którym chce postawić swój symbol. Dla gracza symbol jest nadany odgórnie i jest to "X", zaś ruch komputera jest oznaczany przez symbol "O". W grze tej wygrywa ten kto jako pierwszy postawi swoje trzy znaki w wierszu, w kolumnie bądź też po przekątnej. Możliwy jest również remis, gdy zapełnione zostaną wszystkie pola bez postawienia trzech tych samych znaków.
+\end{frame} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+%------------------------------------------------
+
+%------------------------------------------------
+\section{Co to jest algorytm minimax?}
+
+\subsection{Definicja algorytmu}
+\subsection{Jak działa?}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Definicja algorytmu}
+Algorytm Minimax to algorytm stosowany w prostych grach logicznych do wyznaczania optymalnych ruchów. Algorytm ten jest rekurencyjny, tzn. sam siebie wywołuje do analizy kolejnych ruchów w grze. 
+
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Jak działa?}
+Algorytm Minimax dokonuje oceny stanu gry na danym poziomie. Mamy trzy poziomy 1, 0, -1, gdzie 1 - gdy dany gracz wygrywa, 0 - gdy mamy sytuację, gdzie żaden gracz nie wygrywa zatem dalej jest wykonywany ruch bądź też następuje remis oraz -1 - jeden z graczy przegrywa. Algorytm ten stawia dla danego gracza wszystkie możliwe poziomy wypisane powyżej, a następnie sam siebie wywołuje z wyższym poziomem dla drugiego gracza. Następnie algorytm zapamiętuje ruchy, które maksymalizują dla danego gracza wartość stanu gry otrzymaną z wyższego poziomu. Czyli jeśli gracz X ma poziom -1 to algorytm szuka dla niego ruchów dających wartość większą niż poziom na którym się znajduje. Jeśli graczem jest Y to minimax szuka ruchów o wartościach mniejszych niż 1. Na końcu wyznaczany jest najlepszy ruch, gdzie algorytm zwraca jego wartość. Jeżeli poziom wyznaczonego poziomu jest równy 0 to ruch jest wykonywany.
+
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\Huge{\centerline{KONIEC}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
